@@ -1,0 +1,16 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Good Relic",
+    "FLAVOR": "Flavor text displayed in detailed relic view.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. [E] is an energy icon."
+    ]
+  },
+  "${modID}:SparkleKendamaBall": {
+    "NAME": "Kendama Ball",
+    "FLAVOR": "True skill takes a lifetime of practice.",
+    "DESCRIPTIONS": [
+      "Whenever you play a card that costs your max energy, reduce the cost of all other cards to zero for this combat."
+    ]
+  }
+}

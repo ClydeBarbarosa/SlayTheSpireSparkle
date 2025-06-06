@@ -1,0 +1,37 @@
+{
+  "${modID}:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  },
+  "${modID}:SparkleEnergizedPower": {
+    "NAME": "Energized",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " energy next turn."
+    ]
+  },
+  "${modID}:SparkleUnexpectedPower": {
+    "NAME": "Unexpected",
+    "DESCRIPTIONS": [
+      "Repeat unexpected cards #b",
+      " times."
+    ]
+  },
+  "${modID}:SparkleWaitForItPower": {
+    "NAME": "Wait For It...",
+    "DESCRIPTIONS": [
+      "At the start of each turn, increase the cost of a random card in your hand by ",
+      "."
+    ]
+  },
+  "${modID}:SparkleLeaveItToChancePower": {
+    "NAME": "Leave it to Chance",
+    "DESCRIPTIONS": [
+      "At the start of your turn, flip a coin. On heads, gain ",
+      " energy, on tails, gain ",
+      " block."
+    ]
+  }
+}
