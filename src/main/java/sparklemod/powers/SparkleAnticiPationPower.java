@@ -52,10 +52,7 @@ public class SparkleAnticiPationPower extends BasePower {
         //dumb check to make sure we're initialized
         //It's less dumb than I thought. updateDescription() is called from the constructor
         //before the collected[] array is initialized.
-        if(collected == null) {
-            tempDescription.append(DESCRIPTIONS[0]);
-        }
-        else {
+        if(collected != null) {
             for (int i = 0; i <= 2; i++) {
                 if (collected[i] != 0) {
                     tempDescription.append(DESCRIPTIONS[i + 1]);
