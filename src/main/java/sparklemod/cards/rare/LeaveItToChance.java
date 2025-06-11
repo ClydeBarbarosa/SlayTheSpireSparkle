@@ -25,10 +25,10 @@ public class LeaveItToChance extends BaseCard {
     public LeaveItToChance() {
         super(ID, info);
 
-        setCustomVar("SparkleLeaveItToChanceBlockAmount", BLOCK_AMOUNT, UPGRADED_BLOCK_AMOUNT);
+        setCustomVar("LeaveItToChanceBlockAmount", BLOCK_AMOUNT, UPGRADED_BLOCK_AMOUNT);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SparkleLeaveItToChancePower(p, customVar("SparkleLeaveItToChanceBlockAmount"), 1), customVar("SparkleLeaveItToChanceBlockAmount")));
+        addToBot(new ApplyPowerAction(p, p, new SparkleLeaveItToChancePower(p, customVar("LeaveItToChanceBlockAmount"), 1), customVar("SparkleLeaveItToChanceBlockAmount")));
     }
 }

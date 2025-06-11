@@ -29,12 +29,12 @@ public class DommyVibes extends BaseCard {
     public DommyVibes() {
         super(ID, info);
 
-        setCustomVar("SparkleDommyVibesWeakAmount", BASE_WEAK, UPGRADED_WEAK);
-        setCustomVar("SparkleDommyVibesVulnerableAmount", BASE_VULNERABLE, UPGRADED_VULNERABLE);
+        setCustomVar("DommyVibesWeakAmount", BASE_WEAK, UPGRADED_WEAK);
+        setCustomVar("DommyVibesVulnerableAmount", BASE_VULNERABLE, UPGRADED_VULNERABLE);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, customVar("SparkleDommyVibesWeakAmount"),false), customVar("SparkleDommyVibesWeakAmount")));
-        addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, customVar("SparkleDommyVibesVulnerableAmount"),false), customVar("SparkleDommyVibesVulnerableAmount")));
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, customVar("DommyVibesWeakAmount"),false), customVar("SparkleDommyVibesWeakAmount")));
+        addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, customVar("DommyVibesVulnerableAmount"),false), customVar("SparkleDommyVibesVulnerableAmount")));
     }
 }

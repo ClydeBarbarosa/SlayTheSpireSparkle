@@ -31,8 +31,8 @@ public class AngryMask extends BaseCard {
         super(ID, info);
 
         upgradesDescription = true;
-        setCustomVar("SparkleAngryMaskMinimumDamage", MINIMUM_DAMAGE);
-        setCustomVar("SparkleAngryMaskMaximumDamage", MAXIMUM_DAMAGE);
+        setCustomVar("AngryMaskMinimumDamage", MINIMUM_DAMAGE);
+        setCustomVar("AngryMaskMaximumDamage", MAXIMUM_DAMAGE);
 
     }
 

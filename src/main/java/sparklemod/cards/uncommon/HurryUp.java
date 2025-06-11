@@ -1,16 +1,19 @@
-package sparklemod.cards.common;
+package sparklemod.cards.uncommon;
 
-import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
+import sparklemod.powers.SparkleHurryUpPower;
 import sparklemod.util.CardStats;
 
-public class SmilingMask extends BaseCard {
-    public static final String ID = makeID(SmilingMask.class.getSimpleName());
+//Hurry up! - skill, 1(0) energy - Retain your energy and hand, then end your turn.
+public class HurryUp extends BaseCard {
+    public static final String ID = makeID(HurryUp.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -19,27 +22,14 @@ public class SmilingMask extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private final static int HEAL_MINIMUM = 1;
-    private final static int HEAL_MAXIMUM = 3;
-
-    public SmilingMask() {
+    public HurryUp() {
         super(ID, info);
 
-        upgradesDescription=true;
-        setCustomVar("SmilingMaskHealMinimum", HEAL_MINIMUM);
-        setCustomVar("SmilingMaskHealMaximum", HEAL_MAXIMUM);
-
-        setExhaust(true);
-    }
-
-    @Override
-    public void upgrade() {
-        super.upgrade();
-
-        this.setExhaust(false);
+        setCostUpgrade(0);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new HealAction(p, p, AbstractDungeon.cardRandomRng.random(HEAL_MINIMUM, HEAL_MAXIMUM)));
+        addToBot(new ApplyPowerAction(p, p, new SparkleHurryUpPower(p, AbstractDungeon.player.energy.energy, -1)));
+        addToBot(new PressEndTurnButtonAction());
     }
 }

@@ -35,12 +35,12 @@ public class SadMask extends BaseCard {
     public SadMask() {
         super(ID, info);
 
-        setCustomVar("SparkleSadMaskMinimumWeak", MINIMUM_WEAK);
-        setCustomVar("SparkleSadMaskMinimumVulnerable", MINIMUM_VULNERABLE);
-        setCustomVar("SparkleSadMaskMinimumFrail", MINIMUM_FRAIL);
-        setCustomVar("SparkleSadMaskMaximumWeak", MAXIMUM_WEAK);
-        setCustomVar("SparkleSadMaskMaximumVulnerable", MAXIMUM_VULNERABLE);
-        setCustomVar("SparkleSadMaskMaximumFrail", MAXIMUM_FRAIL);
+        setCustomVar("SadMaskMinimumWeak", MINIMUM_WEAK);
+        setCustomVar("SadMaskMinimumVulnerable", MINIMUM_VULNERABLE);
+        setCustomVar("SadMaskMinimumFrail", MINIMUM_FRAIL);
+        setCustomVar("SadMaskMaximumWeak", MAXIMUM_WEAK);
+        setCustomVar("SadMaskMaximumVulnerable", MAXIMUM_VULNERABLE);
+        setCustomVar("SadMaskMaximumFrail", MAXIMUM_FRAIL);
 
         upgradesDescription = true;
     }

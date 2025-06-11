@@ -30,12 +30,12 @@ public class FireworksDisplay extends BaseCard {
         super(ID, info);
 
         setDamage(BASE_DAMAGE);
-        setCustomVar("SparkleFireworksDisplayNumBaseHits", BASE_NUM_TIMES);
-        setCustomVar("SparkleFireworksDisplayNumMaxHits", BASE_MAX_NUM_TIMES, UPGRADED_MAX_NUM_TIMES);
+        setCustomVar("FireworksDisplayNumBaseHits", BASE_NUM_TIMES);
+        setCustomVar("FireworksDisplayNumMaxHits", BASE_MAX_NUM_TIMES, UPGRADED_MAX_NUM_TIMES);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        int numTimes = AbstractDungeon.cardRandomRng.random(customVar("SparkleFireworksDisplayNumBaseHits"), customVar("SparkleFireworksDisplayNumMaxHits"));
+        int numTimes = AbstractDungeon.cardRandomRng.random(customVar("FireworksDisplayNumBaseHits"), customVar("FireworksDisplayNumMaxHits"));
 
         for(int i = 0; i < numTimes; i++) {
             addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL));

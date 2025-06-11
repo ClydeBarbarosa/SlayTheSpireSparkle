@@ -29,7 +29,7 @@ public class Strike extends BaseCard {
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);
-        setCustomVar("sparkleStrikeSecondHitDamage", VariableType.DAMAGE, SECOND_DAMAGE, UPG_SECOND_DAMAGE);
+        setCustomVar("StrikeSecondHitDamage", VariableType.DAMAGE, SECOND_DAMAGE, UPG_SECOND_DAMAGE);
 
         setCostUpgrade(2);
 
@@ -39,6 +39,6 @@ public class Strike extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageRandomEnemyAction(new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new DamageRandomEnemyAction(new DamageInfo(p, customVar("sparkleStrikeSecondHitDamage"), DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageRandomEnemyAction(new DamageInfo(p, customVar("StrikeSecondHitDamage"), DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 }

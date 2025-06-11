@@ -25,7 +25,7 @@ public class PricklyAudience extends BaseCard {
         super(ID, info);
 
         setExhaust(true);
-        setCustomVar("SparklePricklyAudienceAmount", THORNS_AMOUNT);
+        setCustomVar("PricklyAudienceAmount", THORNS_AMOUNT);
         upgradesDescription = true;
     }
 
@@ -37,6 +37,6 @@ public class PricklyAudience extends BaseCard {
 
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, customVar("SparklePricklyAudienceAmount"))));
+        addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, customVar("PricklyAudienceAmount"))));
     }
 }

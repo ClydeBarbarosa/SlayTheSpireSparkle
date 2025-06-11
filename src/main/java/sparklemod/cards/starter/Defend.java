@@ -27,7 +27,7 @@ public class Defend extends BaseCard {
         super(ID, info);
 
         setBlock(BLOCK, UPGRADED_BLOCK);
-        setCustomVar("sparkleDefendMax",BLOCK + BLOCK_MAX,UPGRADED_BLOCK+ UPGRADED_BLOCK_MAX);
+        setCustomVar("DefendMax",BLOCK + BLOCK_MAX,UPGRADED_BLOCK+ UPGRADED_BLOCK_MAX);
 
         setCostUpgrade(2);
 

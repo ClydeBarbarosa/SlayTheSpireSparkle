@@ -9,86 +9,86 @@
       "Blizzard is a good example for this."
     ]
   },
-  "${modID}:SparkleStrike": {
+  "${modID}:Strike": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage to a random target, then deal !${modID}:sparkleStrikeSecondHitDamage! damage to a second random target."
+    "DESCRIPTION": "Deal !D! damage to a random target, then deal !${modID}:StrikeSecondHitDamage! damage to a second random target."
   },
-  "${modID}:SparkleSixGunRoulette": {
+  "${modID}:SixGunRoulette": {
     "NAME": "Six Gun Roulette",
-    "DESCRIPTION": "Choose a target at random to lose !D! HP. If Sparkle damages herself, gain !B! block."
+    "DESCRIPTION": "Choose a target at random to lose !D! HP. If  damages herself, gain !B! block."
   },
-  "${modID}:SparkleDefend": {
+  "${modID}:Defend": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain between !B! and !${modID}:sparkleDefendMax! block."
+    "DESCRIPTION": "Gain between !B! and !${modID}:DefendMax! block."
   },
-  "${modID}:SparkleLetTheShowBegin": {
+  "${modID}:LetTheShowBegin": {
     "NAME": "Let the Show Begin",
-    "DESCRIPTION": "Gain !${modID}:sparkleLetTheShowBeginStrengthAmount! Strength. *Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}:sparkleLetTheShowBeginStrengthAmount! Strength."
+    "DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength. *Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength."
   },
-  "${modID}:SparklePocketSand": {
+  "${modID}:PocketSand": {
     "NAME": "Pocket Sand",
-    "DESCRIPTION": "Deal !${modID}:sparklePocketSandDamage! - !${modID}:sparklePocketSandMaxDamage! damage and inflict !${modID}:sparklePocketSandWeak! - !${modID}:sparklePocketSandMaxWeak! Weak."
+    "DESCRIPTION": "Deal !${modID}:PocketSandDamage! - !${modID}:PocketSandMaxDamage! damage and inflict !${modID}:PocketSandWeak! - !${modID}:PocketSandMaxWeak! Weak."
   },
-  "${modID}:SparkleMischievousGrin": {
+  "${modID}:MischievousGrin": {
     "NAME": "Mischievous Grin",
     "DESCRIPTION": "Gain 2 energy next turn."
   },
-  "${modID}:SparkleHeelKick": {
+  "${modID}:HeelKick": {
     "NAME": "Heel Kick",
-    "DESCRIPTION": "Deal !D! damage, then randomly apply either !${modID}:sparkleHeelKickWeak! Weak or !${modID}:sparkleHeelKickVulnerable! Vulnerable. ${modID}:Unexpected."
+    "DESCRIPTION": "Deal !D! damage, then randomly apply either !${modID}:HeelKickWeak! Weak or !${modID}:HeelKickVulnerable! Vulnerable. ${modID}:Unexpected."
   },
-  "${modID}:SparkleThisIsBoring": {
+  "${modID}:ThisIsBoring": {
     "NAME": "This is Boring!",
     "DESCRIPTION": "Increase the cost of all cards in your hand by 1 for this combat."
   },
-  "${modID}:SparkleWaitForIt": {
+  "${modID}:WaitForIt": {
     "NAME": "Wait For It",
     "DESCRIPTION": "Each turn, increase the cost of a random card in your hand by 1 for the rest of combat."
   },
-  "${modID}:SparkleAnticipationIsKing": {
+  "${modID}:AnticipationIsKing": {
     "NAME": "Anticipation is King",
     "DESCRIPTION": "Discard your hand. Deal !D! for each card discarded to a random enemy."
   },
-  "${modID}:SparkleDommyVibes": {
+  "${modID}:DommyVibes": {
     "NAME": "Dommy Vibes",
-    "DESCRIPTION": "Inflict !${modID}:SparkleDommyVibesWeakAmount! Weak and !${modID}:SparkleDommyVibesVulnerableAmount! Vulnerable to an enemy."
+    "DESCRIPTION": "Inflict !${modID}:DommyVibesWeakAmount! Weak and !${modID}:DommyVibesVulnerableAmount! Vulnerable to an enemy."
   },
-  "${modID}:SparklePricklyAudience": {
+  "${modID}:PricklyAudience": {
     "NAME": "Prickly Audience",
-    "DESCRIPTION": "Gain !${modID}:SparklePricklyAudienceAmount! Thorns. *Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}:SparklePricklyAudienceAmount! Thorns."
+    "DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns. *Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns."
   },
-  "${modID}:SparkleSmilingMask": {
+  "${modID}:SmilingMask": {
     "NAME": "Smiling Mask",
-    "DESCRIPTION": "Heal between !${modID}:SparkleSmilingMaskHealMinimum! and !${modID}:SparkleSmilingMaskHealMaximum! health. *Exhaust.",
-    "UPGRADE_DESCRIPTION": "Heal between !${modID}:SparkleSmilingMaskHealMinimum! and !${modID}:SparkleSmilingMaskHealMaximum! health."
+    "DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health. *Exhaust.",
+    "UPGRADE_DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health."
   },
-  "${modID}:SparkleAngryMask": {
+  "${modID}:AngryMask": {
     "NAME": "Angry Mask",
-    "DESCRIPTION": "Deal !${modID}:SparkleAngryMaskMinimumDamage! to !${modID}:SparkleAngryMaskMaximumDamage! damage twice.",
-    "UPGRADE_DESCRIPTION": "Deal !${modID}:SparkleAngryMaskMinimumDamage! to !${modID}:SparkleAngryMaskMaximumDamage! damage three times."
+    "DESCRIPTION": "Deal !${modID}:AngryMaskMinimumDamage! to !${modID}:AngryMaskMaximumDamage! damage twice.",
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:AngryMaskMinimumDamage! to !${modID}:AngryMaskMaximumDamage! damage three times."
   },
-  "${modID}:SparkleSadMask": {
+  "${modID}:SadMask": {
     "NAME": "Sad Mask",
-    "DESCRIPTION": "Inflict !${modID}:SparkleSadMaskMinimumWeak! to !${modID}:SparkleSadMaskMaximumWeak! Weak, !${modID}:SparkleSadMaskMinimumVulnerable! to !${modID}:SparkleSadMaskMaximumVulnerable! Vulnerable, and !${modID}:SparkleSadMaskMinimumFrail! to !${modID}:SparkleSadMaskMaximumFrail! Frail to yourself and the target enemy.",
-    "UPGRADE_DESCRIPTION": "Inflict !${modID}:SparkleSadMaskMinimumWeak! to !${modID}:SparkleSadMaskMaximumWeak! Weak, !${modID}:SparkleSadMaskMinimumVulnerable! to !${modID}:SparkleSadMaskMaximumVulnerable! Vulnerable, and !${modID}:SparkleSadMaskMinimumFrail! to !${modID}:SparkleSadMaskMaximumFrail! Frail to yourself once and the target enemy twice."
+    "DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself and the target enemy.",
+    "UPGRADE_DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself once and the target enemy twice."
   },
-  "${modID}:SparkleLeaveItToChance": {
+  "${modID}:LeaveItToChance": {
     "NAME": "Leave it to Chance!",
-    "DESCRIPTION": "At the start of your turn, flip a coin. If heads, gain 1 energy, if tails, gain !${modID}:SparkleLeaveItToChanceBlockAmount! block."
+    "DESCRIPTION": "At the start of your turn, flip a coin. If heads, gain 1 energy, if tails, gain !${modID}:LeaveItToChanceBlockAmount! block."
   },
-  "${modID}:SparkleHeadsIWinTailsYouLose": {
+  "${modID}:HeadsIWinTailsYouLose": {
     "NAME": "Heads I Win, Tails You Lose!",
-    "DESCRIPTION": "Flip a coin. If heads, gain !${modID}:SparkleHIWTYLEnergyGain! energy and draw !${modID}:SparkleHIWTYLNumCards! card(s). If tails, deal !D! damage and *Exhaust."
+    "DESCRIPTION": "Flip a coin. If heads, gain !${modID}:HIWTYLEnergyGain! energy and draw !${modID}:HIWTYLNumCards! card(s). If tails, deal !D! damage and *Exhaust."
   },
-  "${modID}:SparkleShowstopper": {
+  "${modID}:Showstopper": {
     "NAME": "Showstopper",
     "DESCRIPTION": "Deal !D! damage to the target for each card costing more than 3 energy in your hand.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage to the target twice for each card costing more than 3 energy in your hand."
   },
-  "${modID}:SparkleFireworksDisplay": {
+  "${modID}:FireworksDisplay": {
     "NAME": "Fireworks Display",
-    "DESCRIPTION": "Deal !D! damage to all enemies !${modID}:SparkleFireworksDisplayNumBaseHits! to !${modID}:SparkleFireworksDisplayNumMaxHits! times."
+    "DESCRIPTION": "Deal !D! damage to all enemies !${modID}:FireworksDisplayNumBaseHits! to !${modID}:FireworksDisplayNumMaxHits! times."
   }
 }

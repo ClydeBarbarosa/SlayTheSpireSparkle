@@ -23,7 +23,7 @@ public class LetTheShowBegin extends BaseCard {
     public LetTheShowBegin() {
         super(ID, info);
 
-        setCustomVar("sparkleLetTheShowBeginStrengthAmount", STRENGTH_AMOUNT);
+        setCustomVar("LetTheShowBeginStrengthAmount", STRENGTH_AMOUNT);
         this.upgradesDescription=true;
         setExhaust(true, false);
         setCostUpgrade(2);

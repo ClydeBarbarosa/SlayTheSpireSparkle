@@ -36,8 +36,8 @@ public class HeelKick extends BaseCard {
         super(ID, info);
 
         setDamage(BASE_DAMAGE, UPGRADED_DAMAGE);
-        setCustomVar("sparkleHeelKickWeak", VariableType.DAMAGE, BASE_WEAK, UPGRADED_WEAK);
-        setCustomVar("sparkleHeelKickVulnerable", VariableType.DAMAGE, BASE_VULNERABLE, BASE_VULNERABLE);
+        setCustomVar("HeelKickWeak", VariableType.DAMAGE, BASE_WEAK, UPGRADED_WEAK);
+        setCustomVar("HeelKickVulnerable", VariableType.DAMAGE, BASE_VULNERABLE, BASE_VULNERABLE);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
@@ -54,10 +54,10 @@ public class HeelKick extends BaseCard {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
             int rnd = AbstractDungeon.cardRandomRng.random(0,1);
             if (rnd == 0) {
-                addToBot(new ApplyPowerAction(m, p, new WeakPower(m, 1, false), customVar("sparkleHeelKickWeak")));
+                addToBot(new ApplyPowerAction(m, p, new WeakPower(m, 1, false), customVar("HeelKickWeak")));
             }
             else {
-                addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 1, false), customVar("sparkleHeelKickVulnerable")));
+                addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 1, false), customVar("HeelKickVulnerable")));
             }
         }
 

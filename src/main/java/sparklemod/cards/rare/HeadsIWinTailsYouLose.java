@@ -30,8 +30,8 @@ public class HeadsIWinTailsYouLose extends BaseCard {
     public HeadsIWinTailsYouLose() {
         super(ID, info);
         setDamage(BASE_DAMAGE, UPGRADED_DAMAGE_GAIN);
-        setCustomVar("SparkleHIWTYLEnergyGain", ENERGY_GAIN);
-        setCustomVar("SparkleHIWTYLNumCards", NUM_CARDS);
+        setCustomVar("HIWTYLEnergyGain", ENERGY_GAIN);
+        setCustomVar("HIWTYLNumCards", NUM_CARDS);
 
         setCostUpgrade(0);
     }
