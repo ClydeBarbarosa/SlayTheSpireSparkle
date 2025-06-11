@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
 //duplicated from the purple Judgement card
-public class AllOfLifeIsAStageFailEffect extends AbstractGameEffect {
+public class SparkleTextEffect extends AbstractGameEffect {
     private StringBuilder sBuilder = new StringBuilder();
 
     private final String targetString; //= AllOfLifeIsAStage.cardStrings.EXTENDED_DESCRIPTION[0];
@@ -21,7 +21,7 @@ public class AllOfLifeIsAStageFailEffect extends AbstractGameEffect {
 
     private final float y;
 
-    public AllOfLifeIsAStageFailEffect(String stringTarget, float x, float y) {
+    public SparkleTextEffect(String stringTarget, float x, float y) {
         this.targetString = stringTarget;
         this.sBuilder.setLength(0);
         this.x = x;

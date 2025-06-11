@@ -21,10 +21,9 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import sparklemod.cards.common.*;
 import sparklemod.cards.starter.*;
-import sparklemod.cards.uncommon.AllOfLifeIsAStage;
-import sparklemod.cards.uncommon.FireworksDisplay;
-import sparklemod.cards.uncommon.HurryUp;
-import sparklemod.relics.SparkleKendamaBall;
+import sparklemod.cards.uncommon.*;
+import sparklemod.cards.rare.*;
+import sparklemod.relics.*;
 
 import java.util.ArrayList;
 
@@ -144,9 +143,9 @@ public class SparkleCharacter extends CustomPlayer {
         //If you want multiple of the same card, you have to add it multiple times.
 
         //tester cards
-        retVal.add(AllOfLifeIsAStage.ID);
-        retVal.add(DommyVibes.ID);
-        retVal.add(Defend.ID);
+        retVal.add(Antici.ID);
+        retVal.add(SayIt.ID);
+        retVal.add(Pation.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
 

@@ -4,17 +4,14 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.vfx.combat.GiantTextEffect;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
-import sparklemod.vfx.combat.AllOfLifeIsAStageFailEffect;
+import sparklemod.vfx.combat.SparkleTextEffect;
 
 //All of life is a stage - power, 2 energy - randomly gain from 0-2(1-3) strength and 0-2(1-3) dexterity.
 public class AllOfLifeIsAStage extends BaseCard {
@@ -57,7 +54,7 @@ public class AllOfLifeIsAStage extends BaseCard {
         //dexterityAmount = 0;
 
         if(strengthAmount==0 && dexterityAmount ==0) {
-            addToBot(new VFXAction(new AllOfLifeIsAStageFailEffect(this.cardStrings.EXTENDED_DESCRIPTION[0], p.hb.cX, p.hb.cY)));
+            addToBot(new VFXAction(new SparkleTextEffect(this.cardStrings.EXTENDED_DESCRIPTION[0], p.hb.cX, p.hb.cY)));
         }
         else if(strengthAmount > 0) {
             addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, strengthAmount), strengthAmount));

@@ -99,5 +99,18 @@
     "NAME": "All of Life is a Stage",
     "DESCRIPTION": "Randomly gain from !${modID}:AoLiaSStrengthMinimum! to !${modID}:AoLiaSStrengthMaximum! Strength and !${modID}:AoLiaSDexterityMinimum! to !${modID}:AoLiaSDexterityMaximum! Dexterity.",
     "EXTENDED_DESCRIPTION": [ "FAILURE" ]
+  },
+  "${modID}:Antici": {
+    "NAME": "Antici-",
+    "DESCRIPTION": "Gain 1 *Unexpected."
+  },
+  "${modID}:SayIt": {
+    "NAME": "SAY IT!",
+    "DESCRIPTION": "If you have unexpected, inflict !${modID}:SayItMinimumWeak! to !${modID}:SayItMaximumWeak! Weak on a random enemy."
+  },
+  "${modID}:Pation": {
+    "NAME": "PATION!",
+    "DESCRIPTION": "Lose 1 *Unexpected.",
+    "UPGRADE_DESCRIPTION": "Lose 1 *Unexpected. Gain 1 energy on your next turn."
   }
 }

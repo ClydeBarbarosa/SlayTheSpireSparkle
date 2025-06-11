@@ -1,19 +1,20 @@
 package sparklemod.cards.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleHurryUpPower;
+import sparklemod.powers.SparkleAnticiPationPower;
+import sparklemod.powers.SparkleUnexpectedPower;
 import sparklemod.util.CardStats;
 
-//Hurry up! - skill, 1(0) energy - Retain your energy and hand, then end your turn.
-public class HurryUp extends BaseCard {
-    public static final String ID = makeID(HurryUp.class.getSimpleName());
+//Pation - skill, 0(1) energy - Lose 1 Unexpected. (Gain 1 energy on your next turn.)
+//Hidden: Playing "Antici", "SAY IT!", and "PATION!" in the same turn deals 10 damage to all enemies.
+public class Pation extends BaseCard {
+    public static final String ID = makeID(Pation.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -22,15 +23,21 @@ public class HurryUp extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    public HurryUp() {
+    public Pation() {
         super(ID, info);
-
-        setCostUpgrade(0);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        int currentEnergy = EnergyPanel.getCurrentEnergy() - this.cost;
-        addToBot(new ApplyPowerAction(p, p, new SparkleHurryUpPower(p, currentEnergy, -1)));
-        addToBot(new PressEndTurnButtonAction());
+        if(p.hasPower(SparkleAnticiPationPower.POWER_ID)) {
+            SparkleAnticiPationPower sp = (SparkleAnticiPationPower) p.getPower(SparkleAnticiPationPower.POWER_ID);
+            sp.StackPower(SparkleAnticiPationPower.PARTS.PATION);
+        }
+        else {
+            addToBot(new ApplyPowerAction(p, p, new SparkleAnticiPationPower(p, 1, SparkleAnticiPationPower.PARTS.PATION)));
+        }
+        //addToBot(new ApplyPowerAction(p, p, new SparkleAnticiPationPower(p, 1, SparkleAnticiPationPower.PARTS.PATION)));
+
+        //Remove unexpected
+        addToBot(new RemoveSpecificPowerAction(p, p, SparkleUnexpectedPower.POWER_ID));
     }
 }

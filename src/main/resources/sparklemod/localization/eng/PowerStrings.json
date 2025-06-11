@@ -40,5 +40,14 @@
       "Retain your hand. At the start of your turn, gain ",
       " energy."
     ]
+  },
+  "${modID}:SparkleAnticiPationPower": {
+    "NAME": "Rocky Horror Fan",
+    "DESCRIPTIONS": [
+      "Play them all in one turn! ",
+      " Antici... ",
+      " SAY IT! ",
+      " PATION!"
+    ]
   }
 }

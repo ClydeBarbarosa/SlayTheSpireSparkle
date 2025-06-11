@@ -11,9 +11,6 @@ public class SparkleEnergizedPower extends BasePower {
     public static final String POWER_ID = makeID("SparkleEnergizedPower");
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
-    //private static final PowerStrings powerStrings;
-    //public static final String NAME;
-    //public static final String[] DESCRIPTIONS;
 
     public SparkleEnergizedPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
