@@ -90,5 +90,9 @@
   "${modID}:FireworksDisplay": {
     "NAME": "Fireworks Display",
     "DESCRIPTION": "Deal !D! damage to all enemies !${modID}:FireworksDisplayNumBaseHits! to !${modID}:FireworksDisplayNumMaxHits! times."
+  },
+  "${modID}:HurryUp": {
+    "NAME": "Hurry Up!",
+    "DESCRIPTION": "*Retain your energy and hand, then end your turn."
   }
 }

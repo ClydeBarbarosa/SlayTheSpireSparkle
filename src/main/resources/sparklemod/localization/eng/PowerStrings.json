@@ -33,5 +33,12 @@
       " energy, on tails, gain ",
       " block."
     ]
+  },
+  "${modID}:SparkleHurryUpPower": {
+    "NAME": "Hurry Up!",
+    "DESCRIPTIONS": [
+      "Retain your hand. At the start of your turn, gain ",
+      " energy."
+    ]
   }
 }
