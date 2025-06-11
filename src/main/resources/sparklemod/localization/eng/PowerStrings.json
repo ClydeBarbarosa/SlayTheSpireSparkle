@@ -49,5 +49,13 @@
       " SAY IT! ",
       " PATION!"
     ]
+  },
+  "${modID}:SparkleOnTheOtherPatiencePower": {
+    "NAME": "On the Other, Patience",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, gain ",
+      " to ",
+      " temporary Strength."
+    ]
   }
 }

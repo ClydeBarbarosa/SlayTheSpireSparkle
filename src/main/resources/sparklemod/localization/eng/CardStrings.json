@@ -117,5 +117,28 @@
     "NAME": "Talk to the Hand",
     "DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block.",
     "UPGRADE_DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block. NL Repeat !${modID}:TalkToTheHandMinimumBlockTimes! to !${modID}:TalkToTheHandMaximumBlockTimes! times."
+  },
+  "${modID}:Flexibility": {
+    "NAME": "Flexibility",
+    "DESCRIPTION": "Gain !${modID}:FlexibilityDexterityAmount! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:FlexibilityDexterityAmount! Dexterity. NL Draw !${modID}:FlexibilityDrawAmount! card(s). *Exhaust."
+  },
+  "${modID}:JustAPeek": {
+    "NAME": "Just a Peek",
+    "DESCRIPTION": "Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !${modID}:JustAPeekDrawAmount! card(s)."
+  },
+  "${modID}:JustATaste": {
+    "NAME": "Just a Taste",
+    "DESCRIPTION": "Deal !D! Damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Draw !${modID}:JustATasteDrawAmount! card(s)."
+  },
+  "${modID}:OnOneHandViolence": {
+    "NAME": "On One Hand, Violence",
+    "DESCRIPTION": "Gain !${modID}:OnOneHandViolenceMinStrength! to !${modID}:OnOneHandViolenceMaxStrength! temporary Strength."
+  },
+  "${modID}:OnTheOtherPatience": {
+    "NAME": "On the Other, Patience",
+    "DESCRIPTION": "Next turn, gain !${modID}:OnTheOtherPatienceMinStrength! to !${modID}:OnTheOtherPatienceMaxStrength! temporary Strength."
   }
 }
