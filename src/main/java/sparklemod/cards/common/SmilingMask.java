@@ -3,12 +3,12 @@ package sparklemod.cards.common;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Smiling mask - skill, 1 energy - heal between 1-3 hp. Exhaust. (removes exhaust.)
 public class SmilingMask extends BaseCard {
     public static final String ID = makeID(SmilingMask.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -40,6 +40,6 @@ public class SmilingMask extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new HealAction(p, p, AbstractDungeon.cardRandomRng.random(HEAL_MINIMUM, HEAL_MAXIMUM)));
+        addToBot(new HealAction(p, p, randomIntWithVariance(HEAL_MINIMUM, HEAL_MAXIMUM)));
     }
 }

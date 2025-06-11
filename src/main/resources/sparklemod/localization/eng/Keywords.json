@@ -21,10 +21,34 @@
     "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
   },
   {
+    "ID": "unexpected",
     "PROPER_NAME": "Unexpected",
     "NAMES": [
       "Unexpected"
     ],
     "DESCRIPTION": "Repeat this card once per stack of Unexpected."
+  },
+  {
+    "ID": "mask",
+    "PROPER_NAME": "Mask",
+    "NAMES": [
+      "Mask"
+    ],
+    "DESCRIPTION": "Negate the next time an enemy damages you, then randomly gain or lose 1 energy on the next turn."
+  },
+  {
+    "ID": "variance",
+    "PROPER_NAME": "Variance",
+    "NAMES": [
+      "Variance"
+    ],
+    "DESCRIPTION": "Randomness in cards is increased by one minimum and maximum per variance (minimum 1, max 999.)"
+  },
+  {
+    "PROPER:NAME": "Fixed",
+    "NAMES": [
+      "Fixed"
+    ],
+    "DESCRIPTION":"The effect is unaffected by ${modID}:Variance."
   }
 ]

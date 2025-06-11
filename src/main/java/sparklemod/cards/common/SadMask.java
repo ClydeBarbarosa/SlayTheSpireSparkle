@@ -3,7 +3,6 @@ package sparklemod.cards.common;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
@@ -12,7 +11,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Sad mask - skill, 3 energy - gain 0-2 vulnerable, 0-2 weak, 0-2 frail. Inflict the same conditions on all enemies (twice).
+//Sad mask - skill, 3 energy - gain 0-2 vulnerable, 0-2 weak, 0-2 frail. Inflict the same conditions to a target enemy. (twice). Fixed.
 public class SadMask extends BaseCard {
     public static final String ID = makeID(SadMask.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -54,9 +53,9 @@ public class SadMask extends BaseCard {
             numTimes = NUMBER_TIMES;
         }
 
-        int weakAmount = AbstractDungeon.cardRandomRng.random(MINIMUM_WEAK, MAXIMUM_WEAK);
-        int vulnerableAmount = AbstractDungeon.cardRandomRng.random(MINIMUM_VULNERABLE, MAXIMUM_VULNERABLE);
-        int frailAmount = AbstractDungeon.cardRandomRng.random(MINIMUM_FRAIL, MAXIMUM_FRAIL);
+        int weakAmount = randomIntWithoutVariance(MINIMUM_WEAK, MAXIMUM_WEAK);
+        int vulnerableAmount = randomIntWithoutVariance(MINIMUM_VULNERABLE, MAXIMUM_VULNERABLE);
+        int frailAmount = randomIntWithoutVariance(MINIMUM_FRAIL, MAXIMUM_FRAIL);
 
         //apply to player
         if(weakAmount > 0) {

@@ -57,5 +57,29 @@
       " to ",
       " temporary Strength."
     ]
+  },
+  "${modID}:SparkleMaskPower": {
+    "NAME": "Mask",
+    "DESCRIPTIONS": [
+      "Negate the next ",
+      " time ",
+      " times ",
+      "you take damage from an enemy, then on your next turn randomly gain or lose ",
+      " energy."
+    ]
+  },
+  "${modID}:SparkleMaskEnergyGainPower": {
+    "NAME": "Masked Energy Gain",
+    "DESCRIPTIONS": [
+      "On your next turn randomly gain or lose ",
+      " energy."
+    ]
+  },
+  "${modID}:SparkleVariancePower": {
+    "NAME": "Variance",
+    "DESCRIPTION": [
+      "Increase the minimum and maximum amount of your random effects by ",
+      ". (minimum 0, max 999)"
+    ]
   }
 }

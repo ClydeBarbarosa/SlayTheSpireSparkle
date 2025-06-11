@@ -13,7 +13,7 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 import sparklemod.vfx.combat.SparkleTextEffect;
 
-//All of life is a stage - power, 2 energy - randomly gain from 0-2(1-3) strength and 0-2(1-3) dexterity.
+//All of life is a stage - power, 2 energy - randomly gain from 0-2(1-3) strength and 0-2(1-3) dexterity. Fixed.
 public class AllOfLifeIsAStage extends BaseCard {
 
     public static final String ID = makeID(AllOfLifeIsAStage.class.getSimpleName());

@@ -10,6 +10,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Just a taste - skill, 0 energy - gain 3 block(, draw a card).
 public class JustATaste extends BaseCard {
     public static final String ID = makeID(JustATaste.class.getSimpleName());
     private static final CardStats info = new CardStats(

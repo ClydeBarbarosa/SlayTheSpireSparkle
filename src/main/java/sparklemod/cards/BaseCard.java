@@ -3,7 +3,9 @@ package sparklemod.cards;
 import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import sparklemod.SparkleMod;
+import sparklemod.powers.SparkleVariancePower;
 import sparklemod.util.CardStats;
 import sparklemod.util.TriFunction;
 import com.badlogic.gdx.graphics.Color;
@@ -711,5 +713,36 @@ public abstract class BaseCard extends CustomCard {
         }
 
         super.updateCost(tempAmount);
+    }
+
+    //Return an integer affected by the Variance power.
+    public int randomIntWithVariance(int minimum, int maximum) {
+        AbstractPlayer p = AbstractDungeon.player;
+        if(p.hasPower(SparkleVariancePower.POWER_ID)) {
+            int varianceAmount = p.getPower(SparkleVariancePower.POWER_ID).amount;
+
+            int min = (Math.max(minimum - varianceAmount, 0));
+            int max = maximum + varianceAmount;
+
+            return AbstractDungeon.cardRandomRng.random(min, max);
+        }
+        else {
+            return AbstractDungeon.cardRandomRng.random(minimum, maximum);
+        }
+    }
+
+    //return an integer affected by the Variance power.
+    public int randomIntWithVariance(int maximum) {
+        return randomIntWithVariance(0, maximum);
+    }
+
+    //Return an integer unaffected by the Variance power.
+    public int randomIntWithoutVariance(int minimum, int maximum) {
+        return AbstractDungeon.cardRandomRng.random(minimum, maximum);
+    }
+
+    //Return an integer unaffected by the Variance power.
+    public int randomIntWithoutVariance(int maximum) {
+        return AbstractDungeon.cardRandomRng.random(0, maximum);
     }
 }

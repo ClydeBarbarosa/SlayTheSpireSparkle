@@ -9,6 +9,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Just a peek - attack, 0 energy - deal 3 damage(, draw a card).
 public class JustAPeek extends BaseCard {
     public static final String ID = makeID(JustAPeek.class.getSimpleName());
     private static final CardStats info = new CardStats(

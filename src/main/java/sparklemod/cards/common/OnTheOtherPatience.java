@@ -9,6 +9,7 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.SparkleOnTheOtherPatiencePower;
 import sparklemod.util.CardStats;
 
+//On the other, patience - skill, 1 energy - next turn, gain 1-4(1-6) temporary strength.
 public class OnTheOtherPatience extends BaseCard {
     public static final String ID = makeID(OnTheOtherPatience.class.getSimpleName());
     private static final CardStats info = new CardStats(

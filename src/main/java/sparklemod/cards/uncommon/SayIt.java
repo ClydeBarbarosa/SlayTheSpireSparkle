@@ -15,7 +15,7 @@ import sparklemod.util.CardStats;
 
 import java.util.ArrayList;
 
-//SAY IT! - skill, 2(0) energy - If you have Unexpected, inflict 0-2 weak on a random enemy.
+//SAY IT! - skill, 2(0) energy - If you have Unexpected, inflict 0-2 weak on a random enemy. Fixed.
 //Hidden: Playing "Antici", "SAY IT!", and "PATION!" in the same turn deals 10 damage to all enemies.
 public class SayIt extends BaseCard {
     public static final String ID = makeID(SayIt.class.getSimpleName());

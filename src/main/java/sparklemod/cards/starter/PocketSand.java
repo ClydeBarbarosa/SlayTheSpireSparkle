@@ -5,13 +5,13 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Pocket Sand - attack, 2 energy - Deal 5-8(6-10) damage, inflict 0-1(1-2) weak.
 public class PocketSand extends BaseCard {
     public static final String ID = makeID(PocketSand.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -22,42 +22,31 @@ public class PocketSand extends BaseCard {
             2 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    //Pocket Sand - attack, 2 energy - Deal 5-8(6-10) damage, inflict 0-1(1-2) weak.
-
-    private static final int POCKET_SAND_BASE_DAMAGE = 5;
-    private static final int POCKET_SAND_UPGRADED_BASE_DAMAGE = 6;
-    private static final int POCKET_SAND_MAX_DAMAGE = 3;
-    private static final int POCKET_SAND_UPGRADED_MAX_DAMAGE = 4;
-    private static final int POCKET_SAND_BASE_WEAK = 0;
-    private static final int POCKET_SAND_UPGRADED_BASE_WEAK = 1;
-    private static final int POCKET_SAND_MAX_WEAK = 1;
-    private static final int POCKET_SAND_UPGRADED_MAX_WEAK = 1;
+    private static final int BASE_DAMAGE = 5;
+    private static final int UPGRADED_BASE_DAMAGE_INCREASE = 1;
+    private static final int MAX_DAMAGE = 8;
+    private static final int UPGRADED_MAX_DAMAGE_INCREASE = 2;
+    private static final int BASE_WEAK = 0;
+    private static final int UPGRADED_BASE_WEAK_INCREASE = 1;
+    private static final int MAX_WEAK = 1;
+    private static final int UPGRADED_MAX_WEAK_INCREASE = 1;
 
     public PocketSand() {
         super(ID, info);
 
-        setCustomVar("PocketSandDamage", VariableType.DAMAGE, POCKET_SAND_BASE_DAMAGE, POCKET_SAND_UPGRADED_BASE_DAMAGE);
-        setCustomVar("PocketSandMaxDamage", VariableType.DAMAGE, POCKET_SAND_BASE_DAMAGE + POCKET_SAND_MAX_DAMAGE, POCKET_SAND_UPGRADED_BASE_DAMAGE + POCKET_SAND_UPGRADED_MAX_DAMAGE);
-        setCustomVar("PocketSandWeak", VariableType.DAMAGE, POCKET_SAND_BASE_WEAK, POCKET_SAND_UPGRADED_BASE_WEAK);
-        setCustomVar("PocketSandMaxWeak", VariableType.DAMAGE, POCKET_SAND_BASE_WEAK + POCKET_SAND_MAX_WEAK, POCKET_SAND_UPGRADED_BASE_WEAK + POCKET_SAND_UPGRADED_MAX_WEAK);
-
-        setDamage(POCKET_SAND_BASE_DAMAGE, POCKET_SAND_UPGRADED_BASE_DAMAGE);
-        setMagic(POCKET_SAND_BASE_WEAK, POCKET_SAND_UPGRADED_BASE_WEAK);
+        setCustomVar("PocketSandDamage", VariableType.DAMAGE, BASE_DAMAGE, UPGRADED_BASE_DAMAGE_INCREASE);
+        setCustomVar("PocketSandMaxDamage", VariableType.DAMAGE, MAX_DAMAGE, UPGRADED_MAX_DAMAGE_INCREASE);
+        setCustomVar("PocketSandWeak", BASE_WEAK, UPGRADED_BASE_WEAK_INCREASE);
+        setCustomVar("PocketSandMaxWeak", MAX_WEAK, UPGRADED_MAX_WEAK_INCREASE);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         int addedDamage, addedWeak;
 
-        if(!this.upgraded) {
-            addedDamage = AbstractDungeon.miscRng.random(0, POCKET_SAND_MAX_DAMAGE);
-            addedWeak = AbstractDungeon.miscRng.random(0, POCKET_SAND_MAX_WEAK);
-        }
-        else {
-            addedDamage = AbstractDungeon.miscRng.random(0, POCKET_SAND_UPGRADED_MAX_DAMAGE);
-            addedWeak = AbstractDungeon.miscRng.random(0, POCKET_SAND_UPGRADED_MAX_WEAK);
-        }
+        addedDamage = randomIntWithVariance(customVar("PocketSandDamage"),customVar("PocketSandMaxDamage"));
+        addedWeak = randomIntWithVariance(customVar("PocketSandWeak"), customVar("PocketSandMaxWeak"));
 
-        addToBot(new DamageAction(m, new DamageInfo(p, damage + addedDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, 1,false),magicNumber + addedWeak));
+        addToBot(new DamageAction(m, new DamageInfo(p, addedDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, addedWeak,false)));
     }
 }

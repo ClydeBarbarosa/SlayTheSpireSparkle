@@ -36,7 +36,7 @@
   },
   "${modID}:HeelKick": {
     "NAME": "Heel Kick",
-    "DESCRIPTION": "Deal !D! damage, then randomly apply either !${modID}:HeelKickWeak! Weak or !${modID}:HeelKickVulnerable! Vulnerable. ${modID}:Unexpected."
+    "DESCRIPTION": "Deal !D! damage, then randomly apply either !${modID}:HeelKickWeak! Weak or NL !${modID}:HeelKickVulnerable! Vulnerable. ${modID}:Unexpected."
   },
   "${modID}:ThisIsBoring": {
     "NAME": "This is Boring!",
@@ -52,7 +52,7 @@
   },
   "${modID}:DommyVibes": {
     "NAME": "Dommy Vibes",
-    "DESCRIPTION": "Inflict !${modID}:DommyVibesWeakAmount! Weak and !${modID}:DommyVibesVulnerableAmount! Vulnerable to an enemy."
+    "DESCRIPTION": "Inflict !${modID}:DommyVibesWeakAmount! Weak and NL !${modID}:DommyVibesVulnerableAmount! Vulnerable to an enemy."
   },
   "${modID}:PricklyAudience": {
     "NAME": "Prickly Audience",
@@ -71,8 +71,8 @@
   },
   "${modID}:SadMask": {
     "NAME": "Sad Mask",
-    "DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself and the target enemy.",
-    "UPGRADE_DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself once and the target enemy twice."
+    "DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself and the target enemy. NL ${modID}:Fixed.",
+    "UPGRADE_DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself once and the target enemy twice. NL ${modID}:Fixed"
   },
   "${modID}:LeaveItToChance": {
     "NAME": "Leave it to Chance!",
@@ -84,12 +84,12 @@
   },
   "${modID}:Showstopper": {
     "NAME": "Showstopper",
-    "DESCRIPTION": "Deal !D! damage to the target for each card costing more than 3 energy in your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage to the target twice for each card costing more than 3 energy in your hand."
+    "DESCRIPTION": "Deal !D! damage for each card costing 0 energy in your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice for each card costing 0 energy in your hand."
   },
   "${modID}:FireworksDisplay": {
     "NAME": "Fireworks Display",
-    "DESCRIPTION": "Deal !D! damage to all enemies !${modID}:FireworksDisplayNumBaseHits! to !${modID}:FireworksDisplayNumMaxHits! times."
+    "DESCRIPTION": "Deal !D! damage to all enemies !${modID}:FireworksDisplayNumBaseHits! to !${modID}:FireworksDisplayNumMaxHits! times. NL ${modID}:Fixed."
   },
   "${modID}:HurryUp": {
     "NAME": "Hurry Up!",
@@ -97,26 +97,26 @@
   },
   "${modID}:AllOfLifeIsAStage": {
     "NAME": "All of Life is a Stage",
-    "DESCRIPTION": "Randomly gain from !${modID}:AoLiaSStrengthMinimum! to !${modID}:AoLiaSStrengthMaximum! Strength and !${modID}:AoLiaSDexterityMinimum! to !${modID}:AoLiaSDexterityMaximum! Dexterity.",
+    "DESCRIPTION": "Randomly gain from !${modID}:AoLiaSStrengthMinimum! to !${modID}:AoLiaSStrengthMaximum! Strength and NL !${modID}:AoLiaSDexterityMinimum! to !${modID}:AoLiaSDexterityMaximum! Dexterity. NL ${modID}:Fixed.",
     "EXTENDED_DESCRIPTION": [ "FAILURE" ]
   },
   "${modID}:Antici": {
     "NAME": "Antici-",
-    "DESCRIPTION": "Gain 1 *Unexpected."
+    "DESCRIPTION": "Gain 1 ${modID}:Unexpected."
   },
   "${modID}:SayIt": {
     "NAME": "SAY IT!",
-    "DESCRIPTION": "If you have unexpected, inflict !${modID}:SayItMinimumWeak! to !${modID}:SayItMaximumWeak! Weak on a random enemy."
+    "DESCRIPTION": "If you have unexpected, inflict NL !${modID}:SayItMinimumWeak! to !${modID}:SayItMaximumWeak! Weak on a random enemy. NL ${modID}:Fixed."
   },
   "${modID}:Pation": {
     "NAME": "PATION!",
     "DESCRIPTION": "Lose 1 *Unexpected.",
-    "UPGRADE_DESCRIPTION": "Lose 1 *Unexpected. Gain 1 energy on your next turn."
+    "UPGRADE_DESCRIPTION": "Lose 1 ${modID}:Unexpected. Gain 1 energy on your next turn."
   },
   "${modID}:TalkToTheHand": {
     "NAME": "Talk to the Hand",
     "DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block. NL Repeat !${modID}:TalkToTheHandMinimumBlockTimes! to !${modID}:TalkToTheHandMaximumBlockTimes! times."
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block. NL Repeat a ${modID}:Fixed !${modID}:TalkToTheHandMinimumBlockTimes! to !${modID}:TalkToTheHandMaximumBlockTimes! times."
   },
   "${modID}:Flexibility": {
     "NAME": "Flexibility",
@@ -140,5 +140,9 @@
   "${modID}:OnTheOtherPatience": {
     "NAME": "On the Other, Patience",
     "DESCRIPTION": "Next turn, gain !${modID}:OnTheOtherPatienceMinStrength! to !${modID}:OnTheOtherPatienceMaxStrength! temporary Strength."
+  },
+  "${modID}:CanYouFindTheAnswer": {
+    "NAME": "Can You Find the Answer?",
+    "DESCRIPTION": "Gain ${modID}:Mask. *Exhaust."
   }
 }

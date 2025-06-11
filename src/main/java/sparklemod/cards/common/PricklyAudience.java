@@ -9,6 +9,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Prickly audience - skill, 1 energy - gain 3 thorns. Exhaust. (removes exhaust)
 public class PricklyAudience extends BaseCard {
     public static final String ID = makeID(PricklyAudience.class.getSimpleName());
     private static final CardStats info = new CardStats(

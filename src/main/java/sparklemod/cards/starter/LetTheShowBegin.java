@@ -8,6 +8,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Let the show begin - skill, 1 energy - Gain 1 strength. Exhaust. (Remove exhaust, cost becomes 2)
 public class LetTheShowBegin extends BaseCard {
     public static final String ID = makeID(LetTheShowBegin.class.getSimpleName());
     private static final CardStats info = new CardStats(

@@ -9,6 +9,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Talk to the hand - skill, 0(1) energy - gain 1-5 block (2-4 times, fixed..)
 public class TalkToTheHand extends BaseCard {
     public static final String ID = makeID(TalkToTheHand.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -42,7 +43,7 @@ public class TalkToTheHand extends BaseCard {
         }
 
         for(int i=0; i < numTimes; i++) {
-            int blockAmount = AbstractDungeon.cardRandomRng.random(MINIMUM_BLOCK, MAXIMUM_BLOCK);
+            int blockAmount = randomIntWithVariance(MINIMUM_BLOCK, MAXIMUM_BLOCK);
             addToBot(new GainBlockAction(p, blockAmount));
         }
     }

@@ -10,6 +10,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Showstopper - attack, 1 energy - Deal 10 damage once(twice) for each card in your hand that costs 3 or more energy.
 public class Showstopper extends BaseCard {
     public static final String ID = makeID(Showstopper.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -33,7 +34,7 @@ public class Showstopper extends BaseCard {
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         int numHits;
-        int numThreeCostCards = 0;
+        int numZeroCostCards = 0;
 
         //if upgraded, hit twice
         if(this.upgraded) {
@@ -45,13 +46,13 @@ public class Showstopper extends BaseCard {
 
         //count number of cards with cost 3 or greater
         for(AbstractCard c: p.hand.group) {
-            if(c.cost >= 3) {
-                numThreeCostCards++;
+            if(c.cost == 0) {
+                numZeroCostCards++;
             }
         }
 
         for(int i = 0; i < numHits; i++) {
-            int finalDamage = damage * numThreeCostCards;
+            int finalDamage = damage * numZeroCostCards;
             addToBot(new DamageAction(m, new DamageInfo(p, finalDamage), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }
     }

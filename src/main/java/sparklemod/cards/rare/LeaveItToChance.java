@@ -9,6 +9,7 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.SparkleLeaveItToChancePower;
 import sparklemod.util.CardStats;
 
+//Leave it to chance - Power, 1 energy - at the start of your turn, flip a coin. Heads, gain one energy, tails, gain 5(10) block.
 public class LeaveItToChance extends BaseCard {
     public static final String ID = makeID(LeaveItToChance.class.getSimpleName());
     private static final CardStats info = new CardStats(

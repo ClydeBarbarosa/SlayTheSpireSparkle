@@ -11,6 +11,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Heads I win, tails you lose - skill, 1(0) energy - Flip a coin, if heads, gain one energy and draw a card, if tails, deal 9(15) damage and exhaust.
 public class HeadsIWinTailsYouLose extends BaseCard {
 
     public static final String ID = makeID(HeadsIWinTailsYouLose.class.getSimpleName());

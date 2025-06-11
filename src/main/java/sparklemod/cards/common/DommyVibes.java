@@ -10,6 +10,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//Dommy vibes - skill, 3 energy - inflict 2(4) weak and 2(4) vulnerable to an enemy.
 public class DommyVibes extends BaseCard {
     public static final String ID = makeID(DommyVibes.class.getSimpleName());
     private static final CardStats info = new CardStats(

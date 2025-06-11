@@ -9,6 +9,7 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.SparkleEnergizedPower;
 import sparklemod.util.CardStats;
 
+//Mischievous grin - skill, 2(1) - gain 2 energy next turn.
 public class MischievousGrin extends BaseCard {
     public static final String ID = makeID(MischievousGrin.class.getSimpleName());
     private static final CardStats info = new CardStats(

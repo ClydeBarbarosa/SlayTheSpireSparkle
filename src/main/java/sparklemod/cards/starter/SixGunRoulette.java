@@ -13,6 +13,7 @@ import sparklemod.util.CardStats;
 
 import java.util.ArrayList;
 
+//Six-gun Roulette - attack, 1 energy - Choose a target at random (Including Sparkle) to lose 5(8) hp. If Sparkle damages herself, gain 10(20) block.
 public class SixGunRoulette extends BaseCard {
     public static final String ID = makeID(SixGunRoulette.class.getSimpleName());
     private static final CardStats info = new CardStats(

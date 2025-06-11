@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
@@ -47,7 +46,7 @@ public class AngryMask extends BaseCard {
 
 
         for(int i = 0; i < numTimes; i++) {
-            int dam = AbstractDungeon.cardRandomRng.random(MINIMUM_DAMAGE, MAXIMUM_DAMAGE);
+            int dam = randomIntWithVariance(MINIMUM_DAMAGE, MAXIMUM_DAMAGE);
 
             addToBot(new DamageAction(m, new DamageInfo(p, dam, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         }

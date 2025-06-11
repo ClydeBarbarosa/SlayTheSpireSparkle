@@ -3,7 +3,6 @@ package sparklemod.cards.common;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
@@ -11,6 +10,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
+//On one hand, violence - skill, 1 energy - gain 1-4(1-6) temporary strength.
 public class OnOneHandViolence extends BaseCard {
     public static final String ID = makeID(OnOneHandViolence.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -33,7 +33,7 @@ public class OnOneHandViolence extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        int strengthAmount = AbstractDungeon.cardRandomRng.random(customVar("OnOneHandViolenceMinStrength"), customVar("OnOneHandViolenceMaxStrength"));
+        int strengthAmount = randomIntWithVariance(customVar("OnOneHandViolenceMinStrength"), customVar("OnOneHandViolenceMaxStrength"));
 
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, strengthAmount)));
         addToBot(new ApplyPowerAction(p, p, new LoseStrengthPower(p, strengthAmount)));
