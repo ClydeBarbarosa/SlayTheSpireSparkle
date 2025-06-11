@@ -9,8 +9,8 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.SparkleEnergizedPower;
 import sparklemod.util.CardStats;
 
-public class SparkleMischievousGrin extends BaseCard {
-    public static final String ID = makeID(SparkleMischievousGrin.class.getSimpleName());
+public class MischievousGrin extends BaseCard {
+    public static final String ID = makeID(MischievousGrin.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -19,7 +19,7 @@ public class SparkleMischievousGrin extends BaseCard {
             2 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    public SparkleMischievousGrin() {
+    public MischievousGrin() {
         super (ID, info);
 
         setCostUpgrade(1);

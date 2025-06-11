@@ -16,8 +16,8 @@ import sparklemod.powers.SparkleUnexpectedPower;
 import sparklemod.util.CardStats;
 
 //Heel kick - attack, 1 energy - Deal 5(9) damage to a random enemy, then randomly inflict 1(2) weaken or 1 vulnerable. Gain 1 Unexpected.
-public class SparkleHeelKick extends BaseCard {
-    public static final String ID = makeID(SparkleHeelKick.class.getSimpleName());
+public class HeelKick extends BaseCard {
+    public static final String ID = makeID(HeelKick.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -32,7 +32,7 @@ public class SparkleHeelKick extends BaseCard {
     private static final int UPGRADED_WEAK = 2;
     private static final int BASE_VULNERABLE = 1;
 
-    public SparkleHeelKick () {
+    public HeelKick() {
         super(ID, info);
 
         setDamage(BASE_DAMAGE, UPGRADED_DAMAGE);

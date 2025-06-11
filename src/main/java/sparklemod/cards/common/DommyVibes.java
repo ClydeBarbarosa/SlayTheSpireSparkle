@@ -10,8 +10,8 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-public class SparkleDommyVibes extends BaseCard {
-    public static final String ID = makeID(SparkleDommyVibes.class.getSimpleName());
+public class DommyVibes extends BaseCard {
+    public static final String ID = makeID(DommyVibes.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -26,7 +26,7 @@ public class SparkleDommyVibes extends BaseCard {
     private static final int BASE_VULNERABLE = 2;
     private static final int UPGRADED_VULNERABLE = 2;
 
-    public SparkleDommyVibes () {
+    public DommyVibes() {
         super(ID, info);
 
         setCustomVar("SparkleDommyVibesWeakAmount", BASE_WEAK, UPGRADED_WEAK);

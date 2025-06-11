@@ -11,9 +11,9 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-public class SparkleHeadsIWinTailsYouLose extends BaseCard {
+public class HeadsIWinTailsYouLose extends BaseCard {
 
-    public static final String ID = makeID(SparkleHeadsIWinTailsYouLose.class.getSimpleName());
+    public static final String ID = makeID(HeadsIWinTailsYouLose.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -27,7 +27,7 @@ public class SparkleHeadsIWinTailsYouLose extends BaseCard {
     private static final int ENERGY_GAIN = 1;
     private static final int NUM_CARDS = 1;
 
-    public SparkleHeadsIWinTailsYouLose() {
+    public HeadsIWinTailsYouLose() {
         super(ID, info);
         setDamage(BASE_DAMAGE, UPGRADED_DAMAGE_GAIN);
         setCustomVar("SparkleHIWTYLEnergyGain", ENERGY_GAIN);

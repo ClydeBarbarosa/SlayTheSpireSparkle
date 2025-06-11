@@ -10,7 +10,6 @@ import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.green.Neutralize;
 import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,14 +18,10 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
-import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import sparklemod.cards.common.*;
-import sparklemod.cards.rare.SparkleHeadsIWinTailsYouLose;
-import sparklemod.cards.rare.SparkleLeaveItToChance;
-import sparklemod.cards.rare.SparkleShowstopper;
 import sparklemod.cards.starter.*;
-import sparklemod.cards.uncommon.SparkleFireworksDisplay;
+import sparklemod.cards.uncommon.FireworksDisplay;
 import sparklemod.relics.SparkleKendamaBall;
 
 import java.util.ArrayList;
@@ -145,13 +140,13 @@ public class SparkleCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         //List of IDs of cards for your starting deck.
         //If you want multiple of the same card, you have to add it multiple times.
-        retVal.add(SparkleFireworksDisplay.ID);
-        retVal.add(SparkleDommyVibes.ID);
-        retVal.add(SparkleDefend.ID);
-        retVal.add(SparkleDefend.ID);
-        retVal.add(SparkleDefend.ID);
-        //retVal.add(SparkleStrike.ID);
-        //retVal.add(SparkleHeelKick.ID);
+        retVal.add(FireworksDisplay.ID);
+        retVal.add(DommyVibes.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        //retVal.add(Strike.ID);
+        //retVal.add(HeelKick.ID);
 
         return retVal;
     }

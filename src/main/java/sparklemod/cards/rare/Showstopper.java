@@ -10,8 +10,8 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-public class SparkleShowstopper extends BaseCard {
-    public static final String ID = makeID(SparkleShowstopper.class.getSimpleName());
+public class Showstopper extends BaseCard {
+    public static final String ID = makeID(Showstopper.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -24,7 +24,7 @@ public class SparkleShowstopper extends BaseCard {
     private final static int NUM_HITS = 1;
     private final static int UPGRADED_NUM_HITS = 2;
 
-    public SparkleShowstopper() {
+    public Showstopper() {
         super(ID, info);
 
         setDamage(BASE_DAMAGE);

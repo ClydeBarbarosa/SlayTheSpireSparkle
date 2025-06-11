@@ -12,8 +12,8 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
 //Angry mask - attack, 1 energy - deal between 2-7 damage twice. (three times)
-public class SparkleAngryMask extends BaseCard {
-    public static final String ID = makeID(SparkleAngryMask.class.getSimpleName());
+public class AngryMask extends BaseCard {
+    public static final String ID = makeID(AngryMask.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -27,7 +27,7 @@ public class SparkleAngryMask extends BaseCard {
     private static final int NUMBER_TIMES = 2;
     private static final int UPGRADED_NUMBER_TIMES = 3;
 
-    public SparkleAngryMask () {
+    public AngryMask() {
         super(ID, info);
 
         upgradesDescription = true;

@@ -13,8 +13,8 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
 //Sad mask - skill, 3 energy - gain 0-2 vulnerable, 0-2 weak, 0-2 frail. Inflict the same conditions on all enemies (twice).
-public class SparkleSadMask extends BaseCard {
-    public static final String ID = makeID(SparkleSadMask.class.getSimpleName());
+public class SadMask extends BaseCard {
+    public static final String ID = makeID(SadMask.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -32,7 +32,7 @@ public class SparkleSadMask extends BaseCard {
     private static final int NUMBER_TIMES = 1;
     private static final int UPGRADED_NUMBER_TIMES = 2;
 
-    public SparkleSadMask() {
+    public SadMask() {
         super(ID, info);
 
         setCustomVar("SparkleSadMaskMinimumWeak", MINIMUM_WEAK);

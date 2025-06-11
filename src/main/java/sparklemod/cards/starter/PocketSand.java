@@ -2,7 +2,6 @@ package sparklemod.cards.starter;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerToRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,8 +12,8 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-public class SparklePocketSand extends BaseCard {
-    public static final String ID = makeID(SparklePocketSand.class.getSimpleName());
+public class PocketSand extends BaseCard {
+    public static final String ID = makeID(PocketSand.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -34,7 +33,7 @@ public class SparklePocketSand extends BaseCard {
     private static final int POCKET_SAND_MAX_WEAK = 1;
     private static final int POCKET_SAND_UPGRADED_MAX_WEAK = 1;
 
-    public SparklePocketSand() {
+    public PocketSand() {
         super(ID, info);
 
         setCustomVar("sparklePocketSandDamage", VariableType.DAMAGE, POCKET_SAND_BASE_DAMAGE, POCKET_SAND_UPGRADED_BASE_DAMAGE);

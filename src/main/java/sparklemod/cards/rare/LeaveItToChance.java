@@ -9,8 +9,8 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.SparkleLeaveItToChancePower;
 import sparklemod.util.CardStats;
 
-public class SparkleLeaveItToChance extends BaseCard {
-    public static final String ID = makeID(SparkleLeaveItToChance.class.getSimpleName());
+public class LeaveItToChance extends BaseCard {
+    public static final String ID = makeID(LeaveItToChance.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.POWER, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -22,7 +22,7 @@ public class SparkleLeaveItToChance extends BaseCard {
     private static final int BLOCK_AMOUNT = 5;
     private static final int UPGRADED_BLOCK_AMOUNT = 5;
 
-    public SparkleLeaveItToChance() {
+    public LeaveItToChance() {
         super(ID, info);
 
         setCustomVar("SparkleLeaveItToChanceBlockAmount", BLOCK_AMOUNT, UPGRADED_BLOCK_AMOUNT);

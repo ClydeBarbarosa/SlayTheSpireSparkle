@@ -1,17 +1,16 @@
 package sparklemod.cards.common;
 
+import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-import java.util.ArrayList;
-
-//This is boring - skill, 0 energy - increase the cost of all cards in your hand by 1 for the rest of combat.
-public class SparkleThisIsBoring extends BaseCard {
-    public static final String ID = makeID(SparkleThisIsBoring.class.getSimpleName());
+public class SmilingMask extends BaseCard {
+    public static final String ID = makeID(SmilingMask.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -20,19 +19,27 @@ public class SparkleThisIsBoring extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    public SparkleThisIsBoring () {
+    private final static int HEAL_MINIMUM = 1;
+    private final static int HEAL_MAXIMUM = 3;
+
+    public SmilingMask() {
         super(ID, info);
 
-        this.setCostUpgrade(0);
+        upgradesDescription=true;
+        setCustomVar("SparkleSmilingMaskHealMinimum", HEAL_MINIMUM);
+        setCustomVar("SparkleSmilingMaskHealMaximum", HEAL_MAXIMUM);
+
+        setExhaust(true);
+    }
+
+    @Override
+    public void upgrade() {
+        super.upgrade();
+
+        this.setExhaust(false);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        ArrayList<AbstractCard> cannotIncrease = new ArrayList<>();
-
-        for(AbstractCard c : p.hand.group) {
-            if(c.cost < p.energy.energy && c.cost != 0 && c != this) {
-                c.updateCost(1);
-            }
-        }
+        addToBot(new HealAction(p, p, AbstractDungeon.cardRandomRng.random(HEAL_MINIMUM, HEAL_MAXIMUM)));
     }
 }

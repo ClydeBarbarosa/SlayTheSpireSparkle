@@ -11,8 +11,8 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-public class SparkleFireworksDisplay extends BaseCard {
-    public static final String ID = makeID(SparkleFireworksDisplay.class.getSimpleName());
+public class FireworksDisplay extends BaseCard {
+    public static final String ID = makeID(FireworksDisplay.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -26,7 +26,7 @@ public class SparkleFireworksDisplay extends BaseCard {
     private static final int BASE_MAX_NUM_TIMES = 4;
     private static final int UPGRADED_MAX_NUM_TIMES = 2;
 
-    public SparkleFireworksDisplay() {
+    public FireworksDisplay() {
         super(ID, info);
 
         setDamage(BASE_DAMAGE);

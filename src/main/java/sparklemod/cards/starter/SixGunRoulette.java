@@ -13,8 +13,8 @@ import sparklemod.util.CardStats;
 
 import java.util.ArrayList;
 
-public class SparkleSixGunRoulette extends BaseCard {
-    public static final String ID = makeID(SparkleSixGunRoulette.class.getSimpleName());
+public class SixGunRoulette extends BaseCard {
+    public static final String ID = makeID(SixGunRoulette.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -28,7 +28,7 @@ public class SparkleSixGunRoulette extends BaseCard {
     private static final int BLOCK = 10;
     private static final int UPG_BLOCK = 20;
 
-    public SparkleSixGunRoulette() {
+    public SixGunRoulette() {
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);

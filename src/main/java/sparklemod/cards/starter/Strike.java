@@ -1,6 +1,5 @@
 package sparklemod.cards.starter;
 
-import com.evacipated.cardcrawl.mod.stslib.cards.targeting.SelfOrEnemyTargeting;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -10,8 +9,9 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-public class SparkleStrike extends BaseCard {
-    public static final String ID = makeID(SparkleStrike.class.getSimpleName());
+//Strike - attack, 1(2) energy - Deal 5(9) damage to a random enemy, then deal 2(4) damage to another random enemy.
+public class Strike extends BaseCard {
+    public static final String ID = makeID(Strike.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -25,7 +25,7 @@ public class SparkleStrike extends BaseCard {
     private static final int UPG_DAMAGE = 4;
     private static final int UPG_SECOND_DAMAGE = 2;
 
-    public SparkleStrike() {
+    public Strike() {
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);

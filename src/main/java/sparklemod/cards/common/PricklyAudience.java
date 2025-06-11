@@ -9,8 +9,8 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-public class SparklePricklyAudience extends BaseCard {
-    public static final String ID = makeID(SparklePricklyAudience.class.getSimpleName());
+public class PricklyAudience extends BaseCard {
+    public static final String ID = makeID(PricklyAudience.class.getSimpleName());
     private static final CardStats info = new CardStats(
             SparkleCharacter.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -21,7 +21,7 @@ public class SparklePricklyAudience extends BaseCard {
 
     private static final int THORNS_AMOUNT = 3;
 
-    public SparklePricklyAudience () {
+    public PricklyAudience() {
         super(ID, info);
 
         setExhaust(true);
