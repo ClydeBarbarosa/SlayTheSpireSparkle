@@ -143,11 +143,11 @@ public class SparkleCharacter extends CustomPlayer {
         //If you want multiple of the same card, you have to add it multiple times.
 
         //tester cards
-        retVal.add(CanYouFindTheAnswer.ID);
-        retVal.add(CanYouFindTheAnswer.ID);
-        retVal.add(CanYouFindTheAnswer.ID);
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
+        retVal.add(Dreamdiver.ID);
+        retVal.add(Dreamdiver.ID);
+        retVal.add(Dreamdiver.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
 
         /*
         //TesterCard Bank set

@@ -81,5 +81,12 @@
       "Increase the minimum and maximum amount of your random effects by ",
       ". (minimum 0, max 999)"
     ]
+  },
+  "${modID}:SparkleDreamdiverPower": {
+    "NAME": "Dreamdiver",
+    "DESCRIPTIONS": [
+      "Increase the damage of your next attack this turn by ",
+      " %."
+    ]
   }
 }

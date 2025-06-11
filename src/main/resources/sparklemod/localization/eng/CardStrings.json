@@ -144,5 +144,14 @@
   "${modID}:CanYouFindTheAnswer": {
     "NAME": "Can You Find the Answer?",
     "DESCRIPTION": "Gain ${modID}:Mask. *Exhaust."
+  },
+  "${modID}:Monodrama": {
+    "NAME": "Monodrama",
+    "DESCRIPTION": "Strike the enemy for !D! damage."
+  },
+  "${modID}:Dreamdiver": {
+    "NAME": "Dreamdiver",
+    "DESCRIPTION": "Increase the damage of your next attack this turn by 25%.",
+    "UPGRADE_DESCRIPTION": "Increase the damage of your next attack this turn by 50%."
   }
 }
