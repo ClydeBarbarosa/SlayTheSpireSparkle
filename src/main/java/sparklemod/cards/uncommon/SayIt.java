@@ -44,6 +44,7 @@ public class SayIt extends BaseCard {
             ArrayList<AbstractMonster> monsterList = AbstractDungeon.getCurrRoom().monsters.monsters;
 
             monsterList.removeIf(mo -> mo.isDead);
+            monsterList.removeIf(mo -> mo.escaped);
 
             //int numTargets = monsterList.size();
             //int selectedTarget = AbstractDungeon.miscRng.random(0, numTargets);

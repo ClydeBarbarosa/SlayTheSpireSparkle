@@ -19,15 +19,15 @@ public class Defend extends BaseCard {
     );
 
     private static final int BLOCK = 3;
-    private static final int UPGRADED_BLOCK = 5;
-    private static final int BLOCK_MAX = 4;
-    private static final int UPGRADED_BLOCK_MAX = 6;
+    private static final int UPGRADED_BLOCK = 4;
+    private static final int BLOCK_MAX = 7;
+    private static final int UPGRADED_BLOCK_MAX = 4;
 
     public Defend() {
         super(ID, info);
 
-        setBlock(BLOCK, UPGRADED_BLOCK);
-        setCustomVar("DefendMax",BLOCK + BLOCK_MAX,UPGRADED_BLOCK+ UPGRADED_BLOCK_MAX);
+        setCustomVar("DefendMin", BLOCK, UPGRADED_BLOCK);
+        setCustomVar("DefendMax",BLOCK_MAX, UPGRADED_BLOCK_MAX);
 
         setCostUpgrade(2);
 
@@ -35,8 +35,9 @@ public class Defend extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int addedBlock = (this.upgraded ? randomIntWithVariance(BLOCK_MAX) : randomIntWithVariance(UPGRADED_BLOCK_MAX));
+        //int addedBlock = (this.upgraded ? randomIntWithVariance(BLOCK_MAX) : randomIntWithVariance(UPGRADED_BLOCK_MAX));
+        int blockAmount = randomIntWithVariance(customVar("DefendMin"), customVar("DefendMax"));
 
-        addToBot(new GainBlockAction(p, p, block + addedBlock));
+        addToBot(new GainBlockAction(p, p, blockAmount));
     }
 }

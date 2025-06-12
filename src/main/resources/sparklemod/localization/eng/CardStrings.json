@@ -19,7 +19,7 @@
   },
   "${modID}:Defend": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain between !B! and !${modID}:DefendMax! block."
+    "DESCRIPTION": "Gain between !${modID}:DefendMin! and !${modID}:DefendMax! block."
   },
   "${modID}:LetTheShowBegin": {
     "NAME": "Let the Show Begin",
@@ -153,5 +153,9 @@
     "NAME": "Dreamdiver",
     "DESCRIPTION": "Increase the damage of your next attack this turn by 25%.",
     "UPGRADE_DESCRIPTION": "Increase the damage of your next attack this turn by 50%."
+  },
+  "${modID}:DancePartner": {
+    "NAME": "Dance Partner",
+    "DESCRIPTION": "For each enemy, if it is attacking, inflict !${modID}:DancePartnerAmount! Weak, otherwise inflict !${modID}:DancePartnerAmount! Vulnerable."
   }
 }
