@@ -166,5 +166,10 @@
   "${modID}:Powerless": {
     "NAME": "Powerless",
     "DESCRIPTION": "Remove all positive strength from you and all enemies."
+  },
+  "${modID}:PepTalk": {
+    "NAME": "Pep Talk",
+    "DESCRIPTION": "Gain !${modID}PepTalkArtifactGain! Artifact. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}PepTalkArtifactGain! Artifact."
   }
 }
