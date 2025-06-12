@@ -88,5 +88,11 @@
       "Increase the damage of your next attack this turn by ",
       " %."
     ]
+  },
+  "${modID}:SparkleDefenselessPower": {
+    "NAME": "Defenseless",
+    "DESCRIPTIONS": [
+      "Keep your eyes on me, don't even think about looking away!"
+    ]
   }
 }

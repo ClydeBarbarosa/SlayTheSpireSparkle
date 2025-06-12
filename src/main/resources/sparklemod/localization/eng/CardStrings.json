@@ -157,5 +157,10 @@
   "${modID}:DancePartner": {
     "NAME": "Dance Partner",
     "DESCRIPTION": "For each enemy, if it is attacking, inflict !${modID}:DancePartnerAmount! Weak, otherwise inflict !${modID}:DancePartnerAmount! Vulnerable."
+  },
+  "${modID}:Defenseless": {
+    "NAME": "Defenseless",
+    "DESCRIPTION": "Remove all block from target enemy.",
+    "UPGRADE_DESCRIPTION": "Remove all block from target enemy. Do it again at the start of your turn."
   }
 }
