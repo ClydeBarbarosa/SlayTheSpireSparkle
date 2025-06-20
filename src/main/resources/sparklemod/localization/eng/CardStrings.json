@@ -169,7 +169,12 @@
   },
   "${modID}:PepTalk": {
     "NAME": "Pep Talk",
-    "DESCRIPTION": "Gain !${modID}PepTalkArtifactGain! Artifact. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}PepTalkArtifactGain! Artifact."
+    "DESCRIPTION": "Gain !${modID}:PepTalkArtifactGain! Artifact. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:PepTalkArtifactGain! Artifact."
+  },
+  "${modID}:KeepUp": {
+    "NAME": "Keep Up!",
+    "DESCRIPTION": "Deal !${modID}:SparkleKeepUpDamage! damage and inflict !${modID}:SparkleKeepUpWeak Weak to the target.",
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:SparkleKeepUpDamage! damage and inflict !${modID}:SparkleKeepUpWeak! Weak to all enemies."
   }
 }
