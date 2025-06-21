@@ -188,5 +188,17 @@
   "${modID}:ATallFrostyGlass": {
     "NAME": "A Tall Frosty Glass",
     "DESCRIPTION": "... Of Just Ice! Gain !${modID}:ATallFrostyGlassThornsAmount! Thorns each time you are attacked this turn."
+  },
+  "${modID}:IllusionOfChoice": {
+    "NAME": "Illusion Of Choice",
+    "DESCRIPTION": "Choose: Target an enemy (who loses !${modID}:IllusionOfChoiceStrengthAmount! Strength) or yourself (to gain !${modID}:IllusionOfChoiceDexterityAmount! Dexterity.)"
+  },
+  "${modID}:IOCLoseStrength": {
+    "NAME": "Lose Strength",
+    "DESCRIPTION": "Target enemy loses !${modID}:IOCStrLoss! Strength. Ethereal. Exhaust."
+  },
+  "${modID}:IOCGainDexterity": {
+    "NAME": "Gain Dexterity",
+    "DESCRIPTION": "Gain !${modID}:IOCDexGain! Dexterity. Ethereal. Exhaust."
   }
 }
