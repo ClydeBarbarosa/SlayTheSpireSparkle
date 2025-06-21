@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleOnTheOtherPatiencePower;
+import sparklemod.powers.OnTheOtherPatiencePower;
 import sparklemod.util.CardStats;
 
 //On the other, patience - skill, 1 energy - next turn, gain 1-4(1-6) temporary strength.
@@ -32,6 +32,6 @@ public class OnTheOtherPatience extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SparkleOnTheOtherPatiencePower(p, 1, upgraded)));
+        addToBot(new ApplyPowerAction(p, p, new OnTheOtherPatiencePower(p, 1, upgraded)));
     }
 }

@@ -5,28 +5,28 @@
       "You are Very Cool and Strong."
     ]
   },
-  "${modID}:SparkleEnergizedPower": {
+  "${modID}:EnergizedPower": {
     "NAME": "Energized",
     "DESCRIPTIONS": [
       "Gain #b",
       " energy next turn."
     ]
   },
-  "${modID}:SparkleUnexpectedPower": {
+  "${modID}:UnexpectedPower": {
     "NAME": "Unexpected",
     "DESCRIPTIONS": [
       "Repeat unexpected cards #b",
       " times."
     ]
   },
-  "${modID}:SparkleWaitForItPower": {
+  "${modID}:WaitForItPower": {
     "NAME": "Wait For It...",
     "DESCRIPTIONS": [
       "At the start of each turn, increase the cost of a random card in your hand by ",
       "."
     ]
   },
-  "${modID}:SparkleLeaveItToChancePower": {
+  "${modID}:LeaveItToChancePower": {
     "NAME": "Leave it to Chance",
     "DESCRIPTIONS": [
       "At the start of your turn, flip a coin. On heads, gain ",
@@ -34,14 +34,14 @@
       " block."
     ]
   },
-  "${modID}:SparkleHurryUpPower": {
+  "${modID}:HurryUpPower": {
     "NAME": "Hurry Up!",
     "DESCRIPTIONS": [
       "Retain your hand. At the start of your turn, gain ",
       " energy."
     ]
   },
-  "${modID}:SparkleAnticiPationPower": {
+  "${modID}:AnticiPationPower": {
     "NAME": "Rocky Horror Fan",
     "DESCRIPTIONS": [
       "Play them all in one turn! NL ",
@@ -50,7 +50,7 @@
       " PATION!"
     ]
   },
-  "${modID}:SparkleOnTheOtherPatiencePower": {
+  "${modID}:OnTheOtherPatiencePower": {
     "NAME": "On the Other, Patience",
     "DESCRIPTIONS": [
       "At the start of your next turn, gain ",
@@ -58,7 +58,7 @@
       " temporary Strength."
     ]
   },
-  "${modID}:SparkleMaskPower": {
+  "${modID}:MaskPower": {
     "NAME": "Mask",
     "DESCRIPTIONS": [
       "Negate the next ",
@@ -68,34 +68,34 @@
       " energy."
     ]
   },
-  "${modID}:SparkleMaskEnergyGainPower": {
+  "${modID}:MaskEnergyGainPower": {
     "NAME": "Masked Energy Gain",
     "DESCRIPTIONS": [
       "On your next turn randomly gain or lose ",
       " energy."
     ]
   },
-  "${modID}:SparkleVariancePower": {
+  "${modID}:VariancePower": {
     "NAME": "Variance",
     "DESCRIPTION": [
       "Increase the minimum and maximum amount of your random effects by ",
       ". (minimum 0, max 999)"
     ]
   },
-  "${modID}:SparkleDreamdiverPower": {
+  "${modID}:DreamdiverPower": {
     "NAME": "Dreamdiver",
     "DESCRIPTIONS": [
       "Increase the damage of your next attack this turn by ",
       " %."
     ]
   },
-  "${modID}:SparkleDefenselessPower": {
+  "${modID}:DefenselessPower": {
     "NAME": "Defenseless",
     "DESCRIPTIONS": [
       "Keep your eyes on me, don't even think about looking away!"
     ]
   },
-  "${modID}:SparkleATallFrostyGlassPower": {
+  "${modID}:ATallFrostyGlassPower": {
     "NAME": "... of Just Ice!",
     "DESCRIPTIONS": [
       "Gain ",

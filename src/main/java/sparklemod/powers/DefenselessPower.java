@@ -7,12 +7,12 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static sparklemod.SparkleMod.makeID;
 
-public class SparkleDefenselessPower extends BasePower {
-    public static final String POWER_ID = makeID(SparkleDefenselessPower.class.getSimpleName());
+public class DefenselessPower extends BasePower {
+    public static final String POWER_ID = makeID(DefenselessPower.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = true;
 
-    public SparkleDefenselessPower (AbstractCreature owner, int amount, AbstractCreature target) {
+    public DefenselessPower(AbstractCreature owner, int amount, AbstractCreature target) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
 
         this.source = target;

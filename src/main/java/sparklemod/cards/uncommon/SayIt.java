@@ -9,8 +9,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleAnticiPationPower;
-import sparklemod.powers.SparkleUnexpectedPower;
+import sparklemod.powers.AnticiPationPower;
+import sparklemod.powers.UnexpectedPower;
 import sparklemod.util.CardStats;
 
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ public class SayIt extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        if(p.hasPower(SparkleUnexpectedPower.POWER_ID)){
+        if(p.hasPower(UnexpectedPower.POWER_ID)){
             ArrayList<AbstractMonster> monsterList = AbstractDungeon.getCurrRoom().monsters.monsters;
 
             monsterList.removeIf(mo -> mo.isDead);
@@ -53,14 +53,14 @@ public class SayIt extends BaseCard {
 
             addToBot(new ApplyPowerAction(target, p, new WeakPower(target, weakAmount, false), weakAmount));
         }
-        if(p.hasPower(SparkleAnticiPationPower.POWER_ID)) {
-            SparkleAnticiPationPower sp = (SparkleAnticiPationPower) p.getPower(SparkleAnticiPationPower.POWER_ID);
-            sp.StackPower(SparkleAnticiPationPower.PARTS.SAYIT);
+        if(p.hasPower(AnticiPationPower.POWER_ID)) {
+            AnticiPationPower sp = (AnticiPationPower) p.getPower(AnticiPationPower.POWER_ID);
+            sp.StackPower(AnticiPationPower.PARTS.SAYIT);
         }
         else {
-            addToBot(new ApplyPowerAction(p, p, new SparkleAnticiPationPower(p, 1, SparkleAnticiPationPower.PARTS.SAYIT)));
+            addToBot(new ApplyPowerAction(p, p, new AnticiPationPower(p, 1, AnticiPationPower.PARTS.SAYIT)));
         }
 
-        //addToBot(new ApplyPowerAction(p, p, new SparkleAnticiPationPower(p, 1, SparkleAnticiPationPower.PARTS.SAYIT)));
+        //addToBot(new ApplyPowerAction(p, p, new AnticiPationPower(p, 1, AnticiPationPower.PARTS.SAYIT)));
     }
 }

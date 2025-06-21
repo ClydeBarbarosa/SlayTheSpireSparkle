@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleUnexpectedPower;
+import sparklemod.powers.UnexpectedPower;
 import sparklemod.util.CardStats;
 
 //Heel kick - attack, 1 energy - Deal 5(9) damage to a random enemy, then randomly inflict 1(2) weaken or 1 vulnerable. Gain 1 Unexpected.
@@ -43,8 +43,8 @@ public class HeelKick extends BaseCard {
     public void use (AbstractPlayer p, AbstractMonster m) {
         int numRepeats;
 
-        if(p.hasPower(SparkleUnexpectedPower.POWER_ID)) {
-            numRepeats = p.getPower(SparkleUnexpectedPower.POWER_ID).amount;
+        if(p.hasPower(UnexpectedPower.POWER_ID)) {
+            numRepeats = p.getPower(UnexpectedPower.POWER_ID).amount;
         }
         else {
             numRepeats = 0;
@@ -62,6 +62,6 @@ public class HeelKick extends BaseCard {
         }
 
         //Add unexpected
-        addToBot(new ApplyPowerAction(p, p, new SparkleUnexpectedPower(p, 1)));
+        addToBot(new ApplyPowerAction(p, p, new UnexpectedPower(p, 1)));
     }
 }

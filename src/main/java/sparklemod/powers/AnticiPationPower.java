@@ -12,8 +12,8 @@ import sparklemod.vfx.combat.SparkleTextEffect;
 
 import static sparklemod.SparkleMod.makeID;
 
-public class SparkleAnticiPationPower extends BasePower {
-    public static final String POWER_ID = makeID(SparkleAnticiPationPower.class.getSimpleName());
+public class AnticiPationPower extends BasePower {
+    public static final String POWER_ID = makeID(AnticiPationPower.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
@@ -26,7 +26,7 @@ public class SparkleAnticiPationPower extends BasePower {
         PATION
     }
 
-    public SparkleAnticiPationPower(AbstractCreature owner, int amount, PARTS index) {
+    public AnticiPationPower(AbstractCreature owner, int amount, PARTS index) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
 
         //collected = new int[]{0, 0, 0};

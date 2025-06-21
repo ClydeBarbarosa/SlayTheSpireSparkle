@@ -8,14 +8,14 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static sparklemod.SparkleMod.makeID;
 
-public class SparkleHurryUpPower extends BasePower {
+public class HurryUpPower extends BasePower {
 
-    public static final String POWER_ID = makeID("SparkleHurryUpPower");
+    public static final String POWER_ID = makeID("HurryUpPower");
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
     private static int energyGain = 0;
 
-    public SparkleHurryUpPower(AbstractPlayer owner, int energy, int amount) {
+    public HurryUpPower(AbstractPlayer owner, int energy, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
 
         energyGain = energy;

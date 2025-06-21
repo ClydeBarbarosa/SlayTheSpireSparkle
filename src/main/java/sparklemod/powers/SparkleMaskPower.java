@@ -47,7 +47,7 @@ public class SparkleMaskPower extends BasePower {
         if(negateAmount > 0) {
             //remove one stack, negate the damage, add energy gain action
             negateAmount--;
-            addToBot(new ApplyPowerAction(p, p, new SparkleMaskEnergyGainPower(p, energyAmount)));
+            addToBot(new ApplyPowerAction(p, p, new MaskEnergyGainPower(p, energyAmount)));
             if(negateAmount <= 0) {
                 addToBot(new RemoveSpecificPowerAction(p, p, POWER_ID));
             }

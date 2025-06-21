@@ -11,15 +11,15 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import static sparklemod.SparkleMod.makeID;
 
 //Dreamdiver - skill, 1(0) energy - increase the damage of your next attack this turn by 25%.
-public class SparkleDreamdiverPower extends BasePower {
-    public static final String POWER_ID = makeID(SparkleDreamdiverPower.class.getSimpleName());
+public class DreamdiverPower extends BasePower {
+    public static final String POWER_ID = makeID(DreamdiverPower.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
     private static final float BASE_DAMAGE_INCREASE = 0.25F;
     private static final float UPGRADED_DAMAGE_INCREASE = 0.5F;
 
-    public SparkleDreamdiverPower (AbstractCreature owner, int amount, boolean upgraded) {
+    public DreamdiverPower(AbstractCreature owner, int amount, boolean upgraded) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
         if(upgraded) {
             //add an extra stack if upgraded

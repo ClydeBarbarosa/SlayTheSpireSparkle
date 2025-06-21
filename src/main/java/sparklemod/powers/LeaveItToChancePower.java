@@ -8,15 +8,15 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static sparklemod.SparkleMod.makeID;
 
-public class SparkleLeaveItToChancePower extends BasePower {
-    public static final String POWER_ID = makeID( "SparkleLeaveItToChancePower" );
+public class LeaveItToChancePower extends BasePower {
+    public static final String POWER_ID = makeID( "LeaveItToChancePower" );
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
     //private int blockAmount;
     private int energyAmount;
 
-    public SparkleLeaveItToChancePower(AbstractCreature owner, int amount, int energyAmount) {
+    public LeaveItToChancePower(AbstractCreature owner, int amount, int energyAmount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
         //this.blockAmount = blockAmount;
         this.energyAmount = energyAmount;

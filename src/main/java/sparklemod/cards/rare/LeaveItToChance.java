@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleLeaveItToChancePower;
+import sparklemod.powers.LeaveItToChancePower;
 import sparklemod.util.CardStats;
 
 //Leave it to chance - Power, 1 energy - at the start of your turn, flip a coin. Heads, gain one energy, tails, gain 5(10) block.
@@ -30,6 +30,6 @@ public class LeaveItToChance extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SparkleLeaveItToChancePower(p, customVar("LeaveItToChanceBlockAmount"), 1), customVar("SparkleLeaveItToChanceBlockAmount")));
+        addToBot(new ApplyPowerAction(p, p, new LeaveItToChancePower(p, customVar("LeaveItToChanceBlockAmount"), 1), customVar("SparkleLeaveItToChanceBlockAmount")));
     }
 }

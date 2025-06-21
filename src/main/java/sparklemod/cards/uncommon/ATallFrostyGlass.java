@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleATallFrostyGlassPower;
+import sparklemod.powers.ATallFrostyGlassPower;
 import sparklemod.util.CardStats;
 
 //A tall frosty glass - skill, 1 energy - Gain 1 thorns each time you are attacked this turn.
@@ -32,6 +32,6 @@ public class ATallFrostyGlass extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SparkleATallFrostyGlassPower(p, THORNS_AMOUNT)));
+        addToBot(new ApplyPowerAction(p, p, new ATallFrostyGlassPower(p, THORNS_AMOUNT)));
     }
 }

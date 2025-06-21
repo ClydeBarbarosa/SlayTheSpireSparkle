@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleHurryUpPower;
+import sparklemod.powers.HurryUpPower;
 import sparklemod.util.CardStats;
 
 //Hurry up! - skill, 1(0) energy - Retain your energy and hand, then end your turn.
@@ -30,7 +30,7 @@ public class HurryUp extends BaseCard {
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         int currentEnergy = EnergyPanel.getCurrentEnergy() - this.cost;
-        addToBot(new ApplyPowerAction(p, p, new SparkleHurryUpPower(p, currentEnergy, -1)));
+        addToBot(new ApplyPowerAction(p, p, new HurryUpPower(p, currentEnergy, -1)));
         addToBot(new PressEndTurnButtonAction());
     }
 }

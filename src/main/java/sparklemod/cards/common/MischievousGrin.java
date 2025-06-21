@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleEnergizedPower;
+import sparklemod.powers.EnergizedPower;
 import sparklemod.util.CardStats;
 
 //Mischievous grin - skill, 2(1) - gain 2 energy next turn.
@@ -31,6 +31,6 @@ public class MischievousGrin extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SparkleEnergizedPower(p, 2), 2));
+        addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
     }
 }

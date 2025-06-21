@@ -205,5 +205,9 @@
     "NAME": "Feigned Madness",
     "DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn. Exhaust.",
     "UPGRADE_DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn."
+  },
+  "${modID}:GrabABottle": {
+    "NAME": "Grab A Bottle",
+    "DESCRIPTION": "Grab a bottle of SoulGlad~ (Obtain a random potion.) NL Exhaust."
   }
 }

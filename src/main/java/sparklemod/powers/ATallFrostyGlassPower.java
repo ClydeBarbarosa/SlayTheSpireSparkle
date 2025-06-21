@@ -9,12 +9,12 @@ import com.megacrit.cardcrawl.powers.ThornsPower;
 
 import static sparklemod.SparkleMod.makeID;
 
-public class SparkleATallFrostyGlassPower extends BasePower {
-    public static final String POWER_ID = makeID(SparkleATallFrostyGlassPower.class.getSimpleName());
+public class ATallFrostyGlassPower extends BasePower {
+    public static final String POWER_ID = makeID(ATallFrostyGlassPower.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
-    public SparkleATallFrostyGlassPower(AbstractCreature owner, int amount) {
+    public ATallFrostyGlassPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 

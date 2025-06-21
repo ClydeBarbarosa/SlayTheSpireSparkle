@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleUnexpectedPower;
+import sparklemod.powers.UnexpectedPower;
 import sparklemod.util.CardStats;
 
 //Dodge this! - attack, 2 energy - Slap an enemy with a car for 7(10) damage. Gain 1 Unexpected.
@@ -34,8 +34,8 @@ public class DodgeThis extends BaseCard {
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         int amount;
-        if (p.hasPower(SparkleUnexpectedPower.POWER_ID)) {
-            AbstractPower pow = p.getPower(SparkleUnexpectedPower.POWER_ID);
+        if (p.hasPower(UnexpectedPower.POWER_ID)) {
+            AbstractPower pow = p.getPower(UnexpectedPower.POWER_ID);
             amount = pow.amount + 1;
         }
         else {
@@ -44,6 +44,6 @@ public class DodgeThis extends BaseCard {
         for (int i = 0; i < amount; i++) {
             addToBot(new DamageAction(m, new DamageInfo(p, customVar("DodgeThisDamage"), DamageInfo.DamageType.NORMAL)));
         }
-        addToBot(new ApplyPowerAction(p, p, new SparkleUnexpectedPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new UnexpectedPower(p, 1), 1));
     }
 }

@@ -7,12 +7,12 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static sparklemod.SparkleMod.makeID;
 
-public class SparkleWaitForItPower extends BasePower {
-    public static final String POWER_ID = makeID("SparkleWaitForItPower");
+public class WaitForItPower extends BasePower {
+    public static final String POWER_ID = makeID("WaitForItPower");
     private static final AbstractPower.PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
-    public SparkleWaitForItPower (AbstractCreature owner, int amount) {
+    public WaitForItPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
     }
 

@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleDefenselessPower;
+import sparklemod.powers.DefenselessPower;
 import sparklemod.util.CardStats;
 
 public class Defenseless extends BaseCard {
@@ -30,7 +30,7 @@ public class Defenseless extends BaseCard {
             addToBot(new RemoveAllBlockAction(m, p));
         }
         if(upgraded) {
-            addToBot(new ApplyPowerAction(p, p, new SparkleDefenselessPower(p, -1, m)));
+            addToBot(new ApplyPowerAction(p, p, new DefenselessPower(p, -1, m)));
         }
     }
 }

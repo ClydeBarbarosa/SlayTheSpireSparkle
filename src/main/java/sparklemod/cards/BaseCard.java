@@ -5,7 +5,7 @@ import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import sparklemod.SparkleMod;
-import sparklemod.powers.SparkleVariancePower;
+import sparklemod.powers.VariancePower;
 import sparklemod.util.CardStats;
 import sparklemod.util.TriFunction;
 import com.badlogic.gdx.graphics.Color;
@@ -718,8 +718,8 @@ public abstract class BaseCard extends CustomCard {
     //Return an integer affected by the Variance power.
     public int randomIntWithVariance(int minimum, int maximum) {
         AbstractPlayer p = AbstractDungeon.player;
-        if(p.hasPower(SparkleVariancePower.POWER_ID)) {
-            int varianceAmount = p.getPower(SparkleVariancePower.POWER_ID).amount;
+        if(p.hasPower(VariancePower.POWER_ID)) {
+            int varianceAmount = p.getPower(VariancePower.POWER_ID).amount;
 
             int min = (Math.max(minimum - varianceAmount, 0));
             int max = maximum + varianceAmount;

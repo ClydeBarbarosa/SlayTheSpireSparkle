@@ -6,8 +6,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleAnticiPationPower;
-import sparklemod.powers.SparkleUnexpectedPower;
+import sparklemod.powers.AnticiPationPower;
+import sparklemod.powers.UnexpectedPower;
 import sparklemod.util.CardStats;
 
 //Gain 1 unexpected.
@@ -30,15 +30,15 @@ public class Antici extends BaseCard {
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         //Add unexpected
-        addToBot(new ApplyPowerAction(p, p, new SparkleUnexpectedPower(p, 1)));
+        addToBot(new ApplyPowerAction(p, p, new UnexpectedPower(p, 1)));
         //add anticipation
 
-        if(p.hasPower(SparkleAnticiPationPower.POWER_ID)) {
-            SparkleAnticiPationPower sp = (SparkleAnticiPationPower) p.getPower(SparkleAnticiPationPower.POWER_ID);
-            sp.StackPower(SparkleAnticiPationPower.PARTS.ANTICI);
+        if(p.hasPower(AnticiPationPower.POWER_ID)) {
+            AnticiPationPower sp = (AnticiPationPower) p.getPower(AnticiPationPower.POWER_ID);
+            sp.StackPower(AnticiPationPower.PARTS.ANTICI);
         }
         else {
-            addToBot(new ApplyPowerAction(p, p, new SparkleAnticiPationPower(p, 1, SparkleAnticiPationPower.PARTS.ANTICI)));
+            addToBot(new ApplyPowerAction(p, p, new AnticiPationPower(p, 1, AnticiPationPower.PARTS.ANTICI)));
         }
     }
 }

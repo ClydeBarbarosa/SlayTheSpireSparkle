@@ -9,8 +9,8 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import static sparklemod.SparkleMod.makeID;
 
-public class SparkleOnTheOtherPatiencePower extends BasePower {
-    public static final String POWER_ID = makeID(SparkleOnTheOtherPatiencePower.class.getSimpleName());
+public class OnTheOtherPatiencePower extends BasePower {
+    public static final String POWER_ID = makeID(OnTheOtherPatiencePower.class.getSimpleName());
     private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
@@ -21,7 +21,7 @@ public class SparkleOnTheOtherPatiencePower extends BasePower {
     private static final int MAX_AMOUNT = 4;
     private static final int UPGRADED_MAX_AMOUNT = 6;
 
-    public SparkleOnTheOtherPatiencePower(AbstractCreature owner, int amount, boolean upgraded) {
+    public OnTheOtherPatiencePower(AbstractCreature owner, int amount, boolean upgraded) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
 
         minAmount += BASE_AMOUNT;

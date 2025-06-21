@@ -7,8 +7,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleAnticiPationPower;
-import sparklemod.powers.SparkleUnexpectedPower;
+import sparklemod.powers.AnticiPationPower;
+import sparklemod.powers.UnexpectedPower;
 import sparklemod.util.CardStats;
 
 //Pation - skill, 0(1) energy - Lose 1 Unexpected. (Gain 1 energy on your next turn.)
@@ -28,16 +28,16 @@ public class Pation extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        if(p.hasPower(SparkleAnticiPationPower.POWER_ID)) {
-            SparkleAnticiPationPower sp = (SparkleAnticiPationPower) p.getPower(SparkleAnticiPationPower.POWER_ID);
-            sp.StackPower(SparkleAnticiPationPower.PARTS.PATION);
+        if(p.hasPower(AnticiPationPower.POWER_ID)) {
+            AnticiPationPower sp = (AnticiPationPower) p.getPower(AnticiPationPower.POWER_ID);
+            sp.StackPower(AnticiPationPower.PARTS.PATION);
         }
         else {
-            addToBot(new ApplyPowerAction(p, p, new SparkleAnticiPationPower(p, 1, SparkleAnticiPationPower.PARTS.PATION)));
+            addToBot(new ApplyPowerAction(p, p, new AnticiPationPower(p, 1, AnticiPationPower.PARTS.PATION)));
         }
-        //addToBot(new ApplyPowerAction(p, p, new SparkleAnticiPationPower(p, 1, SparkleAnticiPationPower.PARTS.PATION)));
+        //addToBot(new ApplyPowerAction(p, p, new AnticiPationPower(p, 1, AnticiPationPower.PARTS.PATION)));
 
         //Remove unexpected
-        addToBot(new RemoveSpecificPowerAction(p, p, SparkleUnexpectedPower.POWER_ID));
+        addToBot(new RemoveSpecificPowerAction(p, p, UnexpectedPower.POWER_ID));
     }
 }

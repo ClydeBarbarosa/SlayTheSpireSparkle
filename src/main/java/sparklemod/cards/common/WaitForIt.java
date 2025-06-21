@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleWaitForItPower;
+import sparklemod.powers.WaitForItPower;
 import sparklemod.util.CardStats;
 
 //Wait for it - power, 2(1) energy - Each turn, increase the cost of a random card in your hand by 1 for the rest of combat.
@@ -27,6 +27,6 @@ public class WaitForIt extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SparkleWaitForItPower(p, 1)));
+        addToBot(new ApplyPowerAction(p, p, new WaitForItPower(p, 1)));
     }
 }

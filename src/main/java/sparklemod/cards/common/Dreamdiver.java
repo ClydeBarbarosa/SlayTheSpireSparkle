@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleDreamdiverPower;
+import sparklemod.powers.DreamdiverPower;
 import sparklemod.util.CardStats;
 
 //Dreamdiver - skill, 0 energy - increase the damage of your next attack this turn by 25%. (50%).
@@ -26,6 +26,6 @@ public class Dreamdiver extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SparkleDreamdiverPower(p, 1, upgraded)));
+        addToBot(new ApplyPowerAction(p, p, new DreamdiverPower(p, 1, upgraded)));
     }
 }
