@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import static sparklemod.SparkleMod.makeID;
 
 public class WaitForItPower extends BasePower {
-    public static final String POWER_ID = makeID("WaitForItPower");
+    public static final String POWER_ID = makeID(WaitForItPower.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
