@@ -32,7 +32,8 @@ public class SparkleWaitForItPower extends BasePower {
                 AbstractCard c = AbstractDungeon.player.hand.getRandomCard(true);
                 if (c.cost != 0 && c.cost < AbstractDungeon.player.energy.energy) {
                     c.flash();
-                    AbstractDungeon.player.hand.getRandomCard(true).updateCost(amount);
+                    //AbstractDungeon.player.hand.getRandomCard(true).updateCost(amount);
+                    c.updateCost(amount);
                 }
             }
         }

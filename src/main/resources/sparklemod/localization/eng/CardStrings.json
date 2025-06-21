@@ -180,5 +180,9 @@
   "${modID}:DodgeThis": {
     "NAME": "Dodge This!",
     "DESCRIPTION": "Smack the target with a car for !${modID}:SparkleDodgeThisDamage! damage. Gain 1 ${modID}:Unexpected."
+  },
+  "${modID}:ItsFreeRealEstate": {
+    "NAME": "It's Free Real Estate",
+    "DESCRIPTION": "Upgrade a random card in your hand. *Retain. *Exhaust."
   }
 }
