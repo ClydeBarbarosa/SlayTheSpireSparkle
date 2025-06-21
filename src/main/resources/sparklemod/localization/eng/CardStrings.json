@@ -214,5 +214,9 @@
   "${modID}:CaptivatingPerformance": {
     "NAME": "Captivating Performance",
     "DESCRIPTION": "Target enemy cannot gain strength this turn."
+  },
+  "${modID}:BreakDance": {
+    "NAME": "Break Dance",
+    "DESCRIPTION": "Deal !${modID}:BreakDanceMinDamage! to !${modID}:BreakDanceMaxDamage! damage and inflict !${modID}:BreakDanceVulnerableAmount! vulnerable randomly !${modID}:BreakDanceNumberHits! times."
   }
 }
