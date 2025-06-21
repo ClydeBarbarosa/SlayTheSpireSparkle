@@ -108,5 +108,11 @@
       "Take ",
       " damage at the start of your turn. Too much sugar is bad for you!"
     ]
+  },
+  "${modID}:CaptivatingPerformancePower": {
+    "NAME": "Captivated",
+    "DESCRIPTIONS": [
+      "Unable to gain strength this turn."
+    ]
   }
 }
