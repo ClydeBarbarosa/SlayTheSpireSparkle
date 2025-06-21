@@ -17,7 +17,7 @@ public class DreamdiverPower extends BasePower {
     private static final boolean TURN_BASED = false;
 
     private static final float BASE_DAMAGE_INCREASE = 0.25F;
-    private static final float UPGRADED_DAMAGE_INCREASE = 0.5F;
+    private static final float DAMAGE_PER_AMOUNT = BASE_DAMAGE_INCREASE * 100;
 
     public DreamdiverPower(AbstractCreature owner, int amount, boolean upgraded) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
@@ -32,7 +32,7 @@ public class DreamdiverPower extends BasePower {
     }
 
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + (25 * amount) + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + (DAMAGE_PER_AMOUNT * amount) + DESCRIPTIONS[1];
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
@@ -49,7 +49,7 @@ public class DreamdiverPower extends BasePower {
     //increase damage by 25% per stack.
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
 
-        return (type == DamageInfo.DamageType.NORMAL ? damage * (1.0F + (.25F * amount)) : damage);
+        return (type == DamageInfo.DamageType.NORMAL ? damage * (1.0F + (BASE_DAMAGE_INCREASE * amount)) : damage);
     }
 
 }
