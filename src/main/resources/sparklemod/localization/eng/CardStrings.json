@@ -176,5 +176,9 @@
     "NAME": "Keep Up!",
     "DESCRIPTION": "Deal !${modID}:SparkleKeepUpDamage! damage and inflict !${modID}:SparkleKeepUpWeak Weak to the target.",
     "UPGRADE_DESCRIPTION": "Deal !${modID}:SparkleKeepUpDamage! damage and inflict !${modID}:SparkleKeepUpWeak! Weak to all enemies."
+  },
+  "${modID}:DodgeThis": {
+    "NAME": "Dodge This!",
+    "DESCRIPTION": "Smack the target with a car for !${modID}:SparkleDodgeThisDamage! damage. Gain 1 ${modID}:Unexpected."
   }
 }
