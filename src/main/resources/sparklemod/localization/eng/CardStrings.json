@@ -174,15 +174,19 @@
   },
   "${modID}:KeepUp": {
     "NAME": "Keep Up!",
-    "DESCRIPTION": "Deal !${modID}:SparkleKeepUpDamage! damage and inflict !${modID}:SparkleKeepUpWeak Weak to the target.",
-    "UPGRADE_DESCRIPTION": "Deal !${modID}:SparkleKeepUpDamage! damage and inflict !${modID}:SparkleKeepUpWeak! Weak to all enemies."
+    "DESCRIPTION": "Deal !${modID}:KeepUpDamage! damage and inflict !${modID}:KeepUpWeak Weak to the target.",
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:KeepUpDamage! damage and inflict !${modID}:KeepUpWeak! Weak to all enemies."
   },
   "${modID}:DodgeThis": {
     "NAME": "Dodge This!",
-    "DESCRIPTION": "Smack the target with a car for !${modID}:SparkleDodgeThisDamage! damage. Gain 1 ${modID}:Unexpected."
+    "DESCRIPTION": "Smack the target with a car for !${modID}:DodgeThisDamage! damage. Gain 1 ${modID}:Unexpected."
   },
   "${modID}:ItsFreeRealEstate": {
     "NAME": "It's Free Real Estate",
     "DESCRIPTION": "Upgrade a random card in your hand. *Retain. *Exhaust."
+  },
+  "${modID}:ATallFrostyGlass": {
+    "NAME": "A Tall Frosty Glass",
+    "DESCRIPTION": "... Of Just Ice! Gain !${modID}:ATallFrostyGlassThornsAmount! Thorns each time you are attacked this turn."
   }
 }

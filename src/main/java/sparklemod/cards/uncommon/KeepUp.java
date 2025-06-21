@@ -30,8 +30,8 @@ public class KeepUp extends BaseCard {
     public KeepUp() {
         super(ID, info);
 
-        setCustomVar("SparkleKeepUpDamage", BASE_DAMAGE);
-        setCustomVar("SparkleKeepUpWeak", BASE_WEAK);
+        setCustomVar("KeepUpDamage", BASE_DAMAGE);
+        setCustomVar("KeepUpWeak", BASE_WEAK);
 
         upgradesDescription = true;
     }

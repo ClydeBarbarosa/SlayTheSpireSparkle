@@ -42,7 +42,7 @@ public class DodgeThis extends BaseCard {
             amount = 1;
         }
         for (int i = 0; i < amount; i++) {
-            addToBot(new DamageAction(m, new DamageInfo(p, customVar("SparkleDodgeThisDamage"), DamageInfo.DamageType.NORMAL)));
+            addToBot(new DamageAction(m, new DamageInfo(p, customVar("DodgeThisDamage"), DamageInfo.DamageType.NORMAL)));
         }
         addToBot(new ApplyPowerAction(p, p, new SparkleUnexpectedPower(p, 1), 1));
     }

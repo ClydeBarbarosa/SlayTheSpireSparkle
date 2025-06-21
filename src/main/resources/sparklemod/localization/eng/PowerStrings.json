@@ -94,5 +94,12 @@
     "DESCRIPTIONS": [
       "Keep your eyes on me, don't even think about looking away!"
     ]
+  },
+  "${modID}:SparkleATallFrostyGlassPower": {
+    "NAME": "... of Just Ice!",
+    "DESCRIPTIONS": [
+      "Gain ",
+      " Thorns each time you are attacked this turn."
+    ]
   }
 }
