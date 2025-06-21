@@ -45,10 +45,18 @@
     "DESCRIPTION": "Randomness in cards is increased by one minimum and maximum per variance (minimum 1, max 999.)"
   },
   {
-    "PROPER:NAME": "Fixed",
+    "PROPER_NAME": "Fixed",
     "NAMES": [
       "Fixed"
     ],
     "DESCRIPTION":"The effect is unaffected by ${modID}:Variance."
+  },
+  {
+    "PROPER_Name": "Soulglad",
+    "NAMES": [
+      "Soulglad",
+      "SoulGlad"
+    ],
+    "DESCRIPTION": "Too much SoulGlad is bad for your health! (Take damage equal to your stacks each turn.)"
   }
 ]

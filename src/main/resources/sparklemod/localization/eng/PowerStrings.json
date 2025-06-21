@@ -101,5 +101,12 @@
       "Gain ",
       " Thorns each time you are attacked this turn."
     ]
+  },
+  "${modID}:SoulGladPower": {
+    "NAME": "Sugar Rush",
+    "DESCRIPTIONS": [
+      "Take ",
+      " damage at the start of your turn. Too much sugar is bad for you!"
+    ]
   }
 }

@@ -208,6 +208,7 @@
   },
   "${modID}:GrabABottle": {
     "NAME": "Grab A Bottle",
-    "DESCRIPTION": "Grab a bottle of SoulGlad~ (Obtain a random potion.) NL Exhaust."
+    "DESCRIPTION": "Grab a bottle of SoulGlad~ NL (Obtain a NL random potion.) NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Grab a bottle of SoulGlad~ NL (Obtain a NL random potion.)"
   }
 }
