@@ -200,5 +200,10 @@
   "${modID}:IOCGainDexterity": {
     "NAME": "Gain Dexterity",
     "DESCRIPTION": "Gain !${modID}:IOCDexGain! Dexterity. Ethereal. Exhaust."
+  },
+  "${modID}:FeignedMadness": {
+    "NAME": "Feigned Madness",
+    "DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn."
   }
 }
