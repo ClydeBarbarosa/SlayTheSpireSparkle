@@ -114,5 +114,11 @@
     "DESCRIPTIONS": [
       "Unable to gain strength this turn."
     ]
+  },
+  "${modID}:WithoutACarePower": {
+    "NAME": "Without A Care",
+    "DESCRIPTIONS": [
+      "Unable to gain block this turn."
+    ]
   }
 }

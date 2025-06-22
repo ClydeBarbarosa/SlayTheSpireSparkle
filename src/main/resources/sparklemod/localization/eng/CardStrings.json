@@ -218,5 +218,9 @@
   "${modID}:BreakDance": {
     "NAME": "Break Dance",
     "DESCRIPTION": "Deal !${modID}:BreakDanceMinDamage! to !${modID}:BreakDanceMaxDamage! damage and inflict !${modID}:BreakDanceVulnerableAmount! vulnerable randomly !${modID}:BreakDanceNumberHits! times."
+  },
+  "${modID}:WithoutACare": {
+    "NAME": "Without A Care",
+    "DESCRIPTION": "You cannot gain any more block this turn. Deal !${modID}:WithoutACareMinDamage! to !${modID}:WithoutACareMaxDamage! damage randomly."
   }
 }

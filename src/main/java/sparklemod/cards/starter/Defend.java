@@ -3,8 +3,10 @@ package sparklemod.cards.starter;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.NoBlockPower;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
+import sparklemod.powers.WithoutACarePower;
 import sparklemod.util.CardStats;
 
 //Defend - skill, 1(2) energy - Gain between 3(5) and 7(11) block randomly.
@@ -35,8 +37,8 @@ public class Defend extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        //int addedBlock = (this.upgraded ? randomIntWithVariance(BLOCK_MAX) : randomIntWithVariance(UPGRADED_BLOCK_MAX));
-        int blockAmount = randomIntWithVariance(customVar("DefendMin"), customVar("DefendMax"));
+        boolean hasNoBlockPower = p.hasPower(NoBlockPower.POWER_ID) || p.hasPower(WithoutACarePower.POWER_ID);
+        int blockAmount = (hasNoBlockPower ? 0 : randomIntWithVariance(customVar("DefendMin"), customVar("DefendMax")));
 
         addToBot(new GainBlockAction(p, p, blockAmount));
     }

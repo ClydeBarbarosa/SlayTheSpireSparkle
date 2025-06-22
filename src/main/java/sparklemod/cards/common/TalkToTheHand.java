@@ -5,8 +5,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.NoBlockPower;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
+import sparklemod.powers.WithoutACarePower;
 import sparklemod.util.CardStats;
 
 //Talk to the hand - skill, 0(1) energy - gain 1-5 block (2-4 times, fixed..)
@@ -43,7 +45,8 @@ public class TalkToTheHand extends BaseCard {
         }
 
         for(int i=0; i < numTimes; i++) {
-            int blockAmount = randomIntWithVariance(MINIMUM_BLOCK, MAXIMUM_BLOCK);
+            boolean hasNoBlockPower = p.hasPower(NoBlockPower.POWER_ID) || p.hasPower(WithoutACarePower.POWER_ID);
+            int blockAmount = (hasNoBlockPower ? 0 : randomIntWithVariance(MINIMUM_BLOCK, MAXIMUM_BLOCK));
             addToBot(new GainBlockAction(p, blockAmount));
         }
     }
