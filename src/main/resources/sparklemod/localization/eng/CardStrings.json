@@ -222,5 +222,10 @@
   "${modID}:WithoutACare": {
     "NAME": "Without A Care",
     "DESCRIPTION": "You cannot gain any more block this turn. Deal !${modID}:WithoutACareMinDamage! to !${modID}:WithoutACareMaxDamage! damage randomly."
+  },
+  "${modID}:ItWasMeDio": {
+    "NAME": "It was me, Dio!",
+    "DESCRIPTION": "Gain Mask. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain Mask."
   }
 }
