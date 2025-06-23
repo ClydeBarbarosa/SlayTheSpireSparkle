@@ -227,5 +227,9 @@
     "NAME": "It was me, Dio!",
     "DESCRIPTION": "Gain Mask. Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain Mask."
+  },
+  "${modID}:OnceMoreWithFeeling": {
+    "NAME": "Once more, with FEELING!",
+    "DESCRIPTION": "Gain *Mask. Deal !${modID}:OnceMoreWithFeelingDamage! damage. Gain 1 *Unexpected."
   }
 }
