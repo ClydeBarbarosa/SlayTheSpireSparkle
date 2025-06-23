@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SparkleMaskPower;
+import sparklemod.powers.MaskPower;
 import sparklemod.util.CardStats;
 
 //Can you find the answer? - skill, 2(1) energy - Gain Mask. Exhaust.
@@ -26,6 +26,6 @@ public class CanYouFindTheAnswer extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new SparkleMaskPower(p, 1)));
+        addToBot(new ApplyPowerAction(p, p, new MaskPower(p, 1)));
     }
 }

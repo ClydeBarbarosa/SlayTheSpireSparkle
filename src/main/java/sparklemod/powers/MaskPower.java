@@ -9,15 +9,15 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static sparklemod.SparkleMod.makeID;
 
-public class SparkleMaskPower extends BasePower {
-    public static final String POWER_ID = makeID(SparkleMaskPower.class.getSimpleName());
+public class MaskPower extends BasePower {
+    public static final String POWER_ID = makeID(MaskPower.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
     private static int negateAmount = 0;
     private static int energyAmount = 0;
 
-    public SparkleMaskPower(AbstractCreature owner, int amount) {
+    public MaskPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
         negateAmount += amount;
         energyAmount += amount;
