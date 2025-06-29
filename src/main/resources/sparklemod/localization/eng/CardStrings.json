@@ -241,5 +241,10 @@
     "NAME": "Red Herring",
     "DESCRIPTION": "Increase your maximum energy by 1.",
     "UPGRADE_DESCRIPTION": "Increase your maximum energy by 1. Gain ${modID}:Mask."
+  },
+  "${modID}:ThousandFacedHero": {
+    "NAME": "Thousand-Faced Hero",
+    "DESCRIPTION": "If you have Red Herring, increase your damage by 10% for each ${modID}:Mask.",
+    "UPGRADE_DESCRIPTION": "If you have Red Herring, increase your damage by 10% for each ${modID}:Mask. Gain ${modID}:Mask."
   }
 }

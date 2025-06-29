@@ -52,11 +52,19 @@
     "DESCRIPTION":"The effect is unaffected by ${modID}:Variance."
   },
   {
-    "PROPER_Name": "Soulglad",
+    "PROPER_NAME": "Soulglad",
     "NAMES": [
       "Soulglad",
       "SoulGlad"
     ],
     "DESCRIPTION": "Too much SoulGlad is bad for your health! (Take damage equal to your stacks each turn.)"
+  },
+  {
+    "PROPER_NAME": "Loaded Dice",
+    "NAMES": [
+      "Loaded Dice",
+      "Loaded_Dice",
+      "loaded_dice"
+    ]
   }
 ]

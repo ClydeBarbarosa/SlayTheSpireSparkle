@@ -18,7 +18,7 @@ public class MaskEnergyGainPower extends BasePower {
 
     public MaskEnergyGainPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
-        energyGain += amount;
+        energyGain++;
         updateDescription();
     }
 

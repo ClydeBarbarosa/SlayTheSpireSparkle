@@ -62,10 +62,9 @@
     "NAME": "Mask",
     "DESCRIPTIONS": [
       "Negate the next ",
-      " time ",
+      "time ",
       " times ",
-      "you take damage from an enemy, then on your next turn randomly gain or lose ",
-      " energy."
+      "you take damage from an enemy, then on your next turn randomly gain or lose 1 energy."
     ]
   },
   "${modID}:MaskEnergyGainPower": {
@@ -126,6 +125,12 @@
     "DESCRIPTIONS": [
       "Increase your maximum energy by ",
       "."
+    ]
+  },
+  "${modID}:ThousandFacedHeroPower": {
+    "NAME": "The Hero with a Thousand Faces",
+    "DESCRIPTIONS": [
+      "Distractions hold the key to massive damage."
     ]
   }
 }
