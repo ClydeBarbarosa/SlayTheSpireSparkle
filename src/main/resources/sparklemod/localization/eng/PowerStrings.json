@@ -120,5 +120,12 @@
     "DESCRIPTIONS": [
       "Unable to gain block this turn."
     ]
+  },
+  "${modID}:RedHerringPower": {
+    "NAME": "Red Herring",
+    "DESCRIPTIONS": [
+      "Increase your maximum energy by ",
+      "."
+    ]
   }
 }

@@ -236,5 +236,10 @@
     "NAME": "Unreliable Narrator",
     "DESCRIPTION": "Gain Intangible. Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain Intangible."
+  },
+  "${modID}:RedHerring": {
+    "NAME": "Red Herring",
+    "DESCRIPTION": "Increase your maximum energy by 1.",
+    "UPGRADE_DESCRIPTION": "Increase your maximum energy by 1. Gain ${modID}:Mask."
   }
 }
