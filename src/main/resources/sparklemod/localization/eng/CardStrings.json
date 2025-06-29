@@ -230,6 +230,11 @@
   },
   "${modID}:OnceMoreWithFeeling": {
     "NAME": "Once more, with FEELING!",
-    "DESCRIPTION": "Gain *Mask. Deal !${modID}:OnceMoreWithFeelingDamage! damage. Gain 1 *Unexpected."
+    "DESCRIPTION": "Gain ${modID}:Mask. Deal !${modID}:OnceMoreWithFeelingDamage! damage. Gain 1 ${modID}:Unexpected."
+  },
+  "${modID}:UnreliableNarrator": {
+    "NAME": "Unreliable Narrator",
+    "DESCRIPTION": "Gain Intangible. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain Intangible."
   }
 }
