@@ -264,5 +264,9 @@
   "${modID}:DressRehearsal": {
     "NAME": "Dress Rehearsal",
     "DESCRIPTION": "Gain !${modID}:DressRehearsalMetallicizeAmount! Metallicize."
+  },
+  "${modID}:SnackBreak": {
+    "NAME": "Snack Break",
+    "DESCRIPTION": "Gain !${modID}:SnackBreakRegenAmount! Regen. Exhaust."
   }
 }
