@@ -249,12 +249,16 @@
   },
   "${modID}:ICanFixHer": {
     "NAME": "I Can Fix Her",
-    "DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, ${modID}:Loaded Dice, or nothing.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, or ${modID}:Loaded Dice."
+    "DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, ${modID}:Loaded_Dice, or nothing.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, or ${modID}:Loaded_Dice."
   },
   "${modID}:StrangeVillain": {
     "NAME": "Strange Villain",
     "DESCRIPTION": "Randomly heal 3 or deal 5 damage to each enemy and yourself.",
     "UPGRADE_DESCRIPTION": "Heal 3. Randomly heal 3 or deal 7 to each enemy."
+  },
+  "${modID}:SheCanBreakMe": {
+    "NAME": "She Can Break Me",
+    "DESCRIPTION": "Each turn, either gain 5 block or gain 1 Frail and 3 Block. Ethereal."
   }
 }
