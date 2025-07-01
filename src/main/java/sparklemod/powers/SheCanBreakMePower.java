@@ -23,7 +23,11 @@ public class SheCanBreakMePower extends BasePower {
 
     public SheCanBreakMePower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
+    }
 
+    @Override
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0];
     }
 
     @Override
