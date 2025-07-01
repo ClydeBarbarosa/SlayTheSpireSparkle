@@ -5,6 +5,7 @@ import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import sparklemod.SparkleMod;
+import sparklemod.powers.LoadedDicePower;
 import sparklemod.powers.VariancePower;
 import sparklemod.util.CardStats;
 import sparklemod.util.TriFunction;
@@ -716,33 +717,43 @@ public abstract class BaseCard extends CustomCard {
     }
 
     //Return an integer affected by the Variance power.
-    public int randomIntWithVariance(int minimum, int maximum) {
+    public static int randomIntWithVariance(int minimum, int maximum) {
         AbstractPlayer p = AbstractDungeon.player;
+        //loaded dice increase the minimum and maximum by 1 per stack
+        int loadedDiceAmount = (p.hasPower(LoadedDicePower.POWER_ID) ? p.getPower(LoadedDicePower.POWER_ID).amount : 0);
+        int varianceAmount = (p.hasPower(VariancePower.POWER_ID) ? p.getPower(VariancePower.POWER_ID).amount : 0);
+
+        int min = (Math.max(minimum - varianceAmount, 0)) + loadedDiceAmount;
+        int max = Math.min(maximum + varianceAmount + loadedDiceAmount, 999);
+
+        return AbstractDungeon.cardRandomRng.random(min, max);
+
+
+        /*
         if(p.hasPower(VariancePower.POWER_ID)) {
             int varianceAmount = p.getPower(VariancePower.POWER_ID).amount;
 
-            int min = (Math.max(minimum - varianceAmount, 0));
-            int max = maximum + varianceAmount;
-
-            return AbstractDungeon.cardRandomRng.random(min, max);
+            //Loaded dice happens after variance.
         }
         else {
             return AbstractDungeon.cardRandomRng.random(minimum, maximum);
         }
+        */
+
     }
 
     //return an integer affected by the Variance power.
-    public int randomIntWithVariance(int maximum) {
+    public static int randomIntWithVariance(int maximum) {
         return randomIntWithVariance(0, maximum);
     }
 
     //Return an integer unaffected by the Variance power.
-    public int randomIntWithoutVariance(int minimum, int maximum) {
+    public static int randomIntWithoutVariance(int minimum, int maximum) {
         return AbstractDungeon.cardRandomRng.random(minimum, maximum);
     }
 
     //Return an integer unaffected by the Variance power.
-    public int randomIntWithoutVariance(int maximum) {
+    public static int randomIntWithoutVariance(int maximum) {
         return AbstractDungeon.cardRandomRng.random(0, maximum);
     }
 }

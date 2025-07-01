@@ -246,5 +246,10 @@
     "NAME": "Thousand-Faced Hero",
     "DESCRIPTION": "If you have Red Herring, increase your damage by 10% for each ${modID}:Mask.",
     "UPGRADE_DESCRIPTION": "If you have Red Herring, increase your damage by 10% for each ${modID}:Mask. Gain ${modID}:Mask."
+  },
+  "${modID}:ICanFixHer": {
+    "NAME": "I Can Fix Her",
+    "DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, ${modID}:Loaded Dice, or nothing.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, or ${modID}:Loaded Dice."
   }
 }

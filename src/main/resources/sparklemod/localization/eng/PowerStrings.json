@@ -77,7 +77,7 @@
   "${modID}:VariancePower": {
     "NAME": "Variance",
     "DESCRIPTION": [
-      "Increase the minimum and maximum amount of your random effects by ",
+      "Reduce the minimum and increase the maximum amount of your random effects by ",
       ". (minimum 0, max 999)"
     ]
   },
@@ -131,6 +131,18 @@
     "NAME": "The Hero with a Thousand Faces",
     "DESCRIPTIONS": [
       "Distractions hold the key to massive damage."
+    ]
+  },
+  "${modID}:ICanFixHerPower": {
+    "NAME": "I can fix her!",
+    "DESCRIPTIONS": [
+      "Each turn, randomly gain Strength, Dexterity, Variance, Loaded Dice, Mask... or nothing! (Stacks reduce chance of nothing)"
+      ]
+  },
+  "${modID}:LoadedDicePower": {
+    "NAME": "Loaded Dice",
+    "DESCRIPTIONS": [
+      "Increase the minimum and maximum of random effects by 1. (Max 999, after variance.)"
     ]
   }
 }
