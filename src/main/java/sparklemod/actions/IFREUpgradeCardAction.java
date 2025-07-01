@@ -5,8 +5,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class SparkleIFREUpgradeCardAction extends AbstractGameAction {
-    public SparkleIFREUpgradeCardAction () {
+public class IFREUpgradeCardAction extends AbstractGameAction {
+    public IFREUpgradeCardAction() {
     }
 
     public void update() {

@@ -81,8 +81,9 @@ public class ICanFixHerPower extends BasePower {
         SparkleMod.logger.info("Failure roll of {}, fail chance of {}/100", failure_roll, failChance);
 
         if (failure_roll > failChance) {
-            int randomBucket = BaseCard.randomIntWithoutVariance(0, buckets.size());
+            int randomBucket = BaseCard.randomIntWithoutVariance(0, buckets.size()-1);
             SparkleMod.logger.info("Bucket roll of {}", randomBucket);
+            SparkleMod.logger.info("Bucket result of {}", buckets.get(randomBucket));
 
             switch (buckets.get(randomBucket)) {
                 case STRENGTH:

@@ -2,7 +2,7 @@ package sparklemod.cards.uncommon;
 
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sparklemod.actions.SparkleFeignedMadnessAction;
+import sparklemod.actions.FeignedMadnessAction;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
@@ -31,6 +31,6 @@ public class FeignedMadness extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SparkleFeignedMadnessAction());
+        addToBot(new FeignedMadnessAction());
     }
 }

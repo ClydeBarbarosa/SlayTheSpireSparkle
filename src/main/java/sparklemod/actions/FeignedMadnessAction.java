@@ -9,12 +9,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import java.util.ArrayList;
 
 //mostly copied from DualWieldAction for how this works
-public class SparkleFeignedMadnessAction extends AbstractGameAction {
+public class FeignedMadnessAction extends AbstractGameAction {
 
     private ArrayList<AbstractCard> cannotReduce = new ArrayList<>();
     private AbstractPlayer p;
 
-    public SparkleFeignedMadnessAction() {
+    public FeignedMadnessAction() {
         this.actionType = ActionType.CARD_MANIPULATION;
         this.p = AbstractDungeon.player;
         this.duration = Settings.ACTION_DUR_FAST;

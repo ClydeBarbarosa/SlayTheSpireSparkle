@@ -3,7 +3,7 @@ package sparklemod.cards.common;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sparklemod.actions.SparkleAnticipationIsKingAction;
+import sparklemod.actions.AnticipationIsKingAction;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
@@ -28,6 +28,6 @@ public class AnticipationIsKing extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SparkleAnticipationIsKingAction(this.upgraded));
+        addToBot(new AnticipationIsKingAction(this.upgraded));
     }
 }

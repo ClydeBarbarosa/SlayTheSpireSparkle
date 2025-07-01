@@ -3,7 +3,7 @@ package sparklemod.cards.uncommon;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import sparklemod.actions.SparkleIFREUpgradeCardAction;
+import sparklemod.actions.IFREUpgradeCardAction;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
@@ -28,6 +28,6 @@ public class ItsFreeRealEstate extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SparkleIFREUpgradeCardAction());
+        addToBot(new IFREUpgradeCardAction());
     }
 }

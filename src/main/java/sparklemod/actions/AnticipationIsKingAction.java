@@ -7,13 +7,13 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class SparkleAnticipationIsKingAction extends AbstractGameAction {
+public class AnticipationIsKingAction extends AbstractGameAction {
     private final boolean upgrade;
 
     private static final int BASE_DAMAGE = 3;
     private static final int UPGRADED_DAMAGE = 6;
 
-    public SparkleAnticipationIsKingAction (boolean upgraded) {
+    public AnticipationIsKingAction(boolean upgraded) {
         this.upgrade = upgraded;
     }
 
