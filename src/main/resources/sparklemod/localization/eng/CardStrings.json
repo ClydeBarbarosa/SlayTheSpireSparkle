@@ -268,5 +268,9 @@
   "${modID}:SnackBreak": {
     "NAME": "Snack Break",
     "DESCRIPTION": "Gain !${modID}:SnackBreakRegenAmount! Regen. Exhaust."
+  },
+  "${modID}:SpanishInquisition": {
+    "NAME": "Spanish Inquisition",
+    "DESCRIPTION": "Randomly trigger one of four effects. ${modID}:Unexpected. Obviously."
   }
 }
