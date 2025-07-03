@@ -29,7 +29,9 @@ public class ICanFixHer extends BaseCard {
     @Override
     public void update() {
         super.update();
-
+        //ran into a crash when looking at this card in the library. Apparently the power IDs aren't established at that point.
+        if(!AbstractDungeon.isPlayerInDungeon())
+            return;
         if(!maxStacks) {
             if (AbstractDungeon.player.hasPower(ICanFixHerPower.POWER_ID)) {
                 if (AbstractDungeon.player.getPower(ICanFixHerPower.POWER_ID).amount <= 0) {
