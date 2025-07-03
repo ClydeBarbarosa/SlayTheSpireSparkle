@@ -49,7 +49,7 @@
     "NAMES": [
       "Fixed"
     ],
-    "DESCRIPTION":"The effect is unaffected by ${modID}:Variance."
+    "DESCRIPTION":"The randomness of this is unaffected by Variance and Loaded_Dice."
   },
   {
     "PROPER_NAME": "Soulglad",
@@ -65,6 +65,15 @@
       "Loaded Dice",
       "Loaded_Dice",
       "loaded_dice"
-    ]
+    ],
+    "DESCRIPTION": "Randomized values are are increased by 1 per stack after they are rolled."
+  },
+  {
+    "PROPER_NAME": "Volatile",
+    "NAMES": [
+      "Volatile",
+      "volatile"
+    ],
+    "DESCRIPTION": "Taking damage removes one stack from this effect."
   }
 ]

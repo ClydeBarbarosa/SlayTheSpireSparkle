@@ -272,5 +272,9 @@
   "${modID}:SpanishInquisition": {
     "NAME": "Spanish Inquisition",
     "DESCRIPTION": "Randomly trigger one of four effects. ${modID}:Unexpected. Obviously."
+  },
+  "${modID}:BombRace": {
+    "NAME": "Bomb Race",
+    "DESCRIPTION": "Gain !${modID}:BombRaceAmount! ${modID}:Volatile bombs that explode after 3 turns."
   }
 }

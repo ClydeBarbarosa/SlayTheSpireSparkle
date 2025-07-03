@@ -150,5 +150,16 @@
     "DESCRIPTIONS": [
       "At the start of your turn, flip a coin. If heads, gain 5 block per stack. If tails, gain 3 block per stack and 1 frail."
     ]
+  },
+  "${modID}:BombRacePower": {
+    "NAME": "Bomb Race",
+    "DESCRIPTIONS": [
+      "Each time you take more than ",
+      " damage, lose a stack. When time runs out, deal ",
+      " damage to all enemies per stack remaining. Explodes after ",
+      "2 turns.",
+      "your next turn.",
+      "this turn."
+    ]
   }
 }
