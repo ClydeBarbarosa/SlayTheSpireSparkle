@@ -276,5 +276,10 @@
   "${modID}:BombRace": {
     "NAME": "Bomb Race",
     "DESCRIPTION": "Gain !${modID}:BombRaceAmount! ${modID}:Volatile bombs that explode after 3 turns."
+  },
+  "${modID}:GoodEnding": {
+    "NAME": "Good Ending",
+    "DESCRIPTION": "Discard your hand, then draw up to !${modID}:GoodEndingCardDraw! cards.",
+    "UPGRADE_DESCRIPTION": "Discard your hand, then draw up to !${modID}:GoodEndingCardDraw! cards. Reduce the cost of cards in your hand by 1 this turn."
   }
 }
