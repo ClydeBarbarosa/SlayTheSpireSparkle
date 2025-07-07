@@ -1,6 +1,7 @@
 package sparklemod.cards.uncommon;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -8,10 +9,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.AnticiPationPower;
+import sparklemod.powers.EnergizedPower;
 import sparklemod.powers.UnexpectedPower;
 import sparklemod.util.CardStats;
 
-//Pation - skill, 0(1) energy - Lose 1 Unexpected. (Gain 1 energy on your next turn.)
+//Pation - skill, 0 energy - Lose 1 Unexpected. (Gain 1 energy on your next turn.)
 //Hidden: Playing "Antici", "SAY IT!", and "PATION!" in the same turn deals 10 damage to all enemies.
 public class Pation extends BaseCard {
     public static final String ID = makeID(Pation.class.getSimpleName());
@@ -20,11 +22,16 @@ public class Pation extends BaseCard {
             AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
             AbstractCard.CardRarity.UNCOMMON, //Rarity. BASIC is for starting cards, then there's COMMON/UNCOMMON/RARE, and then SPECIAL and CURSE. SPECIAL is for cards you only get from events. Curse is for curses, except for special curses like Curse of the Bell and Necronomicurse.
             AbstractCard.CardTarget.NONE, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
-            1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
+            0 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
+
+    private static final int UNEXPECTED_LOSS_AMOUNT = 1;
+    private final static int ENERGY_GAIN = 1;
 
     public Pation() {
         super(ID, info);
+        setCustomVar("PationUnexpectedLossAmount", UNEXPECTED_LOSS_AMOUNT);
+        setCustomVar("PationEnergyGainAmount", ENERGY_GAIN);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
@@ -38,6 +45,12 @@ public class Pation extends BaseCard {
         //addToBot(new ApplyPowerAction(p, p, new AnticiPationPower(p, 1, AnticiPationPower.PARTS.PATION)));
 
         //Remove unexpected
-        addToBot(new RemoveSpecificPowerAction(p, p, UnexpectedPower.POWER_ID));
+        if(p.hasPower(UnexpectedPower.POWER_ID)) {
+            addToBot(new ReducePowerAction(p, p, UnexpectedPower.POWER_ID, 1));
+        }
+        //if upgraded, gain energy
+        if(this.upgraded) {
+            addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, ENERGY_GAIN)));
+        }
     }
 }

@@ -110,8 +110,8 @@
   },
   "${modID}:Pation": {
     "NAME": "PATION!",
-    "DESCRIPTION": "Lose 1 *Unexpected.",
-    "UPGRADE_DESCRIPTION": "Lose 1 ${modID}:Unexpected. Gain 1 energy on your next turn."
+    "DESCRIPTION": "Lose !${modID}:PationUnexpectedLossAmount! ${modID}:Unexpected.",
+    "UPGRADE_DESCRIPTION": "Lose !${modID}:PationUnexpectedLossAmount! ${modID}:Unexpected. Gain !${modID}:PationEnergyGain! energy on your next turn."
   },
   "${modID}:TalkToTheHand": {
     "NAME": "Talk to the Hand",
