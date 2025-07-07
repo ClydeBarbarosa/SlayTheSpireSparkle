@@ -289,5 +289,10 @@
   "${modID}:SoulGlad": {
     "NAME": "Soulglad",
     "DESCRIPTION": "Gain !${modID}:SoulGladVarianceAmount! ${modID}:Variance."
+  },
+  "${modID}:Excitement": {
+    "NAME": "Excitement!",
+    "DESCRIPTION": "At the start of your turn, gain !${modID}:ExcitementBlockAmount! block per stack of Excitement, ${modID}:Variance, ${modID}:Loaded_Dice, ${modID}:Soulglad, and ${modID}:Mask.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !${modID}:ExcitementBlockAmount! block per stack of Excitement, ${modID}:Variance, ${modID}:Loaded_Dice, ${modID}:Soulglad, and ${modID}:Mask, plus !${modID}:ExcitementBlockUpgradeAmount!."
   }
 }

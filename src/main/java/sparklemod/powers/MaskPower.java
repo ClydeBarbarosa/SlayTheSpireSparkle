@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static sparklemod.SparkleMod.makeID;
@@ -44,18 +43,22 @@ public class MaskPower extends BasePower {
 
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        AbstractCreature p = AbstractDungeon.player;
+        //don't negate self damage, aka SoulGlad
+        if(info.owner == owner) {
+            return damageAmount;
+        }
+
         if(amount > 0) {
             //remove one stack, negate the damage, add energy gain action
-            addToBot(new ReducePowerAction(p, p, POWER_ID, 1));
-            addToBot(new ApplyPowerAction(p, p, new MaskEnergyGainPower(p, 1)));
+            addToBot(new ReducePowerAction(owner, owner, POWER_ID, 1));
+            addToBot(new ApplyPowerAction(owner, owner, new MaskEnergyGainPower(owner, 1)));
             if(amount <= 0) {
-                addToBot(new RemoveSpecificPowerAction(p, p, POWER_ID));
+                addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
             }
             return 0;
         }
         else { //failsafe. this shouldn't happen.
-            addToBot(new RemoveSpecificPowerAction(p, p, POWER_ID));
+            addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
             return damageAmount;
         }
     }

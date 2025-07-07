@@ -76,7 +76,7 @@
   },
   "${modID}:VariancePower": {
     "NAME": "Variance",
-    "DESCRIPTION": [
+    "DESCRIPTIONS": [
       "Reduce the minimum and increase the maximum amount of your random effects by ",
       ". (minimum 0, max 999)"
     ]
@@ -160,6 +160,13 @@
       "2 turns.",
       "your next turn.",
       "this turn."
+    ]
+  },
+  "${modID}:ExcitementPower": {
+    "NAME": "Excitement!",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain ",
+      " block."
     ]
   }
 }
