@@ -23,7 +23,7 @@
   },
   "${modID}:LetTheShowBegin": {
     "NAME": "Let the Show Begin",
-    "DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength. *Exhaust.",
+    "DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength."
   },
   "${modID}:PocketSand": {
@@ -56,12 +56,12 @@
   },
   "${modID}:PricklyAudience": {
     "NAME": "Prickly Audience",
-    "DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns. *Exhaust.",
+    "DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns."
   },
   "${modID}:SmilingMask": {
     "NAME": "Smiling Mask",
-    "DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health. *Exhaust.",
+    "DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health."
   },
   "${modID}:AngryMask": {
@@ -80,7 +80,7 @@
   },
   "${modID}:HeadsIWinTailsYouLose": {
     "NAME": "Heads I Win, Tails You Lose!",
-    "DESCRIPTION": "Flip a coin. If heads, gain !${modID}:HIWTYLEnergyGain! energy and draw !${modID}:HIWTYLNumCards! card(s). If tails, deal !D! damage and *Exhaust."
+    "DESCRIPTION": "Flip a coin. If heads, gain !${modID}:HIWTYLEnergyGain! energy and draw !${modID}:HIWTYLNumCards! card(s). If tails, deal !D! damage and NL Exhaust."
   },
   "${modID}:Showstopper": {
     "NAME": "Showstopper",
@@ -121,7 +121,7 @@
   "${modID}:Flexibility": {
     "NAME": "Flexibility",
     "DESCRIPTION": "Gain !${modID}:FlexibilityDexterityAmount! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}:FlexibilityDexterityAmount! Dexterity. NL Draw !${modID}:FlexibilityDrawAmount! card(s). *Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:FlexibilityDexterityAmount! Dexterity. NL Draw !${modID}:FlexibilityDrawAmount! card(s). NL Exhaust."
   },
   "${modID}:JustAPeek": {
     "NAME": "Just a Peek",
@@ -143,7 +143,7 @@
   },
   "${modID}:CanYouFindTheAnswer": {
     "NAME": "Can You Find the Answer?",
-    "DESCRIPTION": "Gain ${modID}:Mask. *Exhaust."
+    "DESCRIPTION": "Gain ${modID}:Mask. NL Exhaust."
   },
   "${modID}:Monodrama": {
     "NAME": "Monodrama",
@@ -169,7 +169,7 @@
   },
   "${modID}:PepTalk": {
     "NAME": "Pep Talk",
-    "DESCRIPTION": "Gain !${modID}:PepTalkArtifactGain! Artifact. Exhaust.",
+    "DESCRIPTION": "Gain !${modID}:PepTalkArtifactGain! Artifact. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !${modID}:PepTalkArtifactGain! Artifact."
   },
   "${modID}:KeepUp": {
@@ -183,7 +183,7 @@
   },
   "${modID}:ItsFreeRealEstate": {
     "NAME": "It's Free Real Estate",
-    "DESCRIPTION": "Upgrade a random card in your hand. *Retain. *Exhaust."
+    "DESCRIPTION": "Retain. NL Upgrade a random card in your hand. NL Exhaust."
   },
   "${modID}:ATallFrostyGlass": {
     "NAME": "A Tall Frosty Glass",
@@ -195,15 +195,15 @@
   },
   "${modID}:IOCLoseStrength": {
     "NAME": "Lose Strength",
-    "DESCRIPTION": "Target enemy loses !${modID}:IOCStrLoss! Strength. Ethereal. Exhaust."
+    "DESCRIPTION": "Target enemy loses !${modID}:IOCStrLoss! Strength. Ethereal. NL Exhaust."
   },
   "${modID}:IOCGainDexterity": {
     "NAME": "Gain Dexterity",
-    "DESCRIPTION": "Gain !${modID}:IOCDexGain! Dexterity. Ethereal. Exhaust."
+    "DESCRIPTION": "Gain !${modID}:IOCDexGain! Dexterity. Ethereal. NL Exhaust."
   },
   "${modID}:FeignedMadness": {
     "NAME": "Feigned Madness",
-    "DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn. Exhaust.",
+    "DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn."
   },
   "${modID}:GrabABottle": {
@@ -225,7 +225,7 @@
   },
   "${modID}:ItWasMeDio": {
     "NAME": "It was me, Dio!",
-    "DESCRIPTION": "Gain Mask. Exhaust.",
+    "DESCRIPTION": "Gain Mask. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain Mask."
   },
   "${modID}:OnceMoreWithFeeling": {
@@ -234,7 +234,7 @@
   },
   "${modID}:UnreliableNarrator": {
     "NAME": "Unreliable Narrator",
-    "DESCRIPTION": "Gain Intangible. Exhaust.",
+    "DESCRIPTION": "Gain Intangible. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain Intangible."
   },
   "${modID}:RedHerring": {
@@ -267,7 +267,7 @@
   },
   "${modID}:SnackBreak": {
     "NAME": "Snack Break",
-    "DESCRIPTION": "Gain !${modID}:SnackBreakRegenAmount! Regen. Exhaust."
+    "DESCRIPTION": "Gain !${modID}:SnackBreakRegenAmount! Regen. NL Exhaust."
   },
   "${modID}:SpanishInquisition": {
     "NAME": "Spanish Inquisition",
