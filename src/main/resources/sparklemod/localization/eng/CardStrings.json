@@ -285,5 +285,9 @@
   "${modID}:BadEnding": {
     "NAME": "Bad Ending",
     "DESCRIPTION": "Discard your hand, then for each card discarded deal !${modID}:BadEndingDamage! minus the card's cost to a random enemy."
+  },
+  "${modID}:SoulGlad": {
+    "NAME": "Soulglad",
+    "DESCRIPTION": "Gain !${modID}:SoulGladVarianceAmount! ${modID}:Variance."
   }
 }
