@@ -4,6 +4,7 @@ package sparklemod.cards.rare;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import sparklemod.actions.ExcitementUpdateAction;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.*;
@@ -33,5 +34,6 @@ public class Excitement extends BaseCard {
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new ExcitementPower(p, 1, this.upgraded)));
+        addToBot(new ExcitementUpdateAction());
     }
 }

@@ -1,8 +1,10 @@
 package sparklemod.powers;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import sparklemod.actions.ExcitementUpdateAction;
 
 import static sparklemod.SparkleMod.makeID;
 
@@ -39,10 +41,19 @@ public class ExcitementPower extends BasePower {
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         this.updateDescription();
+        addToBot(new ExcitementUpdateAction());
+    }
+
+    @Override
+    public void onAfterCardPlayed(AbstractCard usedCard) {
+        addToBot(new ExcitementUpdateAction());
     }
 
     @Override
     public void atStartOfTurn() {
         addToBot(new GainBlockAction(owner, calculateBlock()));
+        //yeah, it looks redundant. It also works. Sometimes one triggers and the other doesn't. I don't know why.
+        updateDescription();
+        addToBot(new ExcitementUpdateAction());
     }
 }

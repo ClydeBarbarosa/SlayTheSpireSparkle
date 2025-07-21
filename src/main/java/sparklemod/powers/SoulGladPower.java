@@ -2,6 +2,7 @@ package sparklemod.powers;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -26,8 +27,8 @@ public class SoulGladPower extends BasePower {
 
     @Override
     public void atStartOfTurn() {
-        super.atStartOfTurn();
         AbstractPlayer p = AbstractDungeon.player;
-        addToBot(new DamageAction(p, new DamageInfo(p, amount, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.POISON));
+        addToBot(new DamageAction(p, new DamageInfo(p, amount, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.POISON));
+        addToBot(new ReducePowerAction(p, p, POWER_ID, 1));
     }
 }
