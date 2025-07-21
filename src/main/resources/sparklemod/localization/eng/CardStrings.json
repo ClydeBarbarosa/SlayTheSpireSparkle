@@ -294,5 +294,10 @@
     "NAME": "Excitement!",
     "DESCRIPTION": "At the start of your turn, gain !${modID}:ExcitementBlockAmount! block per stack of Excitement, ${modID}:Variance, ${modID}:Loaded_Dice, ${modID}:Soulglad, and ${modID}:Mask.",
     "UPGRADE_DESCRIPTION": "At the start of your turn, gain !${modID}:ExcitementBlockAmount! block per stack of Excitement, ${modID}:Variance, ${modID}:Loaded_Dice, ${modID}:Soulglad, and ${modID}:Mask, plus !${modID}:ExcitementBlockUpgradeAmount!."
+  },
+  "${modID}:TheWorldsAStage": {
+    "NAME": "The World's A Stage",
+    "DESCRIPTION": "Discard your hand, then draw that many cards plus one. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard your hand, then draw that many cards plus one."
   }
 }
