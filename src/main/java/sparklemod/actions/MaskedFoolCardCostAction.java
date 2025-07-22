@@ -23,7 +23,7 @@ public class MaskedFoolCardCostAction extends AbstractGameAction {
         boolean cardCanBeReduced = false;
 
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.costForTurn > 0) {
+            if (c.costForTurn > 1) {
                 cardCanBeReduced = true;
                 break;
             }
@@ -36,10 +36,10 @@ public class MaskedFoolCardCostAction extends AbstractGameAction {
         AbstractCard c;
         do {
             c = AbstractDungeon.player.hand.getRandomCard(true);
-        } while (c.costForTurn == 0);
+        } while (c.costForTurn > 1);
 
         power.flash();
-        c.setCostForTurn(0);
+        c.setCostForTurn(1);
         c.flash();
     }
 }

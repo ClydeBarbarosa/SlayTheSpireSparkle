@@ -34,6 +34,6 @@ public class WaitForIt extends BaseCard {
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 1, false)));
-        addToBot(new ApplyPowerAction(p, p, new WaitForItPower(p, 1, this.damage)));
+        addToBot(new ApplyPowerAction(m, p, new WaitForItPower(p, 1, this.damage)));
     }
 }

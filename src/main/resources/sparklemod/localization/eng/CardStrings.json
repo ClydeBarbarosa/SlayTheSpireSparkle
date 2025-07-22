@@ -184,7 +184,7 @@
   "${modID}:MaskedFool": {
     "NAME": "Masked Fool",
     "DESCRIPTION": "At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique.",
-    "UPDATE_DESCRIPTION": "Innate. NL At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique."
+    "UPGRADE_DESCRIPTION": "Innate. NL At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique."
   },
   "${modID}:MeMeMe": {
     "NAME": "Me, Me, Me!",
@@ -209,7 +209,7 @@
   },
   "${modID}:OnceMoreWithFeeling": {
     "NAME": "Once more, with FEELING!",
-    "DESCRIPTION": "Gain ${modID}:Mask. Deal !${modID}:OnceMoreWithFeelingDamage! Damage. Gain 1 ${modID}:Unexpected."
+    "DESCRIPTION": "Deal !${modID}:OnceMoreWithFeelingDamage! Damage. Gain 1 ${modID}:Unexpected."
   },
   "${modID}:Pation": {
     "NAME": "PATION!",
