@@ -32,7 +32,7 @@ public class ExcitementPower extends BasePower {
         int number_of_stacks = this.amount +
                 (owner.hasPower(VariancePower.POWER_ID) ? owner.getPower(VariancePower.POWER_ID).amount : 0) +
                 (owner.hasPower(LoadedDicePower.POWER_ID) ? owner.getPower(LoadedDicePower.POWER_ID).amount : 0) +
-                (owner.hasPower(SoulGladPower.POWER_ID) ? owner.getPower(SoulGladPower.POWER_ID).amount : 0) +
+                (owner.hasPower(SugarRushPower.POWER_ID) ? owner.getPower(SugarRushPower.POWER_ID).amount : 0) +
                 (owner.hasPower(MaskPower.POWER_ID) ? owner.getPower(MaskPower.POWER_ID).amount : 0);
 
         return BLOCK_AMOUNT_PER_STACK * number_of_stacks + (this.upgraded ? UPGRADED_BLOCK_BONUS : 0);
