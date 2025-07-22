@@ -19,29 +19,27 @@ public class Defend extends BaseCard {
             CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
-
+/*
     private static final int BLOCK = 3;
     private static final int UPGRADED_BLOCK = 4;
     private static final int BLOCK_MAX = 7;
     private static final int UPGRADED_BLOCK_MAX = 4;
-
+*/
     private static final int FIXED_BLOCK = 5;
     private static final int UPGRADED_FIXED_BLOCK = 3;
 
     public Defend() {
         super(ID, info);
 
-        setCustomVar("DefendMin", BLOCK, UPGRADED_BLOCK);
-        setCustomVar("DefendMax",BLOCK_MAX, UPGRADED_BLOCK_MAX);
+        //setCustomVar("DefendMin", BLOCK, UPGRADED_BLOCK);
+        //setCustomVar("DefendMax",BLOCK_MAX, UPGRADED_BLOCK_MAX);
         setBlock(FIXED_BLOCK, UPGRADED_FIXED_BLOCK);
-
-        setCostUpgrade(2);
 
         tags.add(CardTags.STARTER_DEFEND);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        boolean hasNoBlockPower = p.hasPower(NoBlockPower.POWER_ID) || p.hasPower(WithoutACarePower.POWER_ID);
+        //boolean hasNoBlockPower = p.hasPower(NoBlockPower.POWER_ID) || p.hasPower(WithoutACarePower.POWER_ID);
         //int blockAmount = (hasNoBlockPower ? 0 : randomIntWithVariance(customVar("DefendMin"), customVar("DefendMax")));
         //int blockAmount = (this.upgraded ? FIXED_BLOCK : UPGRADED_FIXED_BLOCK);
 
