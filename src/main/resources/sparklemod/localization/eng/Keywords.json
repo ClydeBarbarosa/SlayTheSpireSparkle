@@ -75,5 +75,13 @@
       "volatile"
     ],
     "DESCRIPTION": "Taking damage removes one stack from this effect."
+  },
+  {
+    "PROPER_NAME": "Unique",
+    "NAMES": [
+      "Unique",
+      "unique"
+    ],
+    "DESCRIPTION": "Only one instance of this effect can exist at a time."
   }
 ]

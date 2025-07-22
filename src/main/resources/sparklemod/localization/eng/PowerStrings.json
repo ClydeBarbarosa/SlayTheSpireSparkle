@@ -168,5 +168,11 @@
       "At the start of your turn, gain ",
       " block."
     ]
+  },
+  "${modID}:MeMeMePower": {
+    "NAME": "So Nice I Played It Twice",
+    "DESCRIPTIONS": [
+      "For the rest of the turn, repeat each card you play once."
+    ]
   }
 }
