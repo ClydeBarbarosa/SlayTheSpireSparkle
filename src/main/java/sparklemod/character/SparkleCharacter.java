@@ -143,11 +143,11 @@ public class SparkleCharacter extends CustomPlayer {
         //If you want multiple of the same card, you have to add it multiple times.
 
         //tester cards
-        retVal.add(FeignedMadness.ID);
-        retVal.add(ItsFreeRealEstate.ID);
-        retVal.add(ItsFreeRealEstate.ID);
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
+        //retVal.add(FeignedMadness.ID);
+        //retVal.add(ItsFreeRealEstate.ID);
+        //retVal.add(ItsFreeRealEstate.ID);
+        //retVal.add(Defend.ID);
+        //retVal.add(Defend.ID);
 
         /*
         //TesterCard Bank set
@@ -158,7 +158,7 @@ public class SparkleCharacter extends CustomPlayer {
         retVal.add(Defend.ID);
         */
 
-        /*
+
         //Actual starter deck
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
@@ -170,7 +170,7 @@ public class SparkleCharacter extends CustomPlayer {
         retVal.add(LetTheShowBegin.ID);
         retVal.add(SixGunRoulette.ID);
         retVal.add(PocketSand.ID);
-        */
+
 
         return retVal;
     }
