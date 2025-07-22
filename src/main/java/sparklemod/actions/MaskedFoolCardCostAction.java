@@ -4,7 +4,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import sparklemod.cards.rare.MaskedFool;
 
 public class MaskedFoolCardCostAction extends AbstractGameAction {
 
@@ -24,7 +23,7 @@ public class MaskedFoolCardCostAction extends AbstractGameAction {
         boolean cardCanBeReduced = false;
 
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.cost > 0) {
+            if (c.costForTurn > 0) {
                 cardCanBeReduced = true;
                 break;
             }
@@ -37,7 +36,7 @@ public class MaskedFoolCardCostAction extends AbstractGameAction {
         AbstractCard c;
         do {
             c = AbstractDungeon.player.hand.getRandomCard(true);
-        } while (c.cost == 0);
+        } while (c.costForTurn == 0);
 
         power.flash();
         c.setCostForTurn(0);

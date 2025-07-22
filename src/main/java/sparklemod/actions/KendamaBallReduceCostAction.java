@@ -22,7 +22,7 @@ public class KendamaBallReduceCostAction extends AbstractGameAction {
         }
 
         AbstractCard c = AbstractDungeon.player.hand.getRandomCard(true);
-        if (c.cost > 0) {
+        if (c.costForTurn > 0) {
             owner.flash();
             c.flash();
             c.updateCost(-1);
