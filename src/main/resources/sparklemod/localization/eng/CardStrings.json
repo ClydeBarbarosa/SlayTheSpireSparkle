@@ -308,5 +308,9 @@
   "${modID}:HereHoldThis": {
     "NAME": "Here, Hold This!",
     "DESCRIPTION": "Give target enemy a Sparkle Doll that explodes in 1-3 turns for !${modID}:HereHoldThisDamage! damage."
+  },
+  "${modID}:UnexpectedDividend": {
+    "NAME": "Unexpected Dividend",
+    "DESCRIPTION": "Draw a card. ${modID}:Unexpected."
   }
 }
