@@ -1,44 +1,9 @@
 {
-  "${modID}:PowerID": {
-    "NAME": "Ultimate Power",
+  "${modID}:ATallFrostyGlassPower": {
+    "NAME": "... of Just Ice!",
     "DESCRIPTIONS": [
-      "You are Very Cool and Strong."
-    ]
-  },
-  "${modID}:EnergizedPower": {
-    "NAME": "Energized",
-    "DESCRIPTIONS": [
-      "Gain #b",
-      " energy next turn."
-    ]
-  },
-  "${modID}:UnexpectedPower": {
-    "NAME": "Unexpected",
-    "DESCRIPTIONS": [
-      "Repeat unexpected cards #b",
-      " times."
-    ]
-  },
-  "${modID}:WaitForItPower": {
-    "NAME": "Wait For It...",
-    "DESCRIPTIONS": [
-      "At the start of each turn, increase the cost of a random card in your hand by ",
-      "."
-    ]
-  },
-  "${modID}:LeaveItToChancePower": {
-    "NAME": "Leave it to Chance",
-    "DESCRIPTIONS": [
-      "At the start of your turn, flip a coin. On heads, gain ",
-      " energy, on tails, gain ",
-      " block."
-    ]
-  },
-  "${modID}:HurryUpPower": {
-    "NAME": "Hurry Up!",
-    "DESCRIPTIONS": [
-      "Retain your hand. At the start of your turn, gain ",
-      " energy."
+      "Gain ",
+      " Thorns each time you are attacked this turn."
     ]
   },
   "${modID}:AnticiPationPower": {
@@ -48,107 +13,6 @@
       " Antici... ",
       " SAY IT! ",
       " PATION!"
-    ]
-  },
-  "${modID}:OnTheOtherPatiencePower": {
-    "NAME": "On the Other, Patience",
-    "DESCRIPTIONS": [
-      "At the start of your next turn, gain ",
-      " to ",
-      " temporary Strength."
-    ]
-  },
-  "${modID}:MaskPower": {
-    "NAME": "Mask",
-    "DESCRIPTIONS": [
-      "Negate the next ",
-      "time ",
-      " times ",
-      "you take damage from an enemy attack, then on your next turn randomly gain or lose 1 energy."
-    ]
-  },
-  "${modID}:MaskEnergyGainPower": {
-    "NAME": "Masked Energy Gain",
-    "DESCRIPTIONS": [
-      "On your next turn randomly gain or lose ",
-      " energy."
-    ]
-  },
-  "${modID}:VariancePower": {
-    "NAME": "Variance",
-    "DESCRIPTIONS": [
-      "Reduce the minimum and increase the maximum amount of your random effects by ",
-      ". (minimum 0, max 999)"
-    ]
-  },
-  "${modID}:DreamdiverPower": {
-    "NAME": "Dreamdiver",
-    "DESCRIPTIONS": [
-      "Increase the damage of your next attack this turn by ",
-      " %."
-    ]
-  },
-  "${modID}:DefenselessPower": {
-    "NAME": "Defenseless",
-    "DESCRIPTIONS": [
-      "Keep your eyes on me, don't even think about looking away!"
-    ]
-  },
-  "${modID}:ATallFrostyGlassPower": {
-    "NAME": "... of Just Ice!",
-    "DESCRIPTIONS": [
-      "Gain ",
-      " Thorns each time you are attacked this turn."
-    ]
-  },
-  "${modID}:SoulGladPower": {
-    "NAME": "Sugar Rush",
-    "DESCRIPTIONS": [
-      "Take ",
-      " damage at the start of your turn. Too much sugar is bad for you!"
-    ]
-  },
-  "${modID}:CaptivatingPerformancePower": {
-    "NAME": "Captivated",
-    "DESCRIPTIONS": [
-      "Unable to gain strength this turn."
-    ]
-  },
-  "${modID}:WithoutACarePower": {
-    "NAME": "Without A Care",
-    "DESCRIPTIONS": [
-      "Unable to gain block this turn."
-    ]
-  },
-  "${modID}:RedHerringPower": {
-    "NAME": "Red Herring",
-    "DESCRIPTIONS": [
-      "Increase your maximum energy by ",
-      "."
-    ]
-  },
-  "${modID}:ThousandFacedHeroPower": {
-    "NAME": "The Hero with a Thousand Faces",
-    "DESCRIPTIONS": [
-      "Distractions hold the key to massive damage."
-    ]
-  },
-  "${modID}:ICanFixHerPower": {
-    "NAME": "I can fix her!",
-    "DESCRIPTIONS": [
-      "Each turn, randomly gain Strength, Dexterity, Variance, Loaded Dice, Mask... or nothing! (Stacks reduce chance of nothing)"
-      ]
-  },
-  "${modID}:LoadedDicePower": {
-    "NAME": "Loaded Dice",
-    "DESCRIPTIONS": [
-      "Increase the minimum and maximum of random effects by 1. (Max 999, after variance.)"
-    ]
-  },
-  "${modID}:SheCanBreakMePower": {
-    "NAME": "It hurts so good...",
-    "DESCRIPTIONS": [
-      "At the start of your turn, flip a coin. If heads, gain 5 block per stack. If tails, gain 3 block per stack and 1 frail."
     ]
   },
   "${modID}:BombRacePower": {
@@ -162,17 +26,37 @@
       "this turn."
     ]
   },
+  "${modID}:CaptivatingPerformancePower": {
+    "NAME": "Captivated",
+    "DESCRIPTIONS": [
+      "Unable to gain strength this turn."
+    ]
+  },
+  "${modID}:DefenselessPower": {
+    "NAME": "Defenseless",
+    "DESCRIPTIONS": [
+      "Keep your eyes on me, don't even think about looking away!"
+    ]
+  },
+  "${modID}:DreamdiverPower": {
+    "NAME": "Dreamdiver",
+    "DESCRIPTIONS": [
+      "Increase the damage of your next attack this turn by ",
+      " %."
+    ]
+  },
+  "${modID}:EnergizedPower": {
+    "NAME": "Energized",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " energy next turn."
+    ]
+  },
   "${modID}:ExcitementPower": {
     "NAME": "Excitement!",
     "DESCRIPTIONS": [
       "At the start of your turn, gain ",
       " block."
-    ]
-  },
-  "${modID}:MeMeMePower": {
-    "NAME": "So Nice I Played It Twice",
-    "DESCRIPTIONS": [
-      "For the rest of the turn, repeat each card you play once."
     ]
   },
   "${modID}:HereHoldThisPower": {
@@ -185,10 +69,126 @@
       " damage to all enemies."
     ]
   },
+  "${modID}:HurryUpPower": {
+    "NAME": "Hurry Up!",
+    "DESCRIPTIONS": [
+      "Retain your hand. At the start of your turn, gain ",
+      " energy."
+    ]
+  },
+  "${modID}:ICanFixHerPower": {
+    "NAME": "I can fix her!",
+    "DESCRIPTIONS": [
+      "Each turn, randomly gain Strength, Dexterity, Variance, Loaded Dice, Mask... or nothing! (Stacks reduce chance of nothing)"
+    ]
+  },
+  "${modID}:LeaveItToChancePower": {
+    "NAME": "Leave it to Chance",
+    "DESCRIPTIONS": [
+      "At the start of your turn, flip a coin. On heads, gain ",
+      " energy, on tails, gain ",
+      " block."
+    ]
+  },
+  "${modID}:LoadedDicePower": {
+    "NAME": "Loaded Dice",
+    "DESCRIPTIONS": [
+      "Increase the minimum and maximum of random effects by 1. (Max 999, after variance.)"
+    ]
+  },
+  "${modID}:MaskEnergyGainPower": {
+    "NAME": "Masked Energy Gain",
+    "DESCRIPTIONS": [
+      "On your next turn randomly gain or lose ",
+      " energy."
+    ]
+  },
+  "${modID}:MaskPower": {
+    "NAME": "Mask",
+    "DESCRIPTIONS": [
+      "Negate the next ",
+      "time ",
+      " times ",
+      "you take damage from an enemy attack, then on your next turn randomly gain or lose 1 energy."
+    ]
+  },
   "${modID}:MaskedFoolPower": {
     "NAME": "Sparkle, the Masked Fool",
     "DESCRIPTIONS": [
       "At the start of your turn, reduce the cost of a random card to 0 for this turn."
+    ]
+  },
+  "${modID}:MeMeMePower": {
+    "NAME": "So Nice I Played It Twice",
+    "DESCRIPTIONS": [
+      "For the rest of the turn, repeat each card you play once."
+    ]
+  },
+  "${modID}:OnTheOtherPatiencePower": {
+    "NAME": "On the Other, Patience",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, gain ",
+      " to ",
+      " temporary Strength."
+    ]
+  },
+  "${modID}:PowerID": {
+    "NAME": "Ultimate Power",
+    "DESCRIPTIONS": [
+      "You are Very Cool and Strong."
+    ]
+  },
+  "${modID}:RedHerringPower": {
+    "NAME": "Red Herring",
+    "DESCRIPTIONS": [
+      "Increase your maximum energy by ",
+      "."
+    ]
+  },
+  "${modID}:SheCanBreakMePower": {
+    "NAME": "It hurts so good...",
+    "DESCRIPTIONS": [
+      "At the start of your turn, flip a coin. If heads, gain 5 block per stack. If tails, gain 3 block per stack and 1 frail."
+    ]
+  },
+  "${modID}:SoulGladPower": {
+    "NAME": "Sugar Rush",
+    "DESCRIPTIONS": [
+      "Take ",
+      " damage at the start of your turn. Too much sugar is bad for you!"
+    ]
+  },
+  "${modID}:ThousandFacedHeroPower": {
+    "NAME": "The Hero with a Thousand Faces",
+    "DESCRIPTIONS": [
+      "Distractions hold the key to massive damage."
+    ]
+  },
+  "${modID}:UnexpectedPower": {
+    "NAME": "Unexpected",
+    "DESCRIPTIONS": [
+      "Repeat unexpected cards #b",
+      " times."
+    ]
+  },
+  "${modID}:VariancePower": {
+    "NAME": "Variance",
+    "DESCRIPTIONS": [
+      "Reduce the minimum and increase the maximum amount of your random effects by ",
+      ". (minimum 0, max 999)"
+    ]
+  },
+  "${modID}:WaitForItPower": {
+    "NAME": "Wait For It...",
+    "DESCRIPTIONS": [
+      "At the start of each turn, increase the cost of a random card in your hand by ",
+      "."
+    ]
+  },
+  "${modID}:WithoutACarePower": {
+    "NAME": "Without A Care",
+    "DESCRIPTIONS": [
+      "Unable to gain block this turn."
     ]
   }
 }

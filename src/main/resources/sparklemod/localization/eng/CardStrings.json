@@ -1,4 +1,82 @@
 {
+  "${modID}:ATallFrostyGlass": {
+    "NAME": "A Tall Frosty Glass",
+    "DESCRIPTION": "... Of Just Ice! Gain !${modID}:ATallFrostyGlassThornsAmount! Thorns each time you are attacked this turn."
+  },
+  "${modID}:AllOfLifeIsAStage": {
+    "NAME": "All of Life is a Stage",
+    "DESCRIPTION": "Randomly gain from !${modID}:AoLiaSStrengthMinimum! to !${modID}:AoLiaSStrengthMaximum! Strength and NL !${modID}:AoLiaSDexterityMinimum! to !${modID}:AoLiaSDexterityMaximum! Dexterity. NL ${modID}:Fixed.",
+    "EXTENDED_DESCRIPTION": [
+      "FAILURE"
+    ]
+  },
+  "${modID}:AngryMask": {
+    "NAME": "Angry Mask",
+    "DESCRIPTION": "Deal !${modID}:AngryMaskMinimumDamage! to !${modID}:AngryMaskMaximumDamage! damage twice.",
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:AngryMaskMinimumDamage! to !${modID}:AngryMaskMaximumDamage! damage three times."
+  },
+  "${modID}:Antici": {
+    "NAME": "Antici-",
+    "DESCRIPTION": "Gain 1 ${modID}:Unexpected."
+  },
+  "${modID}:AnticipationIsKing": {
+    "NAME": "Anticipation is King",
+    "DESCRIPTION": "Discard your hand. Deal !D! for each card discarded to a random enemy."
+  },
+  "${modID}:BadEnding": {
+    "NAME": "Bad Ending",
+    "DESCRIPTION": "Discard your hand, then for each card discarded deal !${modID}:BadEndingDamage! minus the card's cost to a random enemy."
+  },
+  "${modID}:BombRace": {
+    "NAME": "Bomb Race",
+    "DESCRIPTION": "Gain !${modID}:BombRaceAmount! ${modID}:Volatile bombs that explode after 3 turns."
+  },
+  "${modID}:BreakDance": {
+    "NAME": "Break Dance",
+    "DESCRIPTION": "Deal !${modID}:BreakDanceMinDamage! to !${modID}:BreakDanceMaxDamage! damage and inflict !${modID}:BreakDanceVulnerableAmount! vulnerable randomly !${modID}:BreakDanceNumberHits! times."
+  },
+  "${modID}:CanYouFindTheAnswer": {
+    "NAME": "Can You Find the Answer?",
+    "DESCRIPTION": "Gain ${modID}:Mask. NL Exhaust."
+  },
+  "${modID}:CaptivatingPerformance": {
+    "NAME": "Captivating Performance",
+    "DESCRIPTION": "Target enemy cannot gain strength this turn."
+  },
+  "${modID}:DancePartner": {
+    "NAME": "Dance Partner",
+    "DESCRIPTION": "For each enemy, if it is attacking, inflict !${modID}:DancePartnerAmount! Weak, otherwise inflict !${modID}:DancePartnerAmount! Vulnerable."
+  },
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! block."
+  },
+  "${modID}:Defenseless": {
+    "NAME": "Defenseless",
+    "DESCRIPTION": "Remove all block from target enemy.",
+    "UPGRADE_DESCRIPTION": "Remove all block from target enemy. Do it again at the start of your turn."
+  },
+  "${modID}:DodgeThis": {
+    "NAME": "Dodge This!",
+    "DESCRIPTION": "Smack the target with a car for !${modID}:DodgeThisDamage! damage. Gain 1 ${modID}:Unexpected."
+  },
+  "${modID}:DommyVibes": {
+    "NAME": "Dommy Vibes",
+    "DESCRIPTION": "Inflict !${modID}:DommyVibesWeakAmount! Weak and NL !${modID}:DommyVibesVulnerableAmount! Vulnerable to an enemy."
+  },
+  "${modID}:DontInCrazy": {
+    "NAME": "Don't In Crazy",
+    "DESCRIPTION": "Deal !${modID}:DontInCrazyMinDamage! to !${modID}:DontInCrazyMaxDamage! damage to !${modID}:DontInCrazyNumHits! random targets. Gain !${modID}:DontInCrazyBlockAmount! block for each unblocked hit."
+  },
+  "${modID}:Dreamdiver": {
+    "NAME": "Dreamdiver",
+    "DESCRIPTION": "Increase the damage of your next attack this turn by 25%.",
+    "UPGRADE_DESCRIPTION": "Increase the damage of your next attack this turn by 50%."
+  },
+  "${modID}:DressRehearsal": {
+    "NAME": "Dress Rehearsal",
+    "DESCRIPTION": "Gain !${modID}:DressRehearsalMetallicizeAmount! Metallicize."
+  },
   "${modID}:ExampleCard": {
     "NAME": "Name",
     "DESCRIPTION": "Description. NL Second line.",
@@ -9,119 +87,76 @@
       "Blizzard is a good example for this."
     ]
   },
-  "${modID}:Strike": {
-    "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage to the target, then deal !${modID}:StrikeSecondHitDamage! damage to a second random target."
+  "${modID}:Excitement": {
+    "NAME": "Excitement!",
+    "DESCRIPTION": "At the start of your turn, gain !${modID}:ExcitementBlockAmount! block per stack of Excitement, ${modID}:Variance, ${modID}:Loaded_Dice, ${modID}:Soulglad, and ${modID}:Mask.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !${modID}:ExcitementBlockAmount! block per stack of Excitement, ${modID}:Variance, ${modID}:Loaded_Dice, ${modID}:Soulglad, and ${modID}:Mask, plus !${modID}:ExcitementBlockUpgradeAmount!."
   },
-  "${modID}:SixGunRoulette": {
-    "NAME": "Six Gun Roulette",
-    "DESCRIPTION": "Choose a target at random to lose !D! HP. If  damages herself, gain !B! block."
-  },
-  "${modID}:Defend": {
-    "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! block."
-  },
-  "${modID}:LetTheShowBegin": {
-    "NAME": "Let the Show Begin",
-    "DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength."
-  },
-  "${modID}:PocketSand": {
-    "NAME": "Pocket Sand",
-    "DESCRIPTION": "Deal !${modID}:PocketSandDamage! - !${modID}:PocketSandMaxDamage! damage and inflict !${modID}:PocketSandWeak! - !${modID}:PocketSandMaxWeak! Weak."
-  },
-  "${modID}:MischievousGrin": {
-    "NAME": "Mischievous Grin",
-    "DESCRIPTION": "Gain 2 energy next turn."
-  },
-  "${modID}:HeelKick": {
-    "NAME": "Heel Kick",
-    "DESCRIPTION": "Deal !D! damage, then randomly apply either !${modID}:HeelKickWeak! Weak or NL !${modID}:HeelKickVulnerable! Vulnerable. ${modID}:Unexpected."
-  },
-  "${modID}:ThisIsBoring": {
-    "NAME": "This is Boring!",
-    "DESCRIPTION": "Increase the cost of all cards in your hand by 1 for this combat."
-  },
-  "${modID}:WaitForIt": {
-    "NAME": "Wait For It",
-    "DESCRIPTION": "Each turn, increase the cost of a random card in your hand by 1 for the rest of combat."
-  },
-  "${modID}:AnticipationIsKing": {
-    "NAME": "Anticipation is King",
-    "DESCRIPTION": "Discard your hand. Deal !D! for each card discarded to a random enemy."
-  },
-  "${modID}:DommyVibes": {
-    "NAME": "Dommy Vibes",
-    "DESCRIPTION": "Inflict !${modID}:DommyVibesWeakAmount! Weak and NL !${modID}:DommyVibesVulnerableAmount! Vulnerable to an enemy."
-  },
-  "${modID}:PricklyAudience": {
-    "NAME": "Prickly Audience",
-    "DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns."
-  },
-  "${modID}:SmilingMask": {
-    "NAME": "Smiling Mask",
-    "DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health."
-  },
-  "${modID}:AngryMask": {
-    "NAME": "Angry Mask",
-    "DESCRIPTION": "Deal !${modID}:AngryMaskMinimumDamage! to !${modID}:AngryMaskMaximumDamage! damage twice.",
-    "UPGRADE_DESCRIPTION": "Deal !${modID}:AngryMaskMinimumDamage! to !${modID}:AngryMaskMaximumDamage! damage three times."
-  },
-  "${modID}:SadMask": {
-    "NAME": "Sad Mask",
-    "DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself and the target enemy. NL ${modID}:Fixed.",
-    "UPGRADE_DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself once and the target enemy twice. NL ${modID}:Fixed"
-  },
-  "${modID}:LeaveItToChance": {
-    "NAME": "Leave it to Chance!",
-    "DESCRIPTION": "At the start of your turn, flip a coin. If heads, gain 1 energy, if tails, gain !${modID}:LeaveItToChanceBlockAmount! block."
-  },
-  "${modID}:HeadsIWinTailsYouLose": {
-    "NAME": "Heads I Win, Tails You Lose!",
-    "DESCRIPTION": "Flip a coin. If heads, gain !${modID}:HIWTYLEnergyGain! energy and draw !${modID}:HIWTYLNumCards! card(s). If tails, deal !D! damage and NL Exhaust."
-  },
-  "${modID}:Showstopper": {
-    "NAME": "Showstopper",
-    "DESCRIPTION": "Deal !D! damage for each card costing 0 energy in your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice for each card costing 0 energy in your hand."
+  "${modID}:FeignedMadness": {
+    "NAME": "Feigned Madness",
+    "DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn."
   },
   "${modID}:FireworksDisplay": {
     "NAME": "Fireworks Display",
     "DESCRIPTION": "Deal !D! damage to all enemies !${modID}:FireworksDisplayNumBaseHits! to !${modID}:FireworksDisplayNumMaxHits! times. NL ${modID}:Fixed."
   },
-  "${modID}:HurryUp": {
-    "NAME": "Hurry Up!",
-    "DESCRIPTION": "*Retain your energy and hand, then end your turn."
-  },
-  "${modID}:AllOfLifeIsAStage": {
-    "NAME": "All of Life is a Stage",
-    "DESCRIPTION": "Randomly gain from !${modID}:AoLiaSStrengthMinimum! to !${modID}:AoLiaSStrengthMaximum! Strength and NL !${modID}:AoLiaSDexterityMinimum! to !${modID}:AoLiaSDexterityMaximum! Dexterity. NL ${modID}:Fixed.",
-    "EXTENDED_DESCRIPTION": [ "FAILURE" ]
-  },
-  "${modID}:Antici": {
-    "NAME": "Antici-",
-    "DESCRIPTION": "Gain 1 ${modID}:Unexpected."
-  },
-  "${modID}:SayIt": {
-    "NAME": "SAY IT!",
-    "DESCRIPTION": "If you have unexpected, inflict NL !${modID}:SayItMinimumWeak! to !${modID}:SayItMaximumWeak! Weak on a random enemy. NL ${modID}:Fixed."
-  },
-  "${modID}:Pation": {
-    "NAME": "PATION!",
-    "DESCRIPTION": "Lose !${modID}:PationUnexpectedLossAmount! ${modID}:Unexpected.",
-    "UPGRADE_DESCRIPTION": "Lose !${modID}:PationUnexpectedLossAmount! ${modID}:Unexpected. Gain !${modID}:PationEnergyGain! energy on your next turn."
-  },
-  "${modID}:TalkToTheHand": {
-    "NAME": "Talk to the Hand",
-    "DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block. NL Repeat a ${modID}:Fixed !${modID}:TalkToTheHandMinimumBlockTimes! to !${modID}:TalkToTheHandMaximumBlockTimes! times."
-  },
   "${modID}:Flexibility": {
     "NAME": "Flexibility",
     "DESCRIPTION": "Gain !${modID}:FlexibilityDexterityAmount! Dexterity.",
     "UPGRADE_DESCRIPTION": "Gain !${modID}:FlexibilityDexterityAmount! Dexterity. NL Draw !${modID}:FlexibilityDrawAmount! card(s). NL Exhaust."
+  },
+  "${modID}:GoodEnding": {
+    "NAME": "Good Ending",
+    "DESCRIPTION": "Discard your hand, then draw up to !${modID}:GoodEndingCardDraw! cards.",
+    "UPGRADE_DESCRIPTION": "Discard your hand, then draw up to !${modID}:GoodEndingCardDraw! cards. Reduce the cost of cards in your hand by 1 this turn."
+  },
+  "${modID}:GrabABottle": {
+    "NAME": "Grab A Bottle",
+    "DESCRIPTION": "Grab a bottle of SoulGlad~ NL (Obtain a NL random potion.) NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Grab a bottle of SoulGlad~ NL (Obtain a NL random potion.)"
+  },
+  "${modID}:HeadsIWinTailsYouLose": {
+    "NAME": "Heads I Win, Tails You Lose!",
+    "DESCRIPTION": "Flip a coin. If heads, gain !${modID}:HIWTYLEnergyGain! energy and draw !${modID}:HIWTYLNumCards! card(s). If tails, deal !D! damage and NL Exhaust."
+  },
+  "${modID}:HeelKick": {
+    "NAME": "Heel Kick",
+    "DESCRIPTION": "Deal !D! damage, then randomly apply either !${modID}:HeelKickWeak! Weak or NL !${modID}:HeelKickVulnerable! Vulnerable. ${modID}:Unexpected."
+  },
+  "${modID}:HereHoldThis": {
+    "NAME": "Here, Hold This!",
+    "DESCRIPTION": "Give target enemy a Sparkle Doll that explodes in 1-3 turns for !${modID}:HereHoldThisDamage! damage."
+  },
+  "${modID}:HurryUp": {
+    "NAME": "Hurry Up!",
+    "DESCRIPTION": "*Retain your energy and hand, then end your turn."
+  },
+  "${modID}:ICanFixHer": {
+    "NAME": "I Can Fix Her",
+    "DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, ${modID}:Loaded_Dice, or nothing.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, or ${modID}:Loaded_Dice."
+  },
+  "${modID}:IOCGainDexterity": {
+    "NAME": "Gain Dexterity",
+    "DESCRIPTION": "Gain !${modID}:IOCDexGain! Dexterity. Ethereal. NL Exhaust."
+  },
+  "${modID}:IOCLoseStrength": {
+    "NAME": "Lose Strength",
+    "DESCRIPTION": "Target enemy loses !${modID}:IOCStrLoss! Strength. Ethereal. NL Exhaust."
+  },
+  "${modID}:IllusionOfChoice": {
+    "NAME": "Illusion Of Choice",
+    "DESCRIPTION": "Choose: Target an enemy (who loses !${modID}:IllusionOfChoiceStrengthAmount! Strength) or yourself (to gain !${modID}:IllusionOfChoiceDexterityAmount! Dexterity.)"
+  },
+  "${modID}:ItWasMeDio": {
+    "NAME": "It was me, Dio!",
+    "DESCRIPTION": "Gain Mask. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain Mask."
+  },
+  "${modID}:ItsFreeRealEstate": {
+    "NAME": "It's Free Real Estate",
+    "DESCRIPTION": "Retain. NL Upgrade a random card in your hand. NL Exhaust."
   },
   "${modID}:JustAPeek": {
     "NAME": "Just a Peek",
@@ -133,6 +168,38 @@
     "DESCRIPTION": "Deal !D! Damage.",
     "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Draw !${modID}:JustATasteDrawAmount! card(s)."
   },
+  "${modID}:KeepUp": {
+    "NAME": "Keep Up!",
+    "DESCRIPTION": "Deal !${modID}:KeepUpDamage! damage and inflict !${modID}:KeepUpWeak Weak to the target.",
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:KeepUpDamage! damage and inflict !${modID}:KeepUpWeak! Weak to all enemies."
+  },
+  "${modID}:LeaveItToChance": {
+    "NAME": "Leave it to Chance!",
+    "DESCRIPTION": "At the start of your turn, flip a coin. If heads, gain 1 energy, if tails, gain !${modID}:LeaveItToChanceBlockAmount! block."
+  },
+  "${modID}:LetTheShowBegin": {
+    "NAME": "Let the Show Begin",
+    "DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:LetTheShowBeginStrengthAmount! Strength."
+  },
+  "${modID}:MaskedFool": {
+    "NAME": "Masked Fool",
+    "DESCRIPTION": "At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique.",
+    "UPDATE_DESCRIPTION": "Innate. NL At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique."
+  },
+  "${modID}:MeMeMe": {
+    "NAME": "Me, Me, Me!",
+    "DESCRIPTION": "For the rest of the turn, repeat each card once. ${modID}:Unique. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL For the rest of the turn, repeat each card once. ${modID}:Unique. NL Exhaust."
+  },
+  "${modID}:MischievousGrin": {
+    "NAME": "Mischievous Grin",
+    "DESCRIPTION": "Gain 2 energy next turn."
+  },
+  "${modID}:Monodrama": {
+    "NAME": "Monodrama",
+    "DESCRIPTION": "Strike the enemy for !D! damage."
+  },
   "${modID}:OnOneHandViolence": {
     "NAME": "On One Hand, Violence",
     "DESCRIPTION": "Gain !${modID}:OnOneHandViolenceMinStrength! to !${modID}:OnOneHandViolenceMaxStrength! temporary Strength."
@@ -141,185 +208,120 @@
     "NAME": "On the Other, Patience",
     "DESCRIPTION": "Next turn, gain !${modID}:OnTheOtherPatienceMinStrength! to !${modID}:OnTheOtherPatienceMaxStrength! temporary Strength."
   },
-  "${modID}:CanYouFindTheAnswer": {
-    "NAME": "Can You Find the Answer?",
-    "DESCRIPTION": "Gain ${modID}:Mask. NL Exhaust."
+  "${modID}:OnceMoreWithFeeling": {
+    "NAME": "Once more, with FEELING!",
+    "DESCRIPTION": "Gain ${modID}:Mask. Deal !${modID}:OnceMoreWithFeelingDamage! damage. Gain 1 ${modID}:Unexpected."
   },
-  "${modID}:Monodrama": {
-    "NAME": "Monodrama",
-    "DESCRIPTION": "Strike the enemy for !D! damage."
-  },
-  "${modID}:Dreamdiver": {
-    "NAME": "Dreamdiver",
-    "DESCRIPTION": "Increase the damage of your next attack this turn by 25%.",
-    "UPGRADE_DESCRIPTION": "Increase the damage of your next attack this turn by 50%."
-  },
-  "${modID}:DancePartner": {
-    "NAME": "Dance Partner",
-    "DESCRIPTION": "For each enemy, if it is attacking, inflict !${modID}:DancePartnerAmount! Weak, otherwise inflict !${modID}:DancePartnerAmount! Vulnerable."
-  },
-  "${modID}:Defenseless": {
-    "NAME": "Defenseless",
-    "DESCRIPTION": "Remove all block from target enemy.",
-    "UPGRADE_DESCRIPTION": "Remove all block from target enemy. Do it again at the start of your turn."
-  },
-  "${modID}:Powerless": {
-    "NAME": "Powerless",
-    "DESCRIPTION": "Remove all positive strength from you and all enemies."
+  "${modID}:Pation": {
+    "NAME": "PATION!",
+    "DESCRIPTION": "Lose !${modID}:PationUnexpectedLossAmount! ${modID}:Unexpected.",
+    "UPGRADE_DESCRIPTION": "Lose !${modID}:PationUnexpectedLossAmount! ${modID}:Unexpected. Gain !${modID}:PationEnergyGain! energy on your next turn."
   },
   "${modID}:PepTalk": {
     "NAME": "Pep Talk",
     "DESCRIPTION": "Gain !${modID}:PepTalkArtifactGain! Artifact. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !${modID}:PepTalkArtifactGain! Artifact."
   },
-  "${modID}:KeepUp": {
-    "NAME": "Keep Up!",
-    "DESCRIPTION": "Deal !${modID}:KeepUpDamage! damage and inflict !${modID}:KeepUpWeak Weak to the target.",
-    "UPGRADE_DESCRIPTION": "Deal !${modID}:KeepUpDamage! damage and inflict !${modID}:KeepUpWeak! Weak to all enemies."
+  "${modID}:PocketSand": {
+    "NAME": "Pocket Sand",
+    "DESCRIPTION": "Deal !${modID}:PocketSandDamage! - !${modID}:PocketSandMaxDamage! damage and inflict !${modID}:PocketSandWeak! - !${modID}:PocketSandMaxWeak! Weak."
   },
-  "${modID}:DodgeThis": {
-    "NAME": "Dodge This!",
-    "DESCRIPTION": "Smack the target with a car for !${modID}:DodgeThisDamage! damage. Gain 1 ${modID}:Unexpected."
+  "${modID}:Powerless": {
+    "NAME": "Powerless",
+    "DESCRIPTION": "Remove all positive strength from you and all enemies."
   },
-  "${modID}:ItsFreeRealEstate": {
-    "NAME": "It's Free Real Estate",
-    "DESCRIPTION": "Retain. NL Upgrade a random card in your hand. NL Exhaust."
-  },
-  "${modID}:ATallFrostyGlass": {
-    "NAME": "A Tall Frosty Glass",
-    "DESCRIPTION": "... Of Just Ice! Gain !${modID}:ATallFrostyGlassThornsAmount! Thorns each time you are attacked this turn."
-  },
-  "${modID}:IllusionOfChoice": {
-    "NAME": "Illusion Of Choice",
-    "DESCRIPTION": "Choose: Target an enemy (who loses !${modID}:IllusionOfChoiceStrengthAmount! Strength) or yourself (to gain !${modID}:IllusionOfChoiceDexterityAmount! Dexterity.)"
-  },
-  "${modID}:IOCLoseStrength": {
-    "NAME": "Lose Strength",
-    "DESCRIPTION": "Target enemy loses !${modID}:IOCStrLoss! Strength. Ethereal. NL Exhaust."
-  },
-  "${modID}:IOCGainDexterity": {
-    "NAME": "Gain Dexterity",
-    "DESCRIPTION": "Gain !${modID}:IOCDexGain! Dexterity. Ethereal. NL Exhaust."
-  },
-  "${modID}:FeignedMadness": {
-    "NAME": "Feigned Madness",
-    "DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Reduce the cost of a card in your hand to 1 for this turn."
-  },
-  "${modID}:GrabABottle": {
-    "NAME": "Grab A Bottle",
-    "DESCRIPTION": "Grab a bottle of SoulGlad~ NL (Obtain a NL random potion.) NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Grab a bottle of SoulGlad~ NL (Obtain a NL random potion.)"
-  },
-  "${modID}:CaptivatingPerformance": {
-    "NAME": "Captivating Performance",
-    "DESCRIPTION": "Target enemy cannot gain strength this turn."
-  },
-  "${modID}:BreakDance": {
-    "NAME": "Break Dance",
-    "DESCRIPTION": "Deal !${modID}:BreakDanceMinDamage! to !${modID}:BreakDanceMaxDamage! damage and inflict !${modID}:BreakDanceVulnerableAmount! vulnerable randomly !${modID}:BreakDanceNumberHits! times."
-  },
-  "${modID}:WithoutACare": {
-    "NAME": "Without A Care",
-    "DESCRIPTION": "You cannot gain any more block this turn. Deal !${modID}:WithoutACareMinDamage! to !${modID}:WithoutACareMaxDamage! damage randomly."
-  },
-  "${modID}:ItWasMeDio": {
-    "NAME": "It was me, Dio!",
-    "DESCRIPTION": "Gain Mask. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain Mask."
-  },
-  "${modID}:OnceMoreWithFeeling": {
-    "NAME": "Once more, with FEELING!",
-    "DESCRIPTION": "Gain ${modID}:Mask. Deal !${modID}:OnceMoreWithFeelingDamage! damage. Gain 1 ${modID}:Unexpected."
-  },
-  "${modID}:UnreliableNarrator": {
-    "NAME": "Unreliable Narrator",
-    "DESCRIPTION": "Gain Intangible. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain Intangible."
+  "${modID}:PricklyAudience": {
+    "NAME": "Prickly Audience",
+    "DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:PricklyAudienceAmount! Thorns."
   },
   "${modID}:RedHerring": {
     "NAME": "Red Herring",
     "DESCRIPTION": "Increase your maximum energy by 1.",
     "UPGRADE_DESCRIPTION": "Increase your maximum energy by 1. Gain ${modID}:Mask."
   },
-  "${modID}:ThousandFacedHero": {
-    "NAME": "Thousand-Faced Hero",
-    "DESCRIPTION": "If you have Red Herring, increase your damage by 10% for each ${modID}:Mask.",
-    "UPGRADE_DESCRIPTION": "If you have Red Herring, increase your damage by 10% for each ${modID}:Mask. Gain ${modID}:Mask."
+  "${modID}:SadMask": {
+    "NAME": "Sad Mask",
+    "DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself and the target enemy. NL ${modID}:Fixed.",
+    "UPGRADE_DESCRIPTION": "Inflict !${modID}:SadMaskMinimumWeak! to !${modID}:SadMaskMaximumWeak! Weak, !${modID}:SadMaskMinimumVulnerable! to !${modID}:SadMaskMaximumVulnerable! Vulnerable, and !${modID}:SadMaskMinimumFrail! to !${modID}:SadMaskMaximumFrail! Frail to yourself once and the target enemy twice. NL ${modID}:Fixed"
   },
-  "${modID}:ICanFixHer": {
-    "NAME": "I Can Fix Her",
-    "DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, ${modID}:Loaded_Dice, or nothing.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, randomly gain Strength, Dexterity, ${modID}:Variance, or ${modID}:Loaded_Dice."
+  "${modID}:SayIt": {
+    "NAME": "SAY IT!",
+    "DESCRIPTION": "If you have unexpected, inflict NL !${modID}:SayItMinimumWeak! to !${modID}:SayItMaximumWeak! Weak on a random enemy. NL ${modID}:Fixed."
+  },
+  "${modID}:SheCanBreakMe": {
+    "NAME": "She Can Break Me",
+    "DESCRIPTION": "Each turn, either gain 5 block or gain 1 Frail and 3 Block. Ethereal."
+  },
+  "${modID}:Showstopper": {
+    "NAME": "Showstopper",
+    "DESCRIPTION": "Deal !D! damage for each card costing 0 energy in your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice for each card costing 0 energy in your hand."
+  },
+  "${modID}:SixGunRoulette": {
+    "NAME": "Six Gun Roulette",
+    "DESCRIPTION": "Choose a target at random to lose !D! HP. If  damages herself, gain !B! block."
+  },
+  "${modID}:SmilingMask": {
+    "NAME": "Smiling Mask",
+    "DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Heal between !${modID}:SmilingMaskHealMinimum! and !${modID}:SmilingMaskHealMaximum! health."
+  },
+  "${modID}:SnackBreak": {
+    "NAME": "Snack Break",
+    "DESCRIPTION": "Gain !${modID}:SnackBreakRegenAmount! Regen. NL Exhaust."
+  },
+  "${modID}:SoulGlad": {
+    "NAME": "Soulglad",
+    "DESCRIPTION": "Gain !${modID}:SoulGladVarianceAmount! ${modID}:Variance."
+  },
+  "${modID}:SpanishInquisition": {
+    "NAME": "Spanish Inquisition",
+    "DESCRIPTION": "Randomly trigger one of four effects. ${modID}:Unexpected. Obviously."
   },
   "${modID}:StrangeVillain": {
     "NAME": "Strange Villain",
     "DESCRIPTION": "Randomly heal 3 or deal 5 damage to each enemy and yourself.",
     "UPGRADE_DESCRIPTION": "Heal 3. Randomly heal 3 or deal 7 to each enemy."
   },
-  "${modID}:SheCanBreakMe": {
-    "NAME": "She Can Break Me",
-    "DESCRIPTION": "Each turn, either gain 5 block or gain 1 Frail and 3 Block. Ethereal."
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage to the target, then deal !${modID}:StrikeSecondHitDamage! damage to a second random target."
   },
-  "${modID}:DressRehearsal": {
-    "NAME": "Dress Rehearsal",
-    "DESCRIPTION": "Gain !${modID}:DressRehearsalMetallicizeAmount! Metallicize."
-  },
-  "${modID}:SnackBreak": {
-    "NAME": "Snack Break",
-    "DESCRIPTION": "Gain !${modID}:SnackBreakRegenAmount! Regen. NL Exhaust."
-  },
-  "${modID}:SpanishInquisition": {
-    "NAME": "Spanish Inquisition",
-    "DESCRIPTION": "Randomly trigger one of four effects. ${modID}:Unexpected. Obviously."
-  },
-  "${modID}:BombRace": {
-    "NAME": "Bomb Race",
-    "DESCRIPTION": "Gain !${modID}:BombRaceAmount! ${modID}:Volatile bombs that explode after 3 turns."
-  },
-  "${modID}:GoodEnding": {
-    "NAME": "Good Ending",
-    "DESCRIPTION": "Discard your hand, then draw up to !${modID}:GoodEndingCardDraw! cards.",
-    "UPGRADE_DESCRIPTION": "Discard your hand, then draw up to !${modID}:GoodEndingCardDraw! cards. Reduce the cost of cards in your hand by 1 this turn."
-  },
-  "${modID}:BadEnding": {
-    "NAME": "Bad Ending",
-    "DESCRIPTION": "Discard your hand, then for each card discarded deal !${modID}:BadEndingDamage! minus the card's cost to a random enemy."
-  },
-  "${modID}:SoulGlad": {
-    "NAME": "Soulglad",
-    "DESCRIPTION": "Gain !${modID}:SoulGladVarianceAmount! ${modID}:Variance."
-  },
-  "${modID}:Excitement": {
-    "NAME": "Excitement!",
-    "DESCRIPTION": "At the start of your turn, gain !${modID}:ExcitementBlockAmount! block per stack of Excitement, ${modID}:Variance, ${modID}:Loaded_Dice, ${modID}:Soulglad, and ${modID}:Mask.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !${modID}:ExcitementBlockAmount! block per stack of Excitement, ${modID}:Variance, ${modID}:Loaded_Dice, ${modID}:Soulglad, and ${modID}:Mask, plus !${modID}:ExcitementBlockUpgradeAmount!."
+  "${modID}:TalkToTheHand": {
+    "NAME": "Talk to the Hand",
+    "DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block. NL Repeat a ${modID}:Fixed !${modID}:TalkToTheHandMinimumBlockTimes! to !${modID}:TalkToTheHandMaximumBlockTimes! times."
   },
   "${modID}:TheWorldsAStage": {
     "NAME": "The World's A Stage",
     "DESCRIPTION": "Discard your hand, then draw that many cards plus one. Exhaust.",
     "UPGRADE_DESCRIPTION": "Discard your hand, then draw that many cards plus one."
   },
-  "${modID}:MeMeMe": {
-    "NAME": "Me, Me, Me!",
-    "DESCRIPTION": "For the rest of the turn, repeat each card once. ${modID}:Unique. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL For the rest of the turn, repeat each card once. ${modID}:Unique. NL Exhaust."
+  "${modID}:ThisIsBoring": {
+    "NAME": "This is Boring!",
+    "DESCRIPTION": "Increase the cost of all cards in your hand by 1 for this combat."
   },
-  "${modID}:HereHoldThis": {
-    "NAME": "Here, Hold This!",
-    "DESCRIPTION": "Give target enemy a Sparkle Doll that explodes in 1-3 turns for !${modID}:HereHoldThisDamage! damage."
+  "${modID}:ThousandFacedHero": {
+    "NAME": "Thousand-Faced Hero",
+    "DESCRIPTION": "If you have Red Herring, increase your damage by 10% for each ${modID}:Mask.",
+    "UPGRADE_DESCRIPTION": "If you have Red Herring, increase your damage by 10% for each ${modID}:Mask. Gain ${modID}:Mask."
   },
   "${modID}:UnexpectedDividend": {
     "NAME": "Unexpected Dividend",
     "DESCRIPTION": "Draw a card. ${modID}:Unexpected."
   },
-  "${modID}:DontInCrazy": {
-    "NAME": "Don't In Crazy",
-    "DESCRIPTION": "Deal !${modID}:DontInCrazyMinDamage! to !${modID}:DontInCrazyMaxDamage! damage to !${modID}:DontInCrazyNumHits! random targets. Gain !${modID}:DontInCrazyBlockAmount! block for each unblocked hit."
+  "${modID}:UnreliableNarrator": {
+    "NAME": "Unreliable Narrator",
+    "DESCRIPTION": "Gain Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain Intangible."
   },
-  "${modID}:MaskedFool": {
-    "NAME": "Masked Fool",
-    "DESCRIPTION": "At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique.",
-    "UPDATE_DESCRIPTION": "Innate. NL At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique."
+  "${modID}:WaitForIt": {
+    "NAME": "Wait For It",
+    "DESCRIPTION": "Each turn, increase the cost of a random card in your hand by 1 for the rest of combat."
+  },
+  "${modID}:WithoutACare": {
+    "NAME": "Without A Care",
+    "DESCRIPTION": "You cannot gain any more block this turn. Deal !${modID}:WithoutACareMinDamage! to !${modID}:WithoutACareMaxDamage! damage randomly."
   }
 }
