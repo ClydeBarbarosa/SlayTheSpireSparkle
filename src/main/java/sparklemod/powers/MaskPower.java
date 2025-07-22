@@ -13,9 +13,11 @@ public class MaskPower extends BasePower {
     public static final String POWER_ID = makeID(MaskPower.class.getSimpleName());
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
+    private static int countHits;
 
     public MaskPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
+        countHits = 0;
         updateDescription();
     }
 
@@ -31,8 +33,6 @@ public class MaskPower extends BasePower {
         }
 
         temp.append(DESCRIPTIONS[3]);
-        //temp.append(energyAmount);
-        //temp.append(DESCRIPTIONS[4]);
 
         this.description = temp.toString();
     }
@@ -42,10 +42,26 @@ public class MaskPower extends BasePower {
         addToBot(new RemoveSpecificPowerAction(owner, owner, this.ID));
     }
 
+    //TODO: Low priority, clean up this code. Right now it's doing the same thing a couple places, but works.
+    //Could be made FAR more readable.
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        //don't negate self damage, aka SoulGlad
+        //don't negate self damage, aka SoulGlad or poison
         if(info.owner == owner) {
+            return damageAmount;
+        }
+
+        //no need to reduce zero damage.
+        if(damageAmount < 1 || owner.currentBlock >= damageAmount) {
+            return damageAmount;
+        }
+
+        //count the number of hits each turn. If the number of hits exceeds amount, remove the power. This
+        //hopefully prevents blocking multihits with a single Mask.
+        countHits++;
+        if(countHits > amount) {
+            addToBot(new RemoveSpecificPowerAction(owner, owner, this.ID));
+            //addToBot(new ApplyPowerAction(owner, owner, new MaskEnergyGainPower(owner, 1)));
             return damageAmount;
         }
 
@@ -59,7 +75,7 @@ public class MaskPower extends BasePower {
             return 0;
         }
         else { //failsafe. this shouldn't happen.
-            addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+            addToBot(new RemoveSpecificPowerAction(owner, owner, this.ID));
             return damageAmount;
         }
     }
