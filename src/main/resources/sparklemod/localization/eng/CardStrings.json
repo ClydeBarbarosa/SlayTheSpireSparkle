@@ -312,5 +312,9 @@
   "${modID}:UnexpectedDividend": {
     "NAME": "Unexpected Dividend",
     "DESCRIPTION": "Draw a card. ${modID}:Unexpected."
+  },
+  "${modID}:DontInCrazy": {
+    "NAME": "Don't In Crazy",
+    "DESCRIPTION": "Deal !${modID}:DontInCrazyMinDamage! to !${modID}:DontInCrazyMaxDamage! damage to !${modID}:DontInCrazyNumHits! random targets. Gain !${modID}:DontInCrazyBlockAmount! block for each unblocked hit."
   }
 }
