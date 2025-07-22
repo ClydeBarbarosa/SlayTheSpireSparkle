@@ -14,6 +14,13 @@ public class KendamaBallReduceCostAction extends AbstractGameAction {
 
     @Override
     public void update() {
+
+        this.isDone = true;
+
+        if(AbstractDungeon.player.hand.isEmpty()) {
+            return;
+        }
+
         AbstractCard c = AbstractDungeon.player.hand.getRandomCard(true);
         if (c.cost > 0) {
             owner.flash();

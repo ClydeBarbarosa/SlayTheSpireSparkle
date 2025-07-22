@@ -34,15 +34,13 @@ public class MaskedFoolCardCostAction extends AbstractGameAction {
             return;
         }
 
-        AbstractCard c = new MaskedFool();
+        AbstractCard c;
         do {
             c = AbstractDungeon.player.hand.getRandomCard(true);
         } while (c.cost == 0);
 
         power.flash();
-
         c.setCostForTurn(0);
-
         c.flash();
     }
 }

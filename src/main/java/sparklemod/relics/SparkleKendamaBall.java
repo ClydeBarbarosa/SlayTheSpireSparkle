@@ -25,7 +25,7 @@ public class SparkleKendamaBall extends BaseRelic {
     }
 
     @Override
-    public void atTurnStart() {
+    public void atTurnStartPostDraw() {
         addToBot(new KendamaBallReduceCostAction(this));
 
     }
