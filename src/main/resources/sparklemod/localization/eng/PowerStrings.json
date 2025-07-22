@@ -174,5 +174,15 @@
     "DESCRIPTIONS": [
       "For the rest of the turn, repeat each card you play once."
     ]
+  },
+  "${modID}:HereHoldThisPower": {
+    "NAME": "Someone Set Me Up The Bomb",
+    "DESCRIPTIONS": [
+      "In ",
+      " turns, ",
+      "This turn, ",
+      " the doll will explode dealing ",
+      " damage to all enemies."
+    ]
   }
 }

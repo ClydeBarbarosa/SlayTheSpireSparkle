@@ -304,5 +304,9 @@
     "NAME": "Me, Me, Me!",
     "DESCRIPTION": "For the rest of the turn, repeat each card once. ${modID}:Unique. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Innate. NL For the rest of the turn, repeat each card once. ${modID}:Unique. NL Exhaust."
+  },
+  "${modID}:HereHoldThis": {
+    "NAME": "Here, Hold This!",
+    "DESCRIPTION": "Give target enemy a Sparkle Doll that explodes in 1-3 turns for !${modID}:HereHoldThisDamage! damage."
   }
 }
