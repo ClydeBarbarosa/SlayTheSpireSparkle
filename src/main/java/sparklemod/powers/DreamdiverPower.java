@@ -24,6 +24,7 @@ public class DreamdiverPower extends BasePower {
         if(upgraded) {
             //add an extra stack if upgraded
             this.amount++;
+            updateDescription();
         }
     }
 
@@ -37,12 +38,16 @@ public class DreamdiverPower extends BasePower {
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
+            //you only boost one attack, not multiple attack slightly less each time
+            addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
+            /*
             if(this.amount == 0) {
                 addToBot(new RemoveSpecificPowerAction(owner, owner, POWER_ID));
             }
             else {
                 addToBot(new ReducePowerAction(owner, owner, POWER_ID, 1));
             }
+            */
         }
     }
 

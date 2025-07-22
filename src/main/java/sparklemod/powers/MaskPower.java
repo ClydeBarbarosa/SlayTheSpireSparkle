@@ -38,6 +38,11 @@ public class MaskPower extends BasePower {
     }
 
     @Override
+    public void atStartOfTurn() {
+        addToBot(new RemoveSpecificPowerAction(owner, owner, this.ID));
+    }
+
+    @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         //don't negate self damage, aka SoulGlad
         if(info.owner == owner) {

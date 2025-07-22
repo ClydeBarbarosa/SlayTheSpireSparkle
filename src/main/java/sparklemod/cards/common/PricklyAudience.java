@@ -9,7 +9,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Prickly audience - skill, 1 energy - gain 3 thorns. Exhaust. (removes exhaust)
+//Prickly audience - skill, 1 energy - gain 2(4) thorns. Exhaust.
 public class PricklyAudience extends BaseCard {
     public static final String ID = makeID(PricklyAudience.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -20,22 +20,15 @@ public class PricklyAudience extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int THORNS_AMOUNT = 3;
+    private static final int THORNS_AMOUNT = 2;
+    private static final int UPGRADE_THORNS_AMOUNT = 2;
 
     public PricklyAudience() {
         super(ID, info);
 
         setExhaust(true);
-        setCustomVar("PricklyAudienceAmount", THORNS_AMOUNT);
-        upgradesDescription = true;
+        setCustomVar("PricklyAudienceAmount", THORNS_AMOUNT, UPGRADE_THORNS_AMOUNT);
     }
-
-    @Override
-    public void upgrade() {
-        super.upgrade();
-        setExhaust(false);
-    }
-
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, customVar("PricklyAudienceAmount"))));

@@ -181,8 +181,8 @@
   "${modID}:WaitForItPower": {
     "NAME": "Wait For It...",
     "DESCRIPTIONS": [
-      "At the start of each turn, increase the cost of a random card in your hand by ",
-      "."
+      "At the start of turn, take ",
+      " damage."
     ]
   },
   "${modID}:WithoutACarePower": {

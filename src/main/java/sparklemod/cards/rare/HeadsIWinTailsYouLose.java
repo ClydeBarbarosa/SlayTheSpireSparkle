@@ -25,7 +25,7 @@ public class HeadsIWinTailsYouLose extends BaseCard {
 
     private static final int BASE_DAMAGE = 9;
     private static final int UPGRADED_DAMAGE_GAIN = 6;
-    private static final int ENERGY_GAIN = 1;
+    private static final int ENERGY_GAIN = 2;
     private static final int NUM_CARDS = 1;
 
     public HeadsIWinTailsYouLose() {
@@ -34,7 +34,7 @@ public class HeadsIWinTailsYouLose extends BaseCard {
         setCustomVar("HIWTYLEnergyGain", ENERGY_GAIN);
         setCustomVar("HIWTYLNumCards", NUM_CARDS);
 
-        setCostUpgrade(0);
+        //setCostUpgrade(0);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {

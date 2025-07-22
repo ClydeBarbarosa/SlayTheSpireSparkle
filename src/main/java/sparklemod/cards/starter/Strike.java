@@ -10,7 +10,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Strike - attack, 1(2) energy - Deal 5(9) damage to a random enemy, then deal 2(4) damage to another random enemy.
+//Strike - attack, 1 energy - Deal 5(7) damage to a random enemy, then deal 2(3) damage to another random enemy.
 public class Strike extends BaseCard {
     public static final String ID = makeID(Strike.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -23,8 +23,8 @@ public class Strike extends BaseCard {
 
     private static final int DAMAGE = 5;
     private static final int SECOND_DAMAGE = 2;
-    private static final int UPG_DAMAGE = 4;
-    private static final int UPG_SECOND_DAMAGE = 2;
+    private static final int UPG_DAMAGE = 2;
+    private static final int UPG_SECOND_DAMAGE = 1;
 
     public Strike() {
         super(ID, info);
@@ -32,7 +32,7 @@ public class Strike extends BaseCard {
         setDamage(DAMAGE, UPG_DAMAGE);
         setCustomVar("StrikeSecondHitDamage", VariableType.DAMAGE, SECOND_DAMAGE, UPG_SECOND_DAMAGE);
 
-        setCostUpgrade(2);
+        //setCostUpgrade(2);
 
         tags.add(CardTags.STARTER_STRIKE);
         tags.add(CardTags.STRIKE);

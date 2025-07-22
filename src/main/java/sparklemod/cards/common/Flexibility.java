@@ -10,7 +10,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Flexibility - skill, 3(0) energy - gain 1 Dexterity. (Draw 1 card. Exhaust.)
+//Flexibility - skill, 3 energy - gain 1 Dexterity. (Shuffle this card into your draw pile.)
 public class Flexibility extends BaseCard {
     public static final String ID = makeID(Flexibility.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -22,25 +22,32 @@ public class Flexibility extends BaseCard {
     );
 
     private static final int DEX_AMOUNT = 1;
-    private static final int CARD_AMOUNT = 1;
+    //private static final int CARD_AMOUNT = 1;
 
     public Flexibility() {
         super(ID, info);
 
         setCustomVar("FlexibilityDexterityAmount", DEX_AMOUNT);
-        setCustomVar("FlexibilityDrawAmount", CARD_AMOUNT);
+        //setCustomVar("FlexibilityDrawAmount", CARD_AMOUNT);
 
         setCostUpgrade(0);
         upgradesDescription = true;
 
-        setExhaust(false, true);
+        setExhaust(true, false);
+    }
+
+    @Override
+    public void upgrade() {
+        super.upgrade();
+        this.shuffleBackIntoDrawPile = true;
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, DEX_AMOUNT)));
 
         if(this.upgraded) {
-            addToBot(new DrawCardAction(p, 1));
+            //addToBot(new DrawCardAction(p, CARD_AMOUNT));
+
         }
     }
 

@@ -11,7 +11,7 @@ import sparklemod.powers.MaskPower;
 import sparklemod.powers.UnexpectedPower;
 import sparklemod.util.CardStats;
 
-//Once More, With Feeling! - Attack, 1 energy. Gain Mask. Deal 5(7) damage. Gain 1 Unexpected.
+//Once More, With Feeling! - Attack, 1 energy. Deal 5(7) damage. Gain 1 Unexpected.
 public class OnceMoreWithFeeling extends BaseCard {
     public static final String ID = makeID(OnceMoreWithFeeling.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -35,7 +35,7 @@ public class OnceMoreWithFeeling extends BaseCard {
         int numTimes = (p.hasPower(UnexpectedPower.POWER_ID) ? p.getPower(UnexpectedPower.POWER_ID).amount : 0);
 
         for(int i=0; i < numTimes+1; i++) {
-            addToBot(new ApplyPowerAction(p, p, new MaskPower(p, 1)));
+            //addToBot(new ApplyPowerAction(p, p, new MaskPower(p, 1)));
             addToBot(new DamageAction(m, new DamageInfo(p, customVar("OnceMoreWithFeelingDamage"), DamageInfo.DamageType.NORMAL)));
         }
         addToBot(new ApplyPowerAction(p, p, new UnexpectedPower(p, 1)));

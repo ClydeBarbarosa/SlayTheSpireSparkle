@@ -8,7 +8,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Smiling mask - skill, 1 energy - heal between 1-3 hp. Exhaust. (removes exhaust.)
+//Smiling mask - skill, 1 energy - heal between 1-3(5) hp. Fixed. Exhaust.
 public class SmilingMask extends BaseCard {
     public static final String ID = makeID(SmilingMask.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -20,26 +20,20 @@ public class SmilingMask extends BaseCard {
     );
 
     private final static int HEAL_MINIMUM = 1;
+    private final static int UPGRADE_HEAL_MINIMUM = 0;
     private final static int HEAL_MAXIMUM = 3;
+    private final static int UPGRADE_HEAL_MAXIMUM = 2;
 
     public SmilingMask() {
         super(ID, info);
 
-        upgradesDescription=true;
-        setCustomVar("SmilingMaskHealMinimum", HEAL_MINIMUM);
-        setCustomVar("SmilingMaskHealMaximum", HEAL_MAXIMUM);
+        setCustomVar("SmilingMaskHealMinimum", HEAL_MINIMUM, UPGRADE_HEAL_MINIMUM);
+        setCustomVar("SmilingMaskHealMaximum", HEAL_MAXIMUM, UPGRADE_HEAL_MAXIMUM);
 
         setExhaust(true);
     }
 
-    @Override
-    public void upgrade() {
-        super.upgrade();
-
-        this.setExhaust(false);
-    }
-
     public void use (AbstractPlayer p, AbstractMonster m) {
-        addToBot(new HealAction(p, p, randomIntWithVariance(HEAL_MINIMUM, HEAL_MAXIMUM)));
+        addToBot(new HealAction(p, p, randomIntWithoutVariance(HEAL_MINIMUM, HEAL_MAXIMUM)));
     }
 }

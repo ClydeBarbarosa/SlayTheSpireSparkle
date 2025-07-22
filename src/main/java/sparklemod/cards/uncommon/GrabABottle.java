@@ -10,7 +10,7 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.SoulGladPower;
 import sparklemod.util.CardStats;
 
-//Grab a Bottle - skill, 1 energy - Obtain a random potion. Exhaust (Removes Exhaust).
+//Grab a Bottle - skill, 1(0) energy - Obtain a random potion. Exhaust.
 public class GrabABottle extends BaseCard {
     public static final String ID = makeID(GrabABottle.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -26,12 +26,11 @@ public class GrabABottle extends BaseCard {
     public GrabABottle() {
         super(ID, info);
         setExhaust(true);
-        upgradesDescription = true;
+        setCostUpgrade(0);
     }
 
     public void upgrade() {
         super.upgrade();
-        setExhaust(false);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {

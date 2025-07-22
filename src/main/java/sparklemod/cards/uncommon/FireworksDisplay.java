@@ -11,7 +11,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Fireworks display - attack, 3 energy - Deal 5 damage to each enemy on the field 2-4(2-6) times. Fixed.
+//Fireworks display - attack, 3 energy - Deal 5 damage to each enemy 2-4(2-6) times. Fixed.
 public class FireworksDisplay extends BaseCard {
     public static final String ID = makeID(FireworksDisplay.class.getSimpleName());
     private static final CardStats info = new CardStats(

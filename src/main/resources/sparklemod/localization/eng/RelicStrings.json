@@ -10,7 +10,7 @@
     "NAME": "Kendama Ball",
     "FLAVOR": "True skill takes a lifetime of practice.",
     "DESCRIPTIONS": [
-      "Whenever you play a card that costs your max energy, reduce the cost of all other cards to zero for this combat."
+      "At the start of your turn, reduce the cost of a card in your hand by 1 for this combat."
     ]
   }
 }

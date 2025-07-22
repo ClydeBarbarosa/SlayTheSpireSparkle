@@ -36,14 +36,7 @@ public class AngryMask extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        int numTimes;
-        if(this.upgraded) {
-            numTimes = UPGRADED_NUMBER_TIMES;
-        }
-        else {
-            numTimes = NUMBER_TIMES;
-        }
-
+        int numTimes = (this.upgraded ? UPGRADED_NUMBER_TIMES : NUMBER_TIMES);
 
         for(int i = 0; i < numTimes; i++) {
             int dam = randomIntWithVariance(MINIMUM_DAMAGE, MAXIMUM_DAMAGE);

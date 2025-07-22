@@ -9,7 +9,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Monodrama - attack, 1 energy - Deal 6(9) damage.
+//Monodrama - attack, 1 energy - Deal 7(11) damage.
 //Why such a simple card? Because your basic strike hits random targets.
 public class Monodrama extends BaseCard {
     public static final String ID = makeID(Monodrama.class.getSimpleName());
@@ -21,13 +21,13 @@ public class Monodrama extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int BASE_DAMAGE = 6;
-    private static final int UPGRADE_DAMAGE_INCREASE = 3;
+    private static final int BASE_DAMAGE = 7;
+    private static final int UPGRADE_DAMAGE_INCREASE = 4;
     public Monodrama() {
         super(ID, info);
         setDamage(BASE_DAMAGE,UPGRADE_DAMAGE_INCREASE);
 
-        tags.add(CardTags.STRIKE);
+        //tags.add(CardTags.STRIKE);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {

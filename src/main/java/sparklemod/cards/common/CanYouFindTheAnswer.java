@@ -23,6 +23,7 @@ public class CanYouFindTheAnswer extends BaseCard {
     public CanYouFindTheAnswer() {
         super(ID, info);
         setCostUpgrade(1);
+        setExhaust(true);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {

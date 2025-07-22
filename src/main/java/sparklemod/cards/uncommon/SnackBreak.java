@@ -8,7 +8,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Snack Break - skill, 1 energy - Gain 3(5) Regen. Exhaust
+//Snack Break - skill, 1 energy - Gain 3(4) Regen. Exhaust
 public class SnackBreak extends BaseCard {
     public static final String ID = makeID(SnackBreak.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -20,7 +20,7 @@ public class SnackBreak extends BaseCard {
     );
 
     private static final int REGEN_AMOUNT = 3;
-    private static final int UPGRADE_REGEN_AMOUNT = 2;
+    private static final int UPGRADE_REGEN_AMOUNT = 1;
     public SnackBreak () {
         super(ID, info);
 

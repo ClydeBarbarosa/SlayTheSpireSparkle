@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import sparklemod.actions.KendamaBallReduceCostAction;
 import sparklemod.character.SparkleCharacter;
 
 import static sparklemod.SparkleMod.makeID;
@@ -14,8 +15,8 @@ public class SparkleKendamaBall extends BaseRelic {
     private static final RelicTier RARITY = RelicTier.STARTER;
     private static final LandingSound SOUND = LandingSound.CLINK;
 
-    public SparkleKendamaBall () {
-        super (ID, NAME, SparkleCharacter.Meta.CARD_COLOR, RARITY, SOUND);
+    public SparkleKendamaBall() {
+        super(ID, NAME, SparkleCharacter.Meta.CARD_COLOR, RARITY, SOUND);
     }
 
     @Override
@@ -23,6 +24,15 @@ public class SparkleKendamaBall extends BaseRelic {
         return DESCRIPTIONS[0];
     }
 
+    @Override
+    public void atTurnStart() {
+        addToBot(new KendamaBallReduceCostAction(this));
+
+    }
+}
+
+    /*
+    //Old version.
     //When you have this relic, playing a card that costs your maximum energy decreases the cost of all
     //other cards in your hand to zero for the rest of combat.
     @Override
@@ -36,4 +46,4 @@ public class SparkleKendamaBall extends BaseRelic {
             }
         }
     }
-}
+    */

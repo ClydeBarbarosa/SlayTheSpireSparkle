@@ -11,7 +11,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Pocket Sand - attack, 2 energy - Deal 5-8(6-10) damage, inflict 0-1(1-2) weak.
+//Pocket Sand - attack, 2 energy - Deal 5-8(7-12) damage, inflict 0-1(1) weak.
 public class PocketSand extends BaseCard {
     public static final String ID = makeID(PocketSand.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -23,13 +23,13 @@ public class PocketSand extends BaseCard {
     );
 
     private static final int BASE_DAMAGE = 5;
-    private static final int UPGRADED_BASE_DAMAGE_INCREASE = 1;
+    private static final int UPGRADED_BASE_DAMAGE_INCREASE = 2;
     private static final int MAX_DAMAGE = 8;
-    private static final int UPGRADED_MAX_DAMAGE_INCREASE = 2;
+    private static final int UPGRADED_MAX_DAMAGE_INCREASE = 4;
     private static final int BASE_WEAK = 0;
     private static final int UPGRADED_BASE_WEAK_INCREASE = 1;
     private static final int MAX_WEAK = 1;
-    private static final int UPGRADED_MAX_WEAK_INCREASE = 1;
+    private static final int UPGRADED_MAX_WEAK_INCREASE = 0;
 
     public PocketSand() {
         super(ID, info);

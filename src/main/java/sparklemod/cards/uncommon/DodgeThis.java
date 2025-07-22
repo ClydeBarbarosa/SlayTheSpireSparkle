@@ -29,7 +29,7 @@ public class DodgeThis extends BaseCard {
     public DodgeThis() {
         super(ID, info);
 
-        setCustomVar("SparkleDodgeThisDamage", BASE_DAMAGE, DAMAGE_UPGRADE);
+        setCustomVar("DodgeThisDamage", BASE_DAMAGE, DAMAGE_UPGRADE);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {

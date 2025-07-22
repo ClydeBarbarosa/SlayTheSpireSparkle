@@ -26,7 +26,7 @@
     "NAMES": [
       "Unexpected"
     ],
-    "DESCRIPTION": "For each stack of Unexpected, repeat this card's other effects once. Then, gain Unexpected."
+    "DESCRIPTION": "For each Unexpected, repeat this card's other effects once. Then, gain Unexpected."
   },
   {
     "ID": "mask",
@@ -42,14 +42,14 @@
     "NAMES": [
       "Variance"
     ],
-    "DESCRIPTION": "Randomness in cards is increased by one minimum and maximum per variance (minimum 1, max 999.)"
+    "DESCRIPTION": "Randomness in cards is reduced by 1 minimum and increased by 1 maximum per Variance (minimum 1, max 999.)"
   },
   {
     "PROPER_NAME": "Fixed",
     "NAMES": [
       "Fixed"
     ],
-    "DESCRIPTION":"The randomness of this is unaffected by Variance and Loaded_Dice."
+    "DESCRIPTION":"Unaffected by Variance and Loaded Dice."
   },
   {
     "PROPER_NAME": "Soulglad",
@@ -57,7 +57,7 @@
       "Soulglad",
       "SoulGlad"
     ],
-    "DESCRIPTION": "Too much SoulGlad is bad for your health! (Take damage equal to your stacks each turn.)"
+    "DESCRIPTION": "Too much SoulGlad is bad for your health! (Lose HP equal to your SoulGlad each turn.)"
   },
   {
     "PROPER_NAME": "Loaded Dice",
@@ -66,7 +66,7 @@
       "Loaded_Dice",
       "loaded_dice"
     ],
-    "DESCRIPTION": "Randomized values are are increased by 1 per stack after they are rolled."
+    "DESCRIPTION": "Randomized values are are increased by 1 per Loaded Dice."
   },
   {
     "PROPER_NAME": "Volatile",

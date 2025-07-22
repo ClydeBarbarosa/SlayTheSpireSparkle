@@ -8,7 +8,7 @@ import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
 import sparklemod.util.CardStats;
 
-//Let the show begin - skill, 1 energy - Gain 1 strength. Exhaust. (Remove exhaust, cost becomes 2)
+//Let the show begin - skill, 1 energy - Gain 1(2) strength. Exhaust.
 public class LetTheShowBegin extends BaseCard {
     public static final String ID = makeID(LetTheShowBegin.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -20,16 +20,13 @@ public class LetTheShowBegin extends BaseCard {
     );
 
     private static final int STRENGTH_AMOUNT = 1;
+    private static final int UPGRADE_STRENGTH = 1;
 
     public LetTheShowBegin() {
         super(ID, info);
 
-        setCustomVar("LetTheShowBeginStrengthAmount", STRENGTH_AMOUNT);
-        this.upgradesDescription=true;
-        setExhaust(true, false);
-        setCostUpgrade(2);
-
-        this.exhaust = true;
+        setCustomVar("LetTheShowBeginStrengthAmount", STRENGTH_AMOUNT, UPGRADE_STRENGTH);
+        setExhaust(true);
     }
 
     @Override

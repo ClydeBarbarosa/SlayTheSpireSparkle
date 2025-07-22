@@ -11,7 +11,7 @@ import sparklemod.character.SparkleCharacter;
 import sparklemod.powers.WithoutACarePower;
 import sparklemod.util.CardStats;
 
-//Talk to the hand - skill, 0(1) energy - gain 1-5 block (2-4 times, fixed..)
+//Talk to the hand - skill, 0(1) energy - gain 1-5 block (1-3 times, fixed..)
 public class TalkToTheHand extends BaseCard {
     public static final String ID = makeID(TalkToTheHand.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -24,8 +24,8 @@ public class TalkToTheHand extends BaseCard {
 
     private static final int MINIMUM_BLOCK = 1;
     private static final int MAXIMUM_BLOCK = 5;
-    private static final int MINIMUM_BLOCK_TIMES = 2;
-    private static final int MAXIMUM_BLOCK_TIMES = 4;
+    private static final int MINIMUM_BLOCK_TIMES = 1;
+    private static final int MAXIMUM_BLOCK_TIMES = 3;
 
     public TalkToTheHand() {
         super(ID, info);

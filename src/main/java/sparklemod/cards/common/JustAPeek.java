@@ -20,7 +20,7 @@ public class JustAPeek extends BaseCard {
             0 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int BLOCK_AMOUNT = 3;
+    private static final int BLOCK_AMOUNT = 4;
     private static final int DRAW_AMOUNT = 1;
 
     public JustAPeek() {

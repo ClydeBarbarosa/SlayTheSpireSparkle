@@ -27,9 +27,9 @@ public class HeelKick extends BaseCard {
     );
 
     private static final int BASE_DAMAGE = 5;
-    private static final int UPGRADED_DAMAGE = 9;
+    private static final int UPGRADED_DAMAGE = 4;
     private static final int BASE_WEAK = 1;
-    private static final int UPGRADED_WEAK = 2;
+    private static final int UPGRADED_WEAK = 1;
     private static final int BASE_VULNERABLE = 1;
 
     public HeelKick() {

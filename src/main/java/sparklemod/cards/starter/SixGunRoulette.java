@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
@@ -13,7 +14,7 @@ import sparklemod.util.CardStats;
 
 import java.util.ArrayList;
 
-//Six-gun Roulette - attack, 1 energy - Choose a target at random (Including Sparkle) to lose 5(8) hp. If Sparkle damages herself, gain 10(20) block.
+//Six-gun Roulette - attack, 1 energy - Deal 1(2) damage 6 times to random targets. Gain 2(4) block each time you hit yourself.
 public class SixGunRoulette extends BaseCard {
     public static final String ID = makeID(SixGunRoulette.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -24,16 +25,18 @@ public class SixGunRoulette extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
 
-    private static final int DAMAGE = 5;
-    private static final int UPG_DAMAGE = 3;
-    private static final int BLOCK = 8;
-    private static final int UPG_BLOCK = 12;
+    private static final int DAMAGE = 1;
+    private static final int UPG_DAMAGE = 1;
+    private static final int BLOCK = 2;
+    private static final int UPG_BLOCK = 2;
+    private static final int NUMBER_HITS = 6;
 
     public SixGunRoulette() {
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);
         setBlock(BLOCK, UPG_BLOCK);
+        setCustomVar("SixGunRouletteNumberHits", NUMBER_HITS);
 
         tags.add(CardTags.STARTER_STRIKE);
         tags.add(CardTags.STRIKE);
@@ -42,17 +45,18 @@ public class SixGunRoulette extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         ArrayList<AbstractMonster> monsterList = AbstractDungeon.getCurrRoom().monsters.monsters;
 
-        monsterList.removeIf(mo -> mo.isDead);
+        monsterList.removeIf(AbstractCreature::isDeadOrEscaped);
 
-        int numTargets = 1 + monsterList.size(); //player is a valid target, so add 1
-        int selectedTarget = AbstractDungeon.miscRng.random(1, numTargets);
+        for(int i = 0; i < NUMBER_HITS; i++) {
+            int numTargets = 1 + monsterList.size(); //player is a valid target, so add 1
+            int selectedTarget = AbstractDungeon.miscRng.random(1, numTargets);
 
-        if(selectedTarget==1) { //the player
-            addToBot(new DamageAction(p, new DamageInfo(p, damage, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-            addToBot(new GainBlockAction(p, p, block));
-        }
-        else { //a monster
-            addToBot(new DamageAction(monsterList.get(selectedTarget-2), new DamageInfo(p, damage, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            if (selectedTarget == 1) { //the player
+                addToBot(new DamageAction(p, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+                addToBot(new GainBlockAction(p, p, block));
+            } else { //a monster
+                addToBot(new DamageAction(monsterList.get(selectedTarget - 2), new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            }
         }
     }
 }
