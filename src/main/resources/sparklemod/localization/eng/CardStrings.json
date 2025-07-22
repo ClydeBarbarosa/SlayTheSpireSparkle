@@ -316,5 +316,10 @@
   "${modID}:DontInCrazy": {
     "NAME": "Don't In Crazy",
     "DESCRIPTION": "Deal !${modID}:DontInCrazyMinDamage! to !${modID}:DontInCrazyMaxDamage! damage to !${modID}:DontInCrazyNumHits! random targets. Gain !${modID}:DontInCrazyBlockAmount! block for each unblocked hit."
+  },
+  "${modID}:MaskedFool": {
+    "NAME": "Masked Fool",
+    "DESCRIPTION": "At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique.",
+    "UPDATE_DESCRIPTION": "Innate. NL At the beginning of your turn, decrease the cost of a random card in your hand to one for this turn. ${modID}:Unique."
   }
 }
