@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
-import sparklemod.powers.SoulGladPower;
+import sparklemod.powers.SugarRushPower;
 import sparklemod.util.CardStats;
 
 //Grab a Bottle - skill, 1(0) energy - Obtain a random potion. Exhaust.
@@ -35,6 +35,6 @@ public class GrabABottle extends BaseCard {
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         addToBot(new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true)));
-        addToBot(new ApplyPowerAction(p, p, new SoulGladPower(p, STACK_AMOUNT), STACK_AMOUNT));
+        addToBot(new ApplyPowerAction(p, p, new SugarRushPower(p, STACK_AMOUNT), STACK_AMOUNT));
     }
 }

@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
+import sparklemod.powers.SugarRushPower;
 import sparklemod.powers.VariancePower;
 import sparklemod.util.CardStats;
 
@@ -19,15 +20,18 @@ public class SoulGlad extends BaseCard {
     );
 
     private static final int VARIANCE_AMOUNT = 1;
+    private static final int SUGAR_RUSH_AMOUNT = 2;
 
     public SoulGlad() {
         super(ID, info);
         setCostUpgrade(0);
         setCustomVar("SoulGladVarianceAmount", VARIANCE_AMOUNT);
+        setCustomVar("SoulGladSugarAmount", SUGAR_RUSH_AMOUNT);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new VariancePower(p, VARIANCE_AMOUNT)));
+        addToBot(new ApplyPowerAction(p, p, new SugarRushPower(p, SUGAR_RUSH_AMOUNT)));
     }
 
 }
