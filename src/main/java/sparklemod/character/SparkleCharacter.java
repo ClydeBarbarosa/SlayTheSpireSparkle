@@ -168,9 +168,9 @@ public class SparkleCharacter extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(LetTheShowBegin.ID);
-        retVal.add(SixGunRoulette.ID);
+        //retVal.add(SixGunRoulette.ID);
         retVal.add(PocketSand.ID);
-
+        retVal.add(HeelKick.ID);
 
         return retVal;
     }

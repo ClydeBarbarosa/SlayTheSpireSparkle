@@ -25,9 +25,9 @@ public class SixGunRoulette extends BaseCard {
     );
 
     private static final int DAMAGE = 5;
-    private static final int UPG_DAMAGE = 8;
-    private static final int BLOCK = 10;
-    private static final int UPG_BLOCK = 20;
+    private static final int UPG_DAMAGE = 3;
+    private static final int BLOCK = 8;
+    private static final int UPG_BLOCK = 12;
 
     public SixGunRoulette() {
         super(ID, info);

@@ -11,7 +11,7 @@
   },
   "${modID}:Strike": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! damage to a random target, then deal !${modID}:StrikeSecondHitDamage! damage to a second random target."
+    "DESCRIPTION": "Deal !D! damage to the target, then deal !${modID}:StrikeSecondHitDamage! damage to a second random target."
   },
   "${modID}:SixGunRoulette": {
     "NAME": "Six Gun Roulette",
@@ -19,7 +19,7 @@
   },
   "${modID}:Defend": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain between !${modID}:DefendMin! and !${modID}:DefendMax! block."
+    "DESCRIPTION": "Gain !B! block."
   },
   "${modID}:LetTheShowBegin": {
     "NAME": "Let the Show Begin",
