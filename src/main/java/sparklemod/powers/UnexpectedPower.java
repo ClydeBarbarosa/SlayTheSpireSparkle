@@ -1,5 +1,6 @@
 package sparklemod.powers;
 
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -12,6 +13,11 @@ public class UnexpectedPower extends BasePower {
 
     public UnexpectedPower(AbstractCreature owner, int amount) {
         super(POWER_ID, TYPE, TURN_BASED, owner, amount);
+    }
+
+    @Override
+    public void atStartOfTurn() {
+        addToBot(new RemoveSpecificPowerAction(owner, owner, this.ID));
     }
 
     public void updateDescription() {
