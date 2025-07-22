@@ -249,7 +249,8 @@
   },
   "${modID}:SheCanBreakMe": {
     "NAME": "She Can Break Me",
-    "DESCRIPTION": "Each turn, either gain 5 Block or gain 1 Frail and 3 Block. Ethereal."
+    "DESCRIPTION": "Each turn, either gain 5 Block or gain 1 Frail and 3 Block. Ethereal.",
+    "UPGRADE_DESCRIPTION": "Innate. Each turn, either gain 5 Block or gain 1 Frail and 3 Block. Ethereal."
   },
   "${modID}:Showstopper": {
     "NAME": "Showstopper",

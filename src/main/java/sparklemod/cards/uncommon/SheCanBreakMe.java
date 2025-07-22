@@ -21,6 +21,8 @@ public class SheCanBreakMe extends BaseCard {
 
     public SheCanBreakMe () {
         super(ID, info);
+        this.upgradesDescription = true;
+        setInnate(false, true);
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {

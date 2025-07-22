@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.GainStrengthPower;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import sparklemod.cards.BaseCard;
 import sparklemod.character.SparkleCharacter;
@@ -29,15 +30,18 @@ public class Powerless extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        if(p.hasPower("Strength")) {
-            if (p.getPower("Strength").amount > 0) {
-                addToBot(new RemoveSpecificPowerAction(p, p, "Strength"));
+        if(p.hasPower(StrengthPower.POWER_ID)) {
+            if (p.getPower(StrengthPower.POWER_ID).amount > 0) {
+                addToBot(new RemoveSpecificPowerAction(p, p, StrengthPower.POWER_ID));
+            }
+            if(p.hasPower(LoseStrengthPower.POWER_ID)) {
+                addToBot(new RemoveSpecificPowerAction(p, p, LoseStrengthPower.POWER_ID));
             }
         }
         for(AbstractCreature mo : AbstractDungeon.getMonsters().monsters) {
-            if (mo.hasPower("Strength")) {
-                if (mo.getPower("Strength").amount > 0) {
-                    addToBot(new RemoveSpecificPowerAction(mo, mo, "Strength"));
+            if (mo.hasPower(StrengthPower.POWER_ID)) {
+                if (mo.getPower(StrengthPower.POWER_ID).amount > 0) {
+                    addToBot(new RemoveSpecificPowerAction(mo, mo, StrengthPower.POWER_ID));
                 }
             }
         }
