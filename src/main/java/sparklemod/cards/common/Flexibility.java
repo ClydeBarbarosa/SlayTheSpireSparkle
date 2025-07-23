@@ -30,7 +30,6 @@ public class Flexibility extends BaseCard {
         setCustomVar("FlexibilityDexterityAmount", DEX_AMOUNT);
         //setCustomVar("FlexibilityDrawAmount", CARD_AMOUNT);
 
-        setCostUpgrade(0);
         upgradesDescription = true;
 
         setExhaust(true, false);
@@ -45,10 +44,10 @@ public class Flexibility extends BaseCard {
     public void use (AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, DEX_AMOUNT)));
 
-        if(this.upgraded) {
+        //if(this.upgraded) {
             //addToBot(new DrawCardAction(p, CARD_AMOUNT));
 
-        }
+        //}
     }
 
 }

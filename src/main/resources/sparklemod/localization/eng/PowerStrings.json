@@ -115,7 +115,7 @@
   "${modID}:MaskedFoolPower": {
     "NAME": "Sparkle, the Masked Fool",
     "DESCRIPTIONS": [
-      "At the start of your turn, reduce the cost of a random card to 0 for this turn."
+      "At the start of your turn, reduce the cost of a random card to 1 for this turn."
     ]
   },
   "${modID}:MeMeMePower": {
