@@ -38,6 +38,7 @@ public class PocketSand extends BaseCard {
         setCustomVar("PocketSandMaxDamage", VariableType.DAMAGE, MAX_DAMAGE, UPGRADED_MAX_DAMAGE_INCREASE);
         setCustomVar("PocketSandWeak", BASE_WEAK, UPGRADED_BASE_WEAK_INCREASE);
         setCustomVar("PocketSandMaxWeak", MAX_WEAK, UPGRADED_MAX_WEAK_INCREASE);
+        this.upgradesDescription = true;
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {

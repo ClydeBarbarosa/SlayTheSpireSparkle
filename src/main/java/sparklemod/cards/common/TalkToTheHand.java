@@ -39,10 +39,7 @@ public class TalkToTheHand extends BaseCard {
     }
 
     public void use (AbstractPlayer p, AbstractMonster m) {
-        int numTimes = 1;
-        if(this.upgraded) {
-            numTimes = AbstractDungeon.cardRandomRng.random(MINIMUM_BLOCK_TIMES, MAXIMUM_BLOCK_TIMES);
-        }
+        int numTimes = (!this.upgraded ? 1 : AbstractDungeon.cardRandomRng.random(MINIMUM_BLOCK_TIMES, MAXIMUM_BLOCK_TIMES) + 1);
 
         for(int i=0; i < numTimes; i++) {
             boolean hasNoBlockPower = p.hasPower(NoBlockPower.POWER_ID) || p.hasPower(WithoutACarePower.POWER_ID);

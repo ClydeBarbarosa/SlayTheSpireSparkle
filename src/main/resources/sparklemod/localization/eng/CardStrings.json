@@ -223,7 +223,8 @@
   },
   "${modID}:PocketSand": {
     "NAME": "Pocket Sand",
-    "DESCRIPTION": "Deal !${modID}:PocketSandDamage! - !${modID}:PocketSandMaxDamage! Damage and apply !${modID}:PocketSandWeak! - !${modID}:PocketSandMaxWeak! Weak."
+    "DESCRIPTION": "Deal !${modID}:PocketSandDamage! - !${modID}:PocketSandMaxDamage! Damage and apply !${modID}:PocketSandWeak! - !${modID}:PocketSandMaxWeak! Weak.",
+    "UPGRADE_DESCRIPTION": "Deal !${modID}:PocketSandDamage! - !${modID}:PocketSandMaxDamage! Damage and apply !${modID}:PocketSandWeak! Weak."
   },
   "${modID}:Powerless": {
     "NAME": "Powerless",
@@ -289,7 +290,7 @@
   "${modID}:TalkToTheHand": {
     "NAME": "Talk to the Hand",
     "DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block.",
-    "UPGRADE_DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block. NL Repeat a ${modID}:Fixed !${modID}:TalkToTheHandMinimumBlockTimes! to !${modID}:TalkToTheHandMaximumBlockTimes! times."
+    "UPGRADE_DESCRIPTION": "Gain !${modID}:TalkToTheHandMinimumBlock! to !${modID}:TalkToTheHandMaximumBlock! Block. NL Do it again a ${modID}:Fixed !${modID}:TalkToTheHandMinimumBlockTimes! to !${modID}:TalkToTheHandMaximumBlockTimes! times."
   },
   "${modID}:TheWorldsAStage": {
     "NAME": "The World's A Stage",
