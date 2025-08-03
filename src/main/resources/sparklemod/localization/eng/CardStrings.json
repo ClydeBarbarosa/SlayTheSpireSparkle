@@ -280,8 +280,8 @@
   },
   "${modID}:StrangeVillain": {
     "NAME": "Strange Villain",
-    "DESCRIPTION": "Randomly heal 3 or deal 5 Damage to each enemy and yourself.",
-    "UPGRADE_DESCRIPTION": "Heal 3. Randomly heal 3 or deal 7 to each enemy."
+    "DESCRIPTION": "Randomly heal !M! or deal !D! Damage to each enemy and yourself.",
+    "UPGRADE_DESCRIPTION": "Heal !M!. All enemies take !D! damage. Exhaust."
   },
   "${modID}:Strike": {
     "NAME": "Strike",
