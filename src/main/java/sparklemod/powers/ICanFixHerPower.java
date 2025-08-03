@@ -37,6 +37,11 @@ public class ICanFixHerPower extends BasePower {
         MASK
     }
 
+    @Override
+    public void updateDescription() {
+        this.description = (failChance <= 0 ? DESCRIPTIONS[1] : DESCRIPTIONS[0] + failChance + DESCRIPTIONS[2]);
+    }
+
     private static final ArrayList<BUCKET_TYPE> buckets = new ArrayList<>();
 
     public ICanFixHerPower(AbstractCreature owner, int amount) {

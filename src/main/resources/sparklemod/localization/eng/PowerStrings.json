@@ -79,7 +79,9 @@
   "${modID}:ICanFixHerPower": {
     "NAME": "I can fix her!",
     "DESCRIPTIONS": [
-      "Each turn, randomly gain Strength, Dexterity, Variance, Loaded Dice, Mask... or nothing! (Stacks reduce chance of nothing)"
+      "Each turn, randomly gain Strength, Dexterity, Variance, Loaded Dice, Mask... or nothing! (",
+      "% chance of nothing.)",
+      "Each turn, randomly gain Strength, Dexterity, Variance, Loaded Dice, Mask."
     ]
   },
   "${modID}:LeaveItToChancePower": {

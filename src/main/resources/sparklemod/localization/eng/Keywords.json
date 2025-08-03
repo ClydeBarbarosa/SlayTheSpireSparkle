@@ -74,7 +74,7 @@
       "Volatile",
       "volatile"
     ],
-    "DESCRIPTION": "Taking damage removes one stack from this effect."
+    "DESCRIPTION": "Taking damage reduces this effect."
   },
   {
     "PROPER_NAME": "Unique",

@@ -29,7 +29,7 @@
   },
   "${modID}:BombRace": {
     "NAME": "Bomb Race",
-    "DESCRIPTION": "Gain !${modID}:BombRaceAmount! ${modID}:Volatile bombs that explode after 3 turns."
+    "DESCRIPTION": "Gain !${modID}:BombRaceAmount! bombs that explode after 3 turns for !D! damage each to all enemies. ${modID}:Volatile."
   },
   "${modID}:BreakDance": {
     "NAME": "Break Dance",
